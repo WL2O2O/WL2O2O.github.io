@@ -592,31 +592,6 @@
   
   
   <entry>
-    <title>Linux 常用命令积累</title>
-    <link href="/2022/09/07/Linux/"/>
-    <url>/2022/09/07/Linux/</url>
-    
-    <content type="html"><![CDATA[<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs cmd">docker相关命令：<br>#docker pull之后，使用如下命令进行创建和启动容器，因为懒的配置，所以使用默认配置。<br>docker run -itd --name redis -p <span class="hljs-number">6379</span>:<span class="hljs-number">6379</span> redis<br>#docker ps：查看运行中的CONTAINER<br>#docker进入容器<br>docker exec -it mymongo /bin/bash<br>#这个是使容器处于docker运行便自启动<br>docker update redis --restart=always <br>#docker重启命令<br>systemctl restart docker<br>#容器重启命令<br>docker restart redis(自己命的名字或者CONTAINER ID)<br>启动     systemctl <span class="hljs-built_in">start</span> firewalld<br>关闭     systemctl stop firewalld<br>查看状态  systemctl status firewalld<br>查看状态  firewall-<span class="hljs-built_in">cmd</span> --state<br>开机启用  systemctl enable firewalld<br>开机禁用  systemctl disable firewalld<br>查看端口  firewall-<span class="hljs-built_in">cmd</span> --zone=public --list-ports<br>添加端口  firewall-<span class="hljs-built_in">cmd</span> --add-port=<span class="hljs-number">443</span>/tcp --permanent //永久添加<span class="hljs-number">443</span>端口,协议为tcp <br>重新加载  firewall-<span class="hljs-built_in">cmd</span> --reload //重新加载<br><br>删除端口  firewall-<span class="hljs-built_in">cmd</span> --zone=public --remove-port=<span class="hljs-number">80</span>/tcp --permanent //删除tcp下的<span class="hljs-number">80</span>端口<br><br><br><br>参数介绍：<br>firewall-<span class="hljs-built_in">cmd</span>：是Linux提供的操作firewall的一个工具(注意没有字母“d”)；<br>--permanent：表示设置为持久；<br>--add-port：标识添加的端口<br>--remove-port:标识删除的端口<br></code></pre></td></tr></table></figure><blockquote><p>Linux常用命令？怎么查看项目的日志？</p><ol><li><p>ls：列出当前目录下的文件和子目录。</p></li><li><p>cd：改变当前工作目录。</p></li><li><p>mkdir：创建一个新目录。</p></li><li><p>rm：删除文件或目录。</p></li><li><p>cp：复制文件或目录。</p></li><li><p>mv：移动文件或目录。</p></li><li><p>touch：创建一个新文件或修改文件的时间戳。</p></li><li><p>cat：查看文件的内容。</p></li><li><p>grep：在文件中查找指定的字符串。</p></li><li><p>ps：查看当前运行的进程。</p></li><li><p>top：查看系统资源使用情况。</p></li><li><p>df：查看文件系统使用情况。</p></li><li><p>du：查看目录大小。</p></li><li><p>tar：归档和压缩文件。</p></li><li><p>ssh：远程登录到另一台主机。</p></li></ol><p>要查看部署到Linux上的项目日志，可以使用以下命令：</p><ol><li>tail：查看文件的末尾几行。</li></ol><p>例如，要查看Tomcat日志文件的最后100行，可以使用以下命令：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">tail -n <span class="hljs-number">100</span> <span class="hljs-regexp">/var/</span>log<span class="hljs-regexp">/tomcat/</span>catalina.out<br></code></pre></td></tr></table></figure><ol start="2"><li>less：查看大文件的内容。</li></ol><p>例如，要查看一个1GB的日志文件，可以使用以下命令：</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">less /<span class="hljs-keyword">var</span>/<span class="hljs-built_in">log</span>/myapp.<span class="hljs-built_in">log</span><br></code></pre></td></tr></table></figure><p>在less中，可以使用Page Up、Page Down、上下方向键等进行滚动和搜索。要退出less，可以使用q键。</p><ol start="3"><li>grep：在日志文件中查找指定的字符串。</li></ol><p>例如，要查找myapp日志文件中包含ERROR的行，可以使用以下命令：</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata">grep <span class="hljs-keyword">ERROR</span> /<span class="hljs-keyword">var</span>/<span class="hljs-keyword">log</span>/myapp.<span class="hljs-keyword">log</span><br></code></pre></td></tr></table></figure><p>以上是一些常用的Linux命令，可以帮助开发者快速定位和解决问题。</p></blockquote>]]></content>
-    
-    
-    <categories>
-      
-      <category>Linux</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Linux</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java Essay</title>
     <link href="/2022/09/07/Java-Essay/"/>
     <url>/2022/09/07/Java-Essay/</url>
@@ -636,6 +611,31 @@
       <tag>老杜</tag>
       
       <tag>沉默王二</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linux 常用命令积累</title>
+    <link href="/2022/09/07/Linux/"/>
+    <url>/2022/09/07/Linux/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs cmd">docker相关命令：<br>#docker pull之后，使用如下命令进行创建和启动容器，因为懒的配置，所以使用默认配置。<br>docker run -itd --name redis -p <span class="hljs-number">6379</span>:<span class="hljs-number">6379</span> redis<br>#docker ps：查看运行中的CONTAINER<br>#docker进入容器<br>docker exec -it mymongo /bin/bash<br>#这个是使容器处于docker运行便自启动<br>docker update redis --restart=always <br>#docker重启命令<br>systemctl restart docker<br>#容器重启命令<br>docker restart redis(自己命的名字或者CONTAINER ID)<br>启动     systemctl <span class="hljs-built_in">start</span> firewalld<br>关闭     systemctl stop firewalld<br>查看状态  systemctl status firewalld<br>查看状态  firewall-<span class="hljs-built_in">cmd</span> --state<br>开机启用  systemctl enable firewalld<br>开机禁用  systemctl disable firewalld<br>查看端口  firewall-<span class="hljs-built_in">cmd</span> --zone=public --list-ports<br>添加端口  firewall-<span class="hljs-built_in">cmd</span> --add-port=<span class="hljs-number">443</span>/tcp --permanent //永久添加<span class="hljs-number">443</span>端口,协议为tcp <br>重新加载  firewall-<span class="hljs-built_in">cmd</span> --reload //重新加载<br><br>删除端口  firewall-<span class="hljs-built_in">cmd</span> --zone=public --remove-port=<span class="hljs-number">80</span>/tcp --permanent //删除tcp下的<span class="hljs-number">80</span>端口<br><br><br><br>参数介绍：<br>firewall-<span class="hljs-built_in">cmd</span>：是Linux提供的操作firewall的一个工具(注意没有字母“d”)；<br>--permanent：表示设置为持久；<br>--add-port：标识添加的端口<br>--remove-port:标识删除的端口<br></code></pre></td></tr></table></figure><blockquote><p>Linux常用命令？怎么查看项目的日志？</p><ol><li><p>ls：列出当前目录下的文件和子目录。</p></li><li><p>cd：改变当前工作目录。</p></li><li><p>mkdir：创建一个新目录。</p></li><li><p>rm：删除文件或目录。</p></li><li><p>cp：复制文件或目录。</p></li><li><p>mv：移动文件或目录。</p></li><li><p>touch：创建一个新文件或修改文件的时间戳。</p></li><li><p>cat：查看文件的内容。</p></li><li><p>grep：在文件中查找指定的字符串。</p></li><li><p>ps：查看当前运行的进程。</p></li><li><p>top：查看系统资源使用情况。</p></li><li><p>df：查看文件系统使用情况。</p></li><li><p>du：查看目录大小。</p></li><li><p>tar：归档和压缩文件。</p></li><li><p>ssh：远程登录到另一台主机。</p></li></ol><p>要查看部署到Linux上的项目日志，可以使用以下命令：</p><ol><li>tail：查看文件的末尾几行。</li></ol><p>例如，要查看Tomcat日志文件的最后100行，可以使用以下命令：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">tail -n <span class="hljs-number">100</span> <span class="hljs-regexp">/var/</span>log<span class="hljs-regexp">/tomcat/</span>catalina.out<br></code></pre></td></tr></table></figure><ol start="2"><li>less：查看大文件的内容。</li></ol><p>例如，要查看一个1GB的日志文件，可以使用以下命令：</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">less /<span class="hljs-keyword">var</span>/<span class="hljs-built_in">log</span>/myapp.<span class="hljs-built_in">log</span><br></code></pre></td></tr></table></figure><p>在less中，可以使用Page Up、Page Down、上下方向键等进行滚动和搜索。要退出less，可以使用q键。</p><ol start="3"><li>grep：在日志文件中查找指定的字符串。</li></ol><p>例如，要查找myapp日志文件中包含ERROR的行，可以使用以下命令：</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stata">grep <span class="hljs-keyword">ERROR</span> /<span class="hljs-keyword">var</span>/<span class="hljs-keyword">log</span>/myapp.<span class="hljs-keyword">log</span><br></code></pre></td></tr></table></figure><p>以上是一些常用的Linux命令，可以帮助开发者快速定位和解决问题。</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
       
     </tags>
     
