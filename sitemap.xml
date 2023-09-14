@@ -398,6 +398,13 @@
   </url>
   
   <url>
+    <loc>https://wl2o2o.github.io/tags/educoder/</loc>
+    <lastmod>2023-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wl2o2o.github.io/tags/DM/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -405,7 +412,7 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/educoder/</loc>
+    <loc>https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -427,13 +434,6 @@
   
   <url>
     <loc>https://wl2o2o.github.io/tags/ArrayList/</loc>
-    <lastmod>2023-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -615,14 +615,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/</loc>
+    <loc>https://wl2o2o.github.io/tags/%E4%BA%91%E4%B8%8A%E4%B9%A6%E5%BA%93/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/%E4%BA%91%E4%B8%8A%E4%B9%A6%E5%BA%93/</loc>
+    <loc>https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -736,14 +736,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/Database/</loc>
+    <loc>https://wl2o2o.github.io/categories/Java-notes/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/Java-notes/</loc>
+    <loc>https://wl2o2o.github.io/categories/Database/</loc>
     <lastmod>2023-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

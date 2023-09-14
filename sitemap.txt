@@ -44,12 +44,12 @@ https://wl2o2o.github.io/tags/SSM/
 https://wl2o2o.github.io/tags/MySQL/
 https://wl2o2o.github.io/tags/jquery/
 https://wl2o2o.github.io/tags/ajax/
-https://wl2o2o.github.io/tags/DM/
 https://wl2o2o.github.io/tags/educoder/
+https://wl2o2o.github.io/tags/DM/
+https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/
 https://wl2o2o.github.io/tags/%E9%93%BE%E8%A1%A8/
 https://wl2o2o.github.io/tags/%E9%80%92%E5%BD%92/
 https://wl2o2o.github.io/tags/ArrayList/
-https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/
 https://wl2o2o.github.io/tags/BigInteger/
 https://wl2o2o.github.io/tags/java-math/
 https://wl2o2o.github.io/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/
@@ -75,8 +75,8 @@ https://wl2o2o.github.io/tags/SDK%E5%BC%80%E5%8F%91/
 https://wl2o2o.github.io/tags/CSS/
 https://wl2o2o.github.io/tags/Git/
 https://wl2o2o.github.io/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/
-https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/
 https://wl2o2o.github.io/tags/%E4%BA%91%E4%B8%8A%E4%B9%A6%E5%BA%93/
+https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/
 https://wl2o2o.github.io/tags/Netty/
 https://wl2o2o.github.io/tags/Object%E7%B1%BB/
 https://wl2o2o.github.io/tags/plan/
@@ -92,8 +92,8 @@ https://wl2o2o.github.io/tags/Linux-DNS/
 https://wl2o2o.github.io/categories/%E7%AE%97%E6%B3%95/
 https://wl2o2o.github.io/categories/Bugs/
 https://wl2o2o.github.io/categories/Project/
-https://wl2o2o.github.io/categories/Database/
 https://wl2o2o.github.io/categories/Java-notes/
+https://wl2o2o.github.io/categories/Database/
 https://wl2o2o.github.io/categories/JVM/
 https://wl2o2o.github.io/categories/Linux/
 https://wl2o2o.github.io/categories/%E5%89%8D%E7%AB%AF/
