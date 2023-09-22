@@ -414,14 +414,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://wl2o2o.github.io/tags/educoder/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/educoder/</loc>
+    <loc>https://wl2o2o.github.io/tags/Java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -449,6 +449,20 @@
   </url>
   
   <url>
+    <loc>https://wl2o2o.github.io/tags/%E8%80%81%E6%9D%9C/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wl2o2o.github.io/tags/%E6%B2%89%E9%BB%98%E7%8E%8B%E4%BA%8C/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wl2o2o.github.io/tags/BigInteger/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -470,20 +484,6 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/%E8%80%81%E6%9D%9C/</loc>
-    <lastmod>2023-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wl2o2o.github.io/tags/%E6%B2%89%E9%BB%98%E7%8E%8B%E4%BA%8C/</loc>
-    <lastmod>2023-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wl2o2o.github.io/tags/Linux/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -491,14 +491,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
+    <loc>https://wl2o2o.github.io/tags/Redis/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/Redis/</loc>
+    <loc>https://wl2o2o.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -561,13 +561,6 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/CSS/</loc>
-    <lastmod>2023-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wl2o2o.github.io/tags/Ant-Design-Pro/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -610,7 +603,7 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/Git/</loc>
+    <loc>https://wl2o2o.github.io/tags/CSS/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -624,7 +617,7 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/</loc>
+    <loc>https://wl2o2o.github.io/tags/Git/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -638,6 +631,13 @@
   </url>
   
   <url>
+    <loc>https://wl2o2o.github.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wl2o2o.github.io/tags/Logging-Services/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -645,14 +645,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/Object%E7%B1%BB/</loc>
+    <loc>https://wl2o2o.github.io/tags/Netty/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/tags/Netty/</loc>
+    <loc>https://wl2o2o.github.io/tags/Object%E7%B1%BB/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -759,14 +759,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/JVM/</loc>
+    <loc>https://wl2o2o.github.io/categories/Java-notes/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/Java-notes/</loc>
+    <loc>https://wl2o2o.github.io/categories/JVM/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -787,14 +787,14 @@
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/Git/</loc>
+    <loc>https://wl2o2o.github.io/categories/Blog/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wl2o2o.github.io/categories/Blog/</loc>
+    <loc>https://wl2o2o.github.io/categories/Git/</loc>
     <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
