@@ -779,6 +779,31 @@
   
   
   <entry>
+    <title>Java Collection</title>
+    <link href="/2022/09/07/collection/"/>
+    <url>/2022/09/07/collection/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-1.png"></p><h2 id="怎么理解HashMap的数据结构呢？"><a href="#怎么理解HashMap的数据结构呢？" class="headerlink" title="怎么理解HashMap的数据结构呢？"></a>怎么理解HashMap的数据结构呢？</h2><p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-8.png"></p><p>HashMap是一种基于哈希表实现的键值对数据结构，它通过哈希函数将键映射到哈希表的桶（bucket）中，并在桶中存储对应的值。HashMap的数据结构可以理解为一个由桶组成的数组和一个保存键值对数量的计数器。</p><p>在HashMap中，每个桶都是一个链表或红黑树，用于解决哈希冲突。当多个键映射到同一个桶时，它们会被存储在同一个桶的链表或红黑树中，通过比较键的值来查找、插入和删除键值对。</p><p>在HashMap中，每个键值对由一个键和一个值组成，其中键是唯一的。在插入键值对时，HashMap首先根据键的哈希值计算出对应的桶，然后在桶中进行查找，如果桶中已经存在相同的键，则更新对应的值，否则将新的键值对插入到桶的末尾或红黑树中。在查找键值对时，HashMap首先根据键的哈希值找到对应的桶，然后在桶中进行查找，如果找到则返回对应的值，否则返回null。</p><p>由于哈希表的查找、插入和删除操作的时间复杂度通常为O(1)，因此HashMap在实现高效的键值对存储、查找和操作方面具有很好的性能。但是，由于哈希冲突的存在，HashMap的性能在数据集很大或者哈希函数不够均匀的情况下可能会受到影响。因此，在使用HashMap时需要注意选择合适的哈希函数，以避免哈希冲突和性能问题。</p><blockquote><p>如果还没有理解，就看下面的例子：</p></blockquote><p>我们可以把HashMap想象成一个盒子，里面可以放很多小球，每个小球都有一个编号和对应的颜色。我们可以通过编号来找到对应的小球的颜色。</p><p>为了快速找到编号对应的小球，我们需要在盒子里面建立一个分布均匀的网格，把小球放在对应的网格里面。这个网格就是哈希表，而网格中的每个小格子就是哈希表的桶。</p><p>当我们要找到某个编号对应的小球时，就可以通过哈希函数把编号转换成一个桶的位置，然后在对应的桶中查找对应的小球。如果找到了，则返回对应的颜色；如果没有找到，则返回null。</p><p>如果多个小球的编号对应的桶位置相同，这就是哈希冲突。为了解决哈希冲突，我们可以在桶中建立一个链表，把编号对应的小球放在链表的末尾。这样，在查找时，我们可以遍历链表，找到对应的小球。</p><p>当链表中的小球数量很多时，遍历链表的效率会变低，因此，我们可以把链表转换成红黑树，以提高查找效率。</p><p>总之，HashMap的数据结构就是一个由桶组成的数组，每个桶中可以存储多个键值对。在查找、插入和删除键值对时，我们需要先通过哈希函数找到对应的桶，然后在桶中进行查找和操作。如果多个键映射到同一个桶，则在桶中使用链表或红黑树解决哈希冲突。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java notes</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java基础</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java Essay</title>
     <link href="/2022/09/07/Java-Essay/"/>
     <url>/2022/09/07/Java-Essay/</url>
@@ -798,31 +823,6 @@
       <tag>老杜</tag>
       
       <tag>沉默王二</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java Collection</title>
-    <link href="/2022/09/07/collection/"/>
-    <url>/2022/09/07/collection/</url>
-    
-    <content type="html"><![CDATA[<p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-1.png"></p><h2 id="怎么理解HashMap的数据结构呢？"><a href="#怎么理解HashMap的数据结构呢？" class="headerlink" title="怎么理解HashMap的数据结构呢？"></a>怎么理解HashMap的数据结构呢？</h2><p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-8.png"></p><p>HashMap是一种基于哈希表实现的键值对数据结构，它通过哈希函数将键映射到哈希表的桶（bucket）中，并在桶中存储对应的值。HashMap的数据结构可以理解为一个由桶组成的数组和一个保存键值对数量的计数器。</p><p>在HashMap中，每个桶都是一个链表或红黑树，用于解决哈希冲突。当多个键映射到同一个桶时，它们会被存储在同一个桶的链表或红黑树中，通过比较键的值来查找、插入和删除键值对。</p><p>在HashMap中，每个键值对由一个键和一个值组成，其中键是唯一的。在插入键值对时，HashMap首先根据键的哈希值计算出对应的桶，然后在桶中进行查找，如果桶中已经存在相同的键，则更新对应的值，否则将新的键值对插入到桶的末尾或红黑树中。在查找键值对时，HashMap首先根据键的哈希值找到对应的桶，然后在桶中进行查找，如果找到则返回对应的值，否则返回null。</p><p>由于哈希表的查找、插入和删除操作的时间复杂度通常为O(1)，因此HashMap在实现高效的键值对存储、查找和操作方面具有很好的性能。但是，由于哈希冲突的存在，HashMap的性能在数据集很大或者哈希函数不够均匀的情况下可能会受到影响。因此，在使用HashMap时需要注意选择合适的哈希函数，以避免哈希冲突和性能问题。</p><blockquote><p>如果还没有理解，就看下面的例子：</p></blockquote><p>我们可以把HashMap想象成一个盒子，里面可以放很多小球，每个小球都有一个编号和对应的颜色。我们可以通过编号来找到对应的小球的颜色。</p><p>为了快速找到编号对应的小球，我们需要在盒子里面建立一个分布均匀的网格，把小球放在对应的网格里面。这个网格就是哈希表，而网格中的每个小格子就是哈希表的桶。</p><p>当我们要找到某个编号对应的小球时，就可以通过哈希函数把编号转换成一个桶的位置，然后在对应的桶中查找对应的小球。如果找到了，则返回对应的颜色；如果没有找到，则返回null。</p><p>如果多个小球的编号对应的桶位置相同，这就是哈希冲突。为了解决哈希冲突，我们可以在桶中建立一个链表，把编号对应的小球放在链表的末尾。这样，在查找时，我们可以遍历链表，找到对应的小球。</p><p>当链表中的小球数量很多时，遍历链表的效率会变低，因此，我们可以把链表转换成红黑树，以提高查找效率。</p><p>总之，HashMap的数据结构就是一个由桶组成的数组，每个桶中可以存储多个键值对。在查找、插入和删除键值对时，我们需要先通过哈希函数找到对应的桶，然后在桶中进行查找和操作。如果多个键映射到同一个桶，则在桶中使用链表或红黑树解决哈希冲突。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java notes</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java基础</tag>
       
     </tags>
     
