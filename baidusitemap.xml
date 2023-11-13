@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wl2o2o.github.io/2022/09/07/Linux/</loc>
+    <lastmod>2023-11-13</lastmod>
+  </url>
+  <url>
     <loc>https://wl2o2o.github.io/2021/09/07/helloHexo/</loc>
     <lastmod>2023-10-25</lastmod>
   </url>
@@ -118,10 +122,6 @@
   </url>
   <url>
     <loc>https://wl2o2o.github.io/2023/10/16/Polymorphism/</loc>
-    <lastmod>2023-10-16</lastmod>
-  </url>
-  <url>
-    <loc>https://wl2o2o.github.io/2022/09/07/Linux/</loc>
     <lastmod>2023-10-16</lastmod>
   </url>
   <url>
