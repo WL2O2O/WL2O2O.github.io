@@ -1,21 +1,33 @@
-name: Deploy # 工作流名称
-on:
-  push: # push 事件触发工作流
-    branches:
-      - hexoBlog # 只有在 hexoBlog 分支推送时触发工作流
-jobs:
-  build: # job1 id
-    runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
-    name: Deploy blog
-    steps:
-      - name: Checkout # 步骤1：获取源码
-        uses: actions/checkout@v2 # 使用 actions/checkout@v2
+# name: Deploy # 工作流名称
+# on:
+#   push: # push 事件触发工作流
+#     branches:
+#       - hexoBlog # 只有在 hexoBlog 分支推送时触发工作流
+# jobs:
+#   build: # job1 id
+#     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
+#     name: Deploy blog
+#     steps:
+#       - name: Checkout # 步骤1：获取源码
+#         uses: actions/checkout@v2 # 使用 actions/checkout@v2
 
-      - name: Cache node modules # 步骤2：缓存 node_modules
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+#       - name: Cache node modules # 步骤2：缓存 node_modules
+#         uses: actions/cache@v2
+#         with:
+#           path: node_modules
+#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+name: Build and Deploy
+on: [push]
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        
       - name: Install Hexo CLI  
         run: npm install -g hexo-cli  
         env:  
