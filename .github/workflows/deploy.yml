@@ -28,7 +28,8 @@ jobs:
           CI: false
           
       - name: Deploy 🚀 # 步骤4：部署
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        # uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master # 部署到 gh-pages 分支
