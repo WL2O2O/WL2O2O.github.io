@@ -1,35 +1,33 @@
-name: Deploy # workflow name
+name: Deploy # 工作流名称
 on:
-  [push] # 触发事件​
+  push: # push 事件触发工作流
+    branches:
+      - hexo # 只有在 main 分支推送时触发工作流
 jobs:
   build: # job1 id
     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
-    name: A job to deploy blog.
+    name: Deploy blog
     steps:
-      - name: Checkout # step1 获取源码
-        uses: actions/checkout@v1 # 使用 actions/checkout@v1
-        with: # 条件
-          submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
-      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。
-      - name: Cache node modules # step2
-        uses: actions/cache@v1
-        id: cache
+      - name: Checkout # 步骤1：获取源码
+        uses: actions/checkout@v2 # 使用 actions/checkout@v2
+
+      - name: Cache node modules # 步骤2：缓存 node_modules
+        uses: actions/cache@v2
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install Dependencies # 安装 node modules 相关依赖
-        if: steps.cache.outputs.cache-hit != 'true' # 如果变量 cache-hit 不等于 true
+
+      - name: Install Dependencies # 步骤3：安装依赖
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          npm install 
+          npm install
           npm run build
         env:
           CI: false
-      - name: Deploy 🚀
+          
+      - name: Deploy 🚀 # 步骤4：部署
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
-
+          BRANCH: master # 部署到 gh-pages 分支
+          FOLDER: public # 部署 public 文件夹
