@@ -35,13 +35,12 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
                 <% } %>
                 <br>
                 <!-- 增加一个在线编辑按钮 -->
-                <button onclick="window.location.href='https://github.com/WL2O2O/WL2O2O.github.io/edit/myblog/source/<%-page.source%>'" target="_blank" class="rounded-link">编辑文章✒️</button>
+                <button onclick="window.location.href='https://github.com/WL2O2O/WL2O2O.github.io/edit/hexo/source/<%-page.source%>'" target="_blank" class="rounded-link">编辑文章✒️</button>
                 <style>
                     .note {
                         display: flex; /* 设置弹性容器 */
                         flex-direction: column; /* 垂直方向排列子元素 */
                     }
-
                     .rounded-link {
                         border-radius: 10px; /* 设置边框圆润 */
                         /* border: 2px solid #007BFF; 设置边框颜色和宽度 */
@@ -63,19 +62,6 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
               <%- partial('_partials/plugins/encrypt') %>
               <%- inject_point('postMarkdownEnd') %>
             <% } else { %>
-              <!-- <div style="text-align: right;">
-                <a href="https://github.com/WL2O2O/WL2O2O.github.io/edit/myblog/source/<%-page.source%>" target="_blank" class="rounded-link">编辑文章✒️</a>
-              </div>
-
-              <style>
-                  .rounded-link {
-                      border-radius: 10px; /* 设置边框圆润 */
-                      border: 2px solid #007BFF; /* 设置边框颜色和宽度 */
-                      padding: 4px;
-                      text-align: center; /* 设置文字居左 */
-                      text-decoration: none;
-                  }
-              </style> -->
               <div class="markdown-body">
                 <%- inject_point('postMarkdownBegin') %>
                 <%- page.content %>
