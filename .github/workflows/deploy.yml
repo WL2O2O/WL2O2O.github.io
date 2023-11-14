@@ -19,11 +19,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Install Dependencies # step3 name
+      - name: Install Dependencies # 安装 node modules 相关依赖
         if: steps.cache.outputs.cache-hit != 'true' # 如果变量 cache-hit 不等于 true
         run: |
-          npm install # 安装 node modules 相关依赖
+          npm install 
           npm run build
+        env:
+          CI: false
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
