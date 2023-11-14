@@ -1,25 +1,30 @@
-name: Build and Deploy
-on: [push]
+name: Deploy # workflow name
+​
+on:
+  [push] # 触发事件
+​
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build: # job1 id
+    runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
+    name: A job to deploy blog.
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      - name: Checkout # step1 获取源码
+        uses: actions/checkout@v1 # 使用 actions/checkout@v1
+        with: # 条件
+          submodules: true # Checkout private submodules(themes or something else). 当有子模块时切换分支？
+  ​
+      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.) 缓存压缩 node_modules，不用每次下载，使用时解压，可以加快工作流的执行过程，超过 7 天没有使用将删除压缩包。
+      - name: Cache node modules # step2
+        uses: actions/cache@v1
+        id: cache
         with:
-          persist-credentials: false
-      # - name: Install Node.js and npm
-      #   uses: actions/setup-node@v2
-      #   with:
-      #     node-version: 10
-      #     # 可选：指定 npm 版本
-      #     npm: '6.4.1'
-
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          hexo g
-        env:
-          CI: false
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install Dependencies # step3 name
+        if: steps.cache.outputs.cache-hit != 'true' # 如果变量 cache-hit 不等于 true
+        run: npm install # 安装 node modules 相关依赖
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
