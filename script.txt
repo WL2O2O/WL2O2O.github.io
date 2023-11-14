@@ -1,0 +1,8 @@
+#---------------------------
+# 文章置顶
+#  安装时间：2023年10月24日
+# 安装插件：npm install hexo-generator-index --save
+#  源码地址：https://github.com/hexojs/hexo-generator-index.git
+#---------------------------
+#  使用方法
+sticky: 100（数值越大，优先级越高）

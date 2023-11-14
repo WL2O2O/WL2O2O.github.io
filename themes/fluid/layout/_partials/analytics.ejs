@@ -1,0 +1,53 @@
+<% if(theme.web_analytics.enable) { %>
+  <% if(theme.web_analytics.baidu) { %>
+    <!-- 百度统计 -->
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?<%= theme.web_analytics.baidu %>";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <% } %>
+      <% if(theme.web_analytics.tencent) { %>
+        <!-- 腾讯统计 -->
+        <script>
+          var _mtac = {};
+          (function () {
+            var mta = document.createElement("script");
+            mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "<%= theme.web_analytics.tencent %>");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+          })();
+        </script>
+        <% } %>
+          <% if(theme.web_analytics.woyaola) { %>
+            <!-- 51.la -->
+            <script type="text/javascript" src="//js.users.51.la/<%= theme.web_analytics.woyaola %>.js"></script>
+            <% } %>
+              <% if(theme.web_analytics.cnzz) { %>
+                <!-- cnzz -->
+                <style type="text/css">
+                  #cnzz_stat_icon_<%=theme.web_analytics.cnzz %> {
+                    display: none;
+                  }
+                </style>
+                <script
+                  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_<%= theme.web_analytics.cnzz %>'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D<%= theme.web_analytics.cnzz %>' type='text/javascript'%3E%3C/script%3E"));</script>
+                <% } %>
+                  <% if(theme.web_analytics.google) { %>
+                    <!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async
+                      src="https://www.googletagmanager.com/gtag/js?id=<%= theme.web_analytics.google %>"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag() { dataLayer.push(arguments); }
+                      gtag("js", new Date());
+                      gtag("config", "<%= theme.web_analytics.google %>");
+                    </script>
+                    <% } %>
+                      <% } %>

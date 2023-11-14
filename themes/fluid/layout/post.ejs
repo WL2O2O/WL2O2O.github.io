@@ -1,0 +1,143 @@
+<%
+page.banner_img = page.banner_img || theme.post.banner_img
+page.banner_img_height = page.banner_img_height || theme.post.banner_img_height
+page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
+%>
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      <%- inject_point('postLeft') %>
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"><%= page.subtitle || page.title %></h1>
+            <% if (theme.post.updated.enable && theme.post.updated && compare_date(page.date, page.updated)) { %>
+              <p class="note note-<%= theme.post.updated.note_class || 'info' %>">
+                <% if (theme.post.updated.relative) { %>
+                  <% if (theme.post.updated.content) { %>
+                    <!-- compatible with older versions-->
+                    <%- theme.post.updated.content %><%- relative_date(page.updated, theme.post.updated.date_format) %>
+                  <% } else { %>
+                    <%- __('post.updated', relative_date(page.updated, theme.post.updated.date_format)) %>
+                  <% } %>
+                <% } else { %>
+                  <% if (theme.post.updated.content) { %>
+                    <!-- compatible with older versions-->
+                    <%- theme.post.updated.content %><%- date(page.updated, theme.post.updated.date_format) %>
+                  <% } else { %>
+                    <%- __('post.updated', date(page.updated, theme.post.updated.date_format)) %>
+                  <% } %>
+                <% } %>
+                <br>
+                <!-- 增加一个在线编辑按钮 -->
+                <button onclick="window.location.href='https://github.com/WL2O2O/WL2O2O.github.io/edit/myblog/source/<%-page.source%>'" target="_blank" class="rounded-link">编辑文章✒️</button>
+                <style>
+                    .note {
+                        display: flex; /* 设置弹性容器 */
+                        flex-direction: column; /* 垂直方向排列子元素 */
+                    }
+
+                    .rounded-link {
+                        border-radius: 10px; /* 设置边框圆润 */
+                        /* border: 2px solid #007BFF; 设置边框颜色和宽度 */
+                        padding: 4px;
+                        text-align: center; /* 设置文字居左 */
+                        text-decoration: none;
+                        position: relative; /* 设置相对定位 */
+                        width: 100%; /* 设置按钮宽度为100% */
+                        margin-left: auto; /* 设置左边距为自动 */
+                        margin-right: 10px; /* 设置右边距为固定值，可根据需要调整 */
+                    }
+                </style>
+              </p>
+
+            <% } %>
+            <% if (page.encrypt === true) { %>
+              <%- inject_point('postMarkdownBegin') %>
+              <%- page.content %>
+              <%- partial('_partials/plugins/encrypt') %>
+              <%- inject_point('postMarkdownEnd') %>
+            <% } else { %>
+              <!-- <div style="text-align: right;">
+                <a href="https://github.com/WL2O2O/WL2O2O.github.io/edit/myblog/source/<%-page.source%>" target="_blank" class="rounded-link">编辑文章✒️</a>
+              </div>
+
+              <style>
+                  .rounded-link {
+                      border-radius: 10px; /* 设置边框圆润 */
+                      border: 2px solid #007BFF; /* 设置边框颜色和宽度 */
+                      padding: 4px;
+                      text-align: center; /* 设置文字居左 */
+                      text-decoration: none;
+                  }
+              </style> -->
+              <div class="markdown-body">
+                <%- inject_point('postMarkdownBegin') %>
+                <%- page.content %>
+                <%- inject_point('postMarkdownEnd') %>
+              </div>
+            <% } %>
+            <hr/>
+            <div>
+
+              <%- inject_point('postMetaBottom') %>
+
+              <%- inject_point('postCopyright') %>
+
+              <% if (theme.post.prev_next.enable && !page.hide) { %>
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    <% const prev = prev_post(page) %>
+                    <% if (prev) { %>
+                      <a href="<%= url_for(prev.path) %>" title="<%= prev.title %>">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"><%= prev.title %></span>
+                        <span class="visible-mobile"><%- __('post.prev_post') %></span>
+                      </a>
+                    <% } %>
+                  </article>
+                  <article class="post-next col-6">
+                    <% const next = next_post(page) %>
+                    <% if (next) { %>
+                      <a href="<%= url_for(next.path) %>" title="<%= next.title %>">
+                        <span class="hidden-mobile"><%= next.title %></span>
+                        <span class="visible-mobile"><%- __('post.next_post') %></span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    <% } %>
+                  </article>
+                </div>
+              <% } %>
+            </div>
+            <!-- 注入评论模块 -->
+            <%- inject_point('postComments') %>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      <%- inject_point('postRight') %>
+    </div>
+  </div>
+</div>
+
+<%- partial('_partials/markdown-plugins') %>
+
+<% if(theme.post.custom && theme.post.custom.enable && theme.post.custom.content && page.custom !== false) { %>
+  <!-- Custom -->
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <%- page.custom || theme.post.custom.content %>
+    </div>
+  </div>
+<% } %>
+
+
