@@ -16,6 +16,10 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install Hexo CLI  
+        run: npm install -g hexo-cli  
+        env:  
+          CI: false
 
       - name: Install Dependencies # 步骤3：安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
