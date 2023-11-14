@@ -19,4 +19,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.（这里就是把生成的public文件推#送到master分支）
+          FOLDER: public # The folder the action should deploy.
