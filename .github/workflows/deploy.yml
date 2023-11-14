@@ -2,7 +2,7 @@ name: Deploy # 工作流名称
 on:
   push: # push 事件触发工作流
     branches:
-      - hexo # 只有在 main 分支推送时触发工作流
+      - hexoBlog # 只有在 hexoBlog 分支推送时触发工作流
 jobs:
   build: # job1 id
     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
@@ -19,9 +19,7 @@ jobs:
 
       - name: Install Dependencies # 步骤3：安装依赖
         if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          npm install
-          npm run build
+        run: npm run build
         env:
           CI: false
           
