@@ -32,7 +32,7 @@ baidusitemap:
 #---------------------------
 
 #启用all_minifier
-all_minifier: false
+all_minifier: true
 
 # html压缩
 html_minifier:
@@ -61,7 +61,7 @@ js_concator:
 
 # 图片优化
 image_minifier:
-  enable: false
+  enable: true
   interlaced: false
   multipass: false
   optimizationLevel: 2
