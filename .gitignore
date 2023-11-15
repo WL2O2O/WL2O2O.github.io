@@ -1,5 +1,6 @@
 .DS_Store
 Thumbs.db
+node_modules/imagemin-gifsicle/*
 *.log
 public/
 .deploy*/
