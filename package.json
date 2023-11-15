@@ -28,6 +28,7 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3",
-    "optipng-bin": "^9.0.0"
+    "optipng-bin": "^9.0.0",
+    "uuid": "^9.0.1"
   }
 }
