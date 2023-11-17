@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>面渣八股</title>
+    <link href="/2023/11/16/%E9%9D%A2%E6%B8%A3%E5%85%AB%E8%82%A1/"/>
+    <url>/2023/11/16/%E9%9D%A2%E6%B8%A3%E5%85%AB%E8%82%A1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="八股复盘"><a href="#八股复盘" class="headerlink" title="八股复盘"></a>八股复盘</h1><h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><blockquote><p>Q什么是数据库第一二三范式？</p></blockquote><p>A：</p><ul><li>第一范式：又称精确范式</li><li>第二范式：又称家规，必须完全依赖主键，若有与主键无关字段者，设置为联合主键</li><li>第三范式：又称恋爱脑范式，遵守家规，远离小三</li></ul><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311161512929.jpeg"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java notes</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>八股文</tag>
+      
+      <tag>面渣逆袭</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>LCR-003-比特位计数</title>
     <link href="/2023/10/24/LCR-003-%E6%AF%94%E7%89%B9%E4%BD%8D%E8%AE%A1%E6%95%B0/"/>
     <url>/2023/10/24/LCR-003-%E6%AF%94%E7%89%B9%E4%BD%8D%E8%AE%A1%E6%95%B0/</url>
