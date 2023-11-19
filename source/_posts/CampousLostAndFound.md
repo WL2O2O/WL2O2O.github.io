@@ -1,7 +1,6 @@
 ---
 title: 校园失物招领系统
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120915504.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627644.png
 categories:
   - Project
 tags:

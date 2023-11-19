@@ -1,7 +1,6 @@
 ---
 title: 001-JZoffer
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111618303.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
 categories:
   - 算法
 tags:

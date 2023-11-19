@@ -1,9 +1,7 @@
 ---
 title: API开放平台
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309110907944.png
-banner_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111138752.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
+banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627632.png
 excerpt: >-
   项目介绍：前端开发的时候有有时会需要后端的接口，如果此时有一个 API 接口可以使用，那么就无需后端接口了。本项目是一个提供 API
   接口调用的平台，用户可以注册与登录，开通接口的调用权限，用户可以使用接口，每次调用会进行次数统计。管理院可以发布接口、下线接口、接入接口，以及可视化接口的调用情况。
@@ -1377,14 +1375,14 @@ spring:
 >    if (Long.parseLong(nonce) > 10000L){
 >    	return handleNoAuth(response);
 >    }
->                                                                                                                
+>                                                                                                                   
 >    //  时间戳校验自己实现，时间和当前时间不能超过5min
 >    Long currentTime = System.currentTimeMillis() / 1000;
 >    Long FIVE_MINUTES = 60 * 5L;
 >    if ((currentTime-Long.parseLong(timeStamp)) >= FIVE_MINUTES) {
 >    	return handleNoAuth(response);
 >    }
->                                                                                                                
+>                                                                                                                   
 >    // TODO 要去数据库中查询
 >    String serverSign = SignUtils.getSign(body, "abcdefgh");
 >    if (!serverSign.equals(sign)) {
@@ -1645,7 +1643,7 @@ zookeeper注册中心：通过内嵌的方式运行，更方便
 > 1. 依赖引入  视频事件：`00:52`
 >
 >    ```
->                                                                                                             
+>                                                                                                                
 >    ```
 >
 >    

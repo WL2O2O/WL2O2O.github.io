@@ -1,7 +1,6 @@
 ---
 title: Java Essay
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120835293.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
 sticky: 100
 categories:
   - Java notes

@@ -1,7 +1,7 @@
 ---
 title: 在线判题系统
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120915504.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
+banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151640352.png
 categories:
   - Project
 tags:
@@ -66,3 +66,9 @@ OJ ： Online Judge（在线判题评测系统）
    （代码提交、代码审核、产品验收）
 
 9. 上线
+
+
+
+
+
+![image-20231115164047376](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151640352.png)

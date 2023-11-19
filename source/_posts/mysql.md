@@ -1,7 +1,7 @@
 ---
 title: MySQL笔记
 index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111618299.png
+  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627638.png
 categories:
   - Database
 tags:

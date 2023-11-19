@@ -1,7 +1,6 @@
 ---
 title: abstract class && interface
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120835293.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
 excerpt: 你知道抽象类(abstract class)和接口(interface)有什么区别吗？
 categories:
   - Java notes

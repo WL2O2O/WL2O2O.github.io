@@ -1,7 +1,6 @@
 ---
 title: 什么是SSM
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120923205.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627644.png
 categories:
   - Java notes
 tags:

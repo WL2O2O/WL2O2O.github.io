@@ -1,7 +1,6 @@
 ---
 title: 面试官的突袭问题：解密多态，让你从懵逼到彻底掌握！
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120835293.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
 excerpt: 面试官的突袭问题：解密多态，让你从懵逼到彻底掌握！
 categories:
   - Blog

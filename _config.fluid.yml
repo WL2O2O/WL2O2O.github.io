@@ -229,7 +229,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#2f4154"
+  navbar_bg_color: "#21252b"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -560,7 +560,7 @@ index:
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
-  banner_img_height: 60
+  banner_img_height: 100
 
   # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
@@ -639,7 +639,7 @@ post:
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
   # default_index_img: /img/example.png  
   # 为优化加载速度，替换为华为对象存储链接
-  default_index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202310052343515.ico
+  default_index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627643.png
 
   # 文章标题下方的元信息
   # Meta information below title

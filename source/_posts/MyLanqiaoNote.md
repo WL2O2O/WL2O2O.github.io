@@ -1,7 +1,7 @@
 ---
 title: 蓝桥杯
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111618298.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627636.png
+banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
 categories:
   - 算法
 tags:
@@ -180,7 +180,7 @@ public static void isprime(int n){
 
 题目链接：[最小质因子之和(Easy Version) - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/1151/learning/)
 
-![image-20230218212950140](http://images.rl0206.love/202302190155824.png)
+![最小质因子之和题目描述](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102197.png)
 
 思路：因为题目输入为T组数据，如果单独计算每组数据，则会有部分区间的数据被重复计算，所以先通过埃氏筛法，求出每一个数的最小质因子，将结果存放在 ans 数组中，然后将 ans 数组表示为前缀和数组，此时 ans 数组中的结果就为2~n的质因子之和，此时，题目若输入 15 ，则直接输出 ans[15] 即可。
 
@@ -300,7 +300,7 @@ public static Main{
 
 #### 唯一分解定理
 
-![image-20230218213033194](http://images.rl0206.love/202302190155826.png)
+![image-20231118203136873](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102199.png)
 
 #### n的质因数个数----唯一分解定理
 
@@ -367,7 +367,7 @@ public static long num(int n){
 
 题目链接：[数数 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/2218/learning/)
 
-![image-20230218213105395](http://images.rl0206.love/202302190155827.png)
+![image-20231118203219627](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102200.png)
 
 思路：将这个区间中的每一个数都根据唯一分解定理进行拆分，统计有多少个数的拆分结果为12
 
@@ -406,7 +406,9 @@ public class 数数 {
 
 题目链接：[求阶乘 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/2145/learning/)
 
-![image-20230218213136197](http://images.rl0206.love/202302190155828.png)思路：
+![image-20231118203313070](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102201.png)
+
+思路：
 
 ​		1.根据唯一分解定理可知：每一个数都可以写为 n 个素数的乘积；
 
@@ -505,7 +507,7 @@ public static int cycle(String s){
 
 思路：pos 表示第二行的字符串向右移动的格数，如果移动后，第二行的字符串与第一行字符串对应位置的字符全部相同，则 pos 就是这个字符串的周期。
 
-![image-20230218213304526](http://images.rl0206.love/202302190155829.png)
+![image-20231118203417476](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102202.png)
 
 ```java
 public static int cycle(String s){
@@ -542,7 +544,9 @@ public static int cycle(String s){
 
 题目链接：[重复字符串 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/1049/learning/)
 
-![image-20230218213358383](http://images.rl0206.love/202302190155830.png)思路：已知重复次数为 K ，那么周期就是 S.length() / K ，然后只需要求出每一个周期的第 i 个字符，出现次数最多的字符是哪个，然后将其余字符全部改为它，那么就将 S 改为了重复 K 次的字符串，此时修改次数也是最少的。以abdcbbcaabca ， 重复 3 次为例：
+![image-20231118203511964](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102203.png)
+
+思路：已知重复次数为 K ，那么周期就是 S.length() / K ，然后只需要求出每一个周期的第 i 个字符，出现次数最多的字符是哪个，然后将其余字符全部改为它，那么就将 S 改为了重复 K 次的字符串，此时修改次数也是最少的。以abdcbbcaabca ， 重复 3 次为例：
 
 ​		将此字符串拆分为三个部分后，每个周期写在一行，结果为：
 
@@ -740,11 +744,11 @@ per.next = end;
 
 ​		插入前：
 
-![image-20230219014059512](http://images.rl0206.love/202302190155831.png)
+![image-20231118203551162](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102205.png)
 
 ​			插入后：
 
-![image-20230219014137705](http://images.rl0206.love/202302190155832.png)
+![image-20231118203544620](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102206.png)
 
 ```java
 Node now;//待插入结点
@@ -756,11 +760,11 @@ head.next = now;//此节点位置的上一个结点的下一个结点为now
 
 ​		删除前：
 
-![image-20230219014156981](http://images.rl0206.love/202302190155833.png)
+![image-20231118203608364](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102207.png)
 
 ​		删除后：	
 
-​										 ![image-20230219014215603](http://images.rl0206.love/202302190155834.png)			
+![image-20231118203627478](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102208.png)		
 
 ```java
 Node now;//待删除结点
@@ -800,11 +804,11 @@ per.next = end;
 
 ​		插入前：
 
-![image-20230219014245867](http://images.rl0206.love/202302190155835.png)
+![image-20231118203704325](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102209.png)
 
 ​	 	插入后：
 
-![image-20230219014302340](http://images.rl0206.love/202302190155836.png)
+![image-20231118203719212](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102210.png)
 
 ```java
 Node now;//待插入结点
@@ -818,11 +822,11 @@ now.last = first;
 
 ​		删除前：
 
-![image-20230219014319511](http://images.rl0206.love/202302190155837.png)
+![image-20231118203733885](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102211.png)
 
 ​		删除后：
 
-![image-20230219014334189](http://images.rl0206.love/202302190155838.png)
+![image-20231118203744884](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102212.png)
 
 ```java
 Node now;//待删除结点
@@ -834,7 +838,7 @@ now.next.last = now.last;
 
 题目链接：[左移右移 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/2219/learning/)
 
-![image-20230219014357749](http://images.rl0206.love/202302190155839.png)
+![image-20231118203759075](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102213.png)
 
 思路：
 
@@ -921,7 +925,7 @@ public class 左移右移_双链表 {
 
 栈底（Bottom）：固定的，不允许进行插入和删除的另一端。
 
-![image-20230219014443140](http://images.rl0206.love/202302190155840.png)
+![image-20231118203841538](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102214.png)
 
 #### 常用方法
 
@@ -960,7 +964,7 @@ public static boolean check(String s){
 
 队列（queue）是一种先进先出的、操作受限的线性表。
 
-![image-20230219014507105](http://images.rl0206.love/202302190155841.png)
+![image-20231118203904215](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102215.png)
 
 队列这种数据结构非常容易理解，就像我们平时去超市买东西，在收银台结账的时候需要排队，先去排队的就先结账出去，排在后面的就后结账，有其他人再要过来结账，必须排在队尾不能在队中间插队。
 
@@ -978,7 +982,7 @@ queue.push(11);//将11存放到队列中
 
 题目链接：[左移右移 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/2219/learning/)
 
-![image-20230219014523818](http://images.rl0206.love/202302190155842.png)
+![image-20231118203920958](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102217.png)
 
 思路：
 
@@ -1221,7 +1225,7 @@ public static void dfs(int n,int nowget,int max,String ans){//要划分的数，
 
 题目链接：[路径之谜 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/89/learning/)
 
-![image-20230219014600752](http://images.rl0206.love/202302190155843.png)
+![image-20231118204002349](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102218.png)
 
 思路：
 
@@ -1303,7 +1307,7 @@ public class 路径之谜 {
 
 题目链接：[迷宫 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/602/learning/)
 
-![image-20230219014635007](http://images.rl0206.love/202302190155844.png)
+![image-20231118204041308](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102219.png)
 
 思路：从起点开始，将从此点能到达的点存储到队列中，每次获取并删除队列中的第一个元素，并将其能到达且还未到达过的点（若此点已经到达过，则表示当前处理的这条路径不是最短路径）存储到队列中，若已经到达终点，则此路径为最短路径。如果队列中已经没有元素，但仍未到达迷宫终点，则表示此迷宫无解
 
@@ -1390,7 +1394,7 @@ public class 迷宫 {
 
 题目链接：[合并果子 - 蓝桥云课 (lanqiao.cn)](https://www.lanqiao.cn/problems/741/learning/)
 
-![image-20230219015419280](http://images.rl0206.love/202302190155845.png)
+![image-20231118204125650](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102220.png)
 
 思路：
 
@@ -1454,7 +1458,7 @@ public class Main {
 
 #### 树的基本概念
 
-![image-20230219015439471](http://images.rl0206.love/202302190155846.png)
+![image-20231118204210164](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311182102221.png)
 
 ## 二叉树
 

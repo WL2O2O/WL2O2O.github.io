@@ -1,7 +1,7 @@
 ---
 title: 尚医通
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120915505.png
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
+banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151644178.png
 categories:
   - Project
 tags:
@@ -58,6 +58,8 @@ date: 2022-05-31 11:23:42
 功能性类库：
 
 ​	  `JWT`登录验证、`EasyExcell`数据库导入导出
+
+![架构图](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151644178.png)
 
 > ## 业务流程
 

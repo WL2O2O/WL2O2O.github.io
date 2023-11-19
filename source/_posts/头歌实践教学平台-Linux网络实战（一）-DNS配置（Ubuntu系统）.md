@@ -1,7 +1,6 @@
 ---
 title: 头歌实践教学平台-Linux网络实战（一）-DNS配置（Ubuntu系统）
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111619818.jpg
+index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627632.png
 categories:
   - Linux
 tags:
