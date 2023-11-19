@@ -5,8 +5,7 @@ sticky: 100
 categories:
   - Java notes
 tags:
-  - 老杜
-  - 沉默王二
+  - Java基础
 abbrlink: 11449
 date: 2022-09-07 08:58:32
 ---
