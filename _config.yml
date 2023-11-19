@@ -128,7 +128,7 @@ deploy:
     repo: git@github.com:WL2O2O/WL2O2O.github.io.git
     branch: master
   - type: git
-    repo: git@gitee.com:WLei224/hexo-blog.git
+    repo: git@gitee.com:WLei224/WLei224.git
     branch: master
   # - type: git
   #   repo: git@139.159.155.183:/home/git/hexo-blog.git
