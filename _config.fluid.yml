@@ -629,8 +629,9 @@ index:
 post:
   # banner_img: /img/default.png 
   # 为优化加载速度，下面替换为华为对象存储链接
-  # banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202310251642680.jpg
-  banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202310251653374.jpg
+  # 阳光活力：banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202310251642680.jpg
+  # programer life：banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202310251653374.jpg
+  banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311202012704.png
 
   banner_img_height: 70
   banner_mask_alpha: 0.3
