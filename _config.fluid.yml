@@ -1146,6 +1146,12 @@ links:
       link: "https://csguider.icu",
       avatar: "/img/avatar.png"
       }
+    - {
+      title: "语雀知识库",
+      intro: "我的知识沉淀",
+      link: "https://www.yuque.com/wlei224/csguider/csb1zwghsos18fag",
+      avatar: "/img/yuque.png"
+      }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
