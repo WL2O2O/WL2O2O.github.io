@@ -334,13 +334,18 @@ web_analytics:  # 网页访问统计
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
   # Baidu analytics, get the string behind `hm.js?`
   # See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376
-  baidu: 532b21a5fc88ac9d57905860111efbbb
+  # Gitee
+  baidu: 956b14594152e1b71ce14695a71235d5
+  # GitHub
+  # baidu: 532b21a5fc88ac9d57905860111efbbb
+  
 
   # Google Analytics 4 的媒体资源 ID
   # Google Analytics 4 MEASUREMENT_ID
   # See: https://support.google.com/analytics/answer/9744165#zippy=%2Cin-this-article
-  google:
-    measurement_id:
+  # google:
+  #   measurement_id:
+  google: G-MP1THLPZFC
 
   # 腾讯统计的 H5 App ID，开启高级功能才有cid
   # Tencent analytics, set APP ID

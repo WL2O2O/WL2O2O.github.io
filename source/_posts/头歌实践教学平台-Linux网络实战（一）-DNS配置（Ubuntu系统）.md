@@ -10,15 +10,22 @@ abbrlink: 14983
 date: 2022-05-04 15:30:37
 ---
 
-@[TOC](头歌实践教学平台-Linux网络实战（一）-DNS配置（Ubuntu系统）)
-见者有缘，欢迎大家访问我的博客【CS_GUIDER】：https://wlei224.gitee.io   或   www.csguider.icu（部署在github，可能访问慢）
+***见者有缘，欢迎大家访问我的博客【CS_GUIDER】：
+[https://wlei224.gitee.io](https://wlei224.gitee.io/) （建议访问这个，速度极快）
+[https://wl2o2o.github.io](https://wl2o2o.github.io/)（github托管，可能访问慢）***
+
+
+
+我的开源博客涵盖了**八股文**、Java基础、JVM、MySQL、Linux、框架技术、算法以及其他领域的文章，如果你对建站比较感兴趣，你也想沉淀自己的知识，欢迎访问我的网站，不定时更新连载我的博客搭建版本记录，踩坑记录或者是我基于hexo的fluid主题增加的小功能，欢迎大家访问和咨询。
+
+![博客文章](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210931702.png)
 
 > ## 写在前面
 >
 > 别划走！！！这篇博客就是你要找的头歌教学实践平台上的：第四关：DNS服务器配置的保姆级通关步骤。
 >
-> ![头歌实践教学平台-Linux网络实战（一）第四关](https://img-blog.csdnimg.cn/d5cb120009f04799a922533bde76d046.png#pic_center)
-> ![成功图](https://img-blog.csdnimg.cn/5d1ccfb83506428892cd288db82f3035.png#pic_center) 如上图所示，本关题解笔者已经通过，并测验了多次，为避免出错，可以先按照如下步骤，直接复制即可，通关后想了解原理，再回过头来一步一步进行，如果遇到什么问题，欢迎在评论区进行讨论！
+> ![头歌实践教学平台-Linux网络实战（一）第四关](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210935053.png)
+> ![成功图](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210935591.png) 如上图所示，本关题解笔者已经通过，并测验了多次，为避免出错，可以先按照如下步骤，直接复制即可，通关后想了解原理，再回过头来一步一步进行，如果遇到什么问题，欢迎在评论区进行讨论！
 # 通关前的啰嗦（属于知识补充，不想看就跳过）
 ## 相关知识背景
 **域名**：`Internet`上某一台计算机或计算机组的名称，是`IP地址`的映射。域名解析实际上就是把域名映射回`IP地址`。
@@ -147,7 +154,7 @@ vim /etc/resolv.conf
 nameserver 127.0.0.1 
 ```
 
-![使用vi命令打开文件后添加一行：nameserver 127.0.0.1](https://img-blog.csdnimg.cn/ac450769cec5475fb849462364cf24ec.png#pic_center)
+![使用vi命令打开文件后添加一行：nameserver 127.0.0.1](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210936377.png)
 
 ## 五、不要忘记重新启动bind服务器
 ```cmd
@@ -179,8 +186,13 @@ host 10.40.211.244
 
 > ## 写在最后
 >
-> 无论你是计算机小白，还是佬儿，或者是考研党，或者是摸鱼翁，能在CSDN相遇即是缘分，欢迎大家访问我的博客：https://wlei224.gitee.io 或者 www.csguider.icu，如果你对写博文很感兴趣，或者说想加入我一起打造这个小网站，你可以在博客的评论区，或者本文的评论区联系我，总之，话不多说，一起努力！
+> 无论你是计算机小白，还是佬儿，或者是考研党，或者是摸鱼翁，能在此相遇即是缘分，欢迎大家访问我的博客，链接见下面，如果你对写博文很感兴趣，或者说想加入我一起打造这个小网站，你可以在博客的评论区，或者本文的评论区联系我，总之，话不多说，一起努力！沉淀的知识都是自己的财富！
 >
 > 送给大家八个字：慢下来，走好每一步！
 >
-> CS_GUIDER博客域名：https://wlei224.gitee.io   或   www.csguider.icu（部署在github，可能访问慢）![CS_GUIDER](https://img-blog.csdnimg.cn/a27ded70f81f415089e0f067476b6d87.png#pic_center)
+> CS_GUIDER博客链接：
+>
+> [https://wlei224.gitee.io](https://wlei224.gitee.io)（建议访问这个，速度极快）
+> [https://wl2o2o.github.io](https://wl2o2o.github.io)（github托管，可能访问慢）![我的Hexo静态博客](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210936718.png)
+> 我的开源博客涵盖了**八股文**、Java基础、JVM、MySQL、Linux、框架技术、算法以及其他领域的文章，如果你对建站比较感兴趣，你也想沉淀自己的知识，欢迎访问我的网站，不定时更新连载我的博客搭建版本记录，踩坑记录或者是我基于hexo的fluid主题增加的小功能，欢迎大家访问和咨询。
+> ![article categories](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210936197.png)

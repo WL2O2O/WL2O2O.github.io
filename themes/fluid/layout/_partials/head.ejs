@@ -14,6 +14,16 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
 %>
 
 <head>
+  <!-- 添加Google Analytis -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MP1THLPZFC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MP1THLPZFC');
+  </script>
   <!-- 添加Google Search -->
   <meta name="google-site-verification" content="COwq4mOphzRDivHncvzFed0dZge2jK1Rz_yDgTJsoQY" />
   <!-- 添加百度搜索 -->
