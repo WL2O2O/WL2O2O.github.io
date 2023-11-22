@@ -14,8 +14,17 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
 %>
 
 <head>
-  <!-- 添加Google Analytis -->
-  <!-- Google tag (gtag.js) -->
+  <!-- 因为我同时部署到 Gitee 和 Github 所以下方有两个验证代码 -->
+  <!-- Github Pages 添加 Google tag (gtag.js) 到 Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CX1BM2TTD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1CX1BM2TTD');
+  </script>
+  <!-- Gitee 添加 Google tag (gtag.js) 到 Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MP1THLPZFC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,9 +33,9 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
 
     gtag('config', 'G-MP1THLPZFC');
   </script>
-  <!-- 添加Google Search -->
+  <!-- Github Pages 添加 Google Search为什么只添加了Github的验证元信息，因为gitee的验证可以通过上方的Analytics代码验证通过 -->
   <meta name="google-site-verification" content="COwq4mOphzRDivHncvzFed0dZge2jK1Rz_yDgTJsoQY" />
-  <!-- 添加百度搜索 -->
+  <!-- Gitee Pages 添加 百度搜索 -->
   <meta name="baidu-site-verification" content="codeva-CjBrQqVd18" />
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="<%= url_for(theme.apple_touch_icon) %>">
