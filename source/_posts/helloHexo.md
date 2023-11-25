@@ -5,25 +5,11 @@ categories:
   - Blog
 tags:
   - 网站搭建
+description: 这是我的 Hexo 多端部署方案以及怎么把hexo博客部署到服务器，怎么优化博客访问速度？hexo博客优化
 abbrlink: 44559
 date: 2021-09-07 14:07:56
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-> `Hexo`这小子太不厚道了，拉拢`npm`好兄弟一起给我整活，不是包死活下载不了，就是各种奇怪的报错，也或者是本地环境没有问题，结果`GitHub`远仓工作流文件出了问题，我与`Hexo`不共... 啊不对，我与`Hexo`和睦相处！
->
-> 
->
-> 参考文章：
->
-> ```text
-> hexo访问速度优化：（三种插件的对比）
-> https://blog.csdn.net/qq_29654777/article/details/108222881
-> ```
->
-> 
-
-
 
 ## Quick Start
 
@@ -35,38 +21,80 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
-
-### merge commend
+merge commend
 
 ```bash
 $ hexo cl && hexo g && hexo s
 $ hexo d
 ```
 
-### 文件压缩
+## 我的 Hexo 多端部署方案
+
+> 由于部署在 GitHub Pages 上，国内访问速度很是拉跨。于是准备托管到 Gitee Pages 上，奈何 Gitee 个人版不支持自定义域名和ssl。
+>
+> 首先，我认为搭建博客有两个出发点。①是出于沉淀知识的目的，②则是出于沉淀知识的同时分享自己的知识，追求个人流量以及知名度。
+>
+> - **0投资沉淀私域知识（不想花钱，不关心访客量）：**
+>   - 首先推荐部署到`Gitee Pages`静态网页上，不仅提供了 https 链接，而且国内访问速度还是很 OK 的，缺点就是每次更新文章需要手动点击更新。喜欢摸索的可以学习下 CI/CD 持续部署，创建一个工作流文件，当监听到仓库更新时，自动部署到 Pages。
+>   - 其次推荐部署到`Github Pages`静态网页上，但是访问速度堪忧，有时需要魔法才可以正常访问。
+>   - **图片加载问题：**在`GitHub Pages`超级慢，前者还行。解决方案：购买一个云服务商的对象存储，例如华为云OBS、阿里云OSS...，创建一个图床，这样就可以解决图片加载问题了。
+> - **出于沉淀知识 + 分享知识，打造个人 IP：**
+>   - **前置条件：**域名、备案
+>     - **贫民方案-无服务器部署：**都知道服务器是不便宜的，我曾看到一篇博客，说可以部署到腾讯云的 Coding 平台，这样就可以使用自定义域名了，只需花一个域名的钱，也可以选择完成域名备案。[点击前往：文章更新于2020年，可能Coding平台已升级，未验证是否还支持静态网站部署](https://blog.csdn.net/qq_29654777/article/details/108222881)
+>   - **前置条件：**域名、备案 + 对象存储、CDN、服务器
+>     - **金主方案-个人服务器部署：**直接博客上云，推送到云端服务器的 GitHub 仓库-->远仓自定义主页domain-->域名控制台完成解析-->购买个人对象存储图床和 CDN 内容分发-->域名备案-->提交域名到各搜索引擎，例如[百度搜索资源平台](https://ziyuan.baidu.com/site/index#/)和[Google Search Console](https://search.google.com/search-console/welcome)，同时可以搭配百度统计和Google Analytics 来可视化分析自己博客的访问情况。
+> - **我的二者兼得方案：**
+>   - 待补充！
+>   - 百度资源搜索平台如何验证个人站点？谷歌搜索怎么验证个人站点？怎么提高百度收录量？
+
+## SEO优化
+
+> 1. 保持更新并紧扣关键字。经常更新博客，并确保文章内容紧紧围绕关键字展开，同时也要注意保持文章标题和内文的关键词自然出现，不要过度堆砌。
+>
+> 2. 优化内容页。SEO优化重点应以文章内容页为主，适当增加关键词(Keyword)、描述(Description)、抓取器(Robots)等标签，并确保每个页面都有唯一的URL。[参考链接](https://blog.csdn.net/u011316675/article/details/113750491)
+>
+>    ![image-20231125201620113](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311252016193.png)
+>
+>    ![image-20231125201628969](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311252016055.png)
+>
+>    注意description的获取优先级: `description>excerpt>content>config.description
+>
+> 3. 建立单一关键词策略。对于新博客，可以建立单一关键词策略，以增强网站对搜索引擎的权威性。
+>
+> 4. 合理分类栏目。使用目录形式分类栏目，并避免过度分类。对于比较重要的文章的URL，可以使用拼音、英文和分割线等结构。
+>
+> 5. 做好内部链接建设。在新文章中适当增加一些老文章的链接，并确保文章的内部链接自然出现。
+>
+> 6. 外部链接建设。建立其他博客或网站的外部链接，推荐使用工具如http://www.lusongsong.com/tool/seo/。
+>
+> 7. 垃圾留言处理。及时删除垃圾留言，否则可能严重影响排名。
+>
+> 8. Alt标签和图片信息。给每个博文插图添加和文章内容相关的alt信息，并在图片周围添加相关信息。
+>
+> 9. TAG标签使用。通过添加TAG标签可以增强主题的相关性和被搜索的概率。
+>
+> 10. 合理设置标题。文章的Title最好以“文章标题-博客名称”形式出现。
+> 11. 关键词自然出现。在文章标题、正文开头或结尾中自然出现关键词。
+> 12. 文章结尾优化。每篇文章的结尾处可加入“原创文章如转载，请注明出处”“本文首发于XXX网站”等信息，对SEO有一定帮助。
+
+## 生成sitemap.xml
+
+```shell
+#---------------------------
+# 站点地图（sitemap.xml）
+# 安装插件：
+#   -Google：npm install hexo-generator-sitemap --save
+#   -Baidu：npm install hexo-generator-baidu-sitemap --save
+#---------------------------
+
+# sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+```
+
+## 文件压缩--hexo-all-minifier
 
 > 如果安装的时候出现各种报错都没有在`GitHub`提到的`issues`中找到，仔细看报错内容提示，该重启的时候就重启，该上梯子就上梯子（不行就全局模式），卸载依赖：`npm uninstall hexo-all-minifier`；安装依赖：`npm install hexo-all-minifier --save`，这两个命令反复多来几次，就会忽然发现，安装成功了！！！！最后吐槽一句，被墙真不友好！！！
 
@@ -116,11 +144,11 @@ image_minifier:
   progressive: false
 ```
 
-**再记录、复盘一下这个插件的问题！！！**
+**再记录、复盘一下这个插件在 GitHub 工作流中的问题！！！盲猜是因为 nodejs 的环境或者 npm 的环境问题**
 
 > 事情缘由：想给文章增加一个在线编辑的`Button`，被工作流文件和这个插件折腾了一天多。
 >
-> 问题所在：本地环境与GitHub环境有所不同，相同的依赖上传到GitHub，在hexo generate构建的时候，也就是npm run build的时候，工作流文件会报错。报错如下：
+> 问题所在：本地环境与 GitHub 环境有所不同，相同的依赖上传到GitHub，在hexo generate构建的时候，也就是npm run build的时候，工作流文件会报错。报错如下：
 >
 > ```bash
 > FATAL {
@@ -147,7 +175,7 @@ image_minifier:
 >
 > 解决方案：
 >
-> 因为本地是完全没有问题的，而且我的依赖是本地直传GitHub远仓，于是，直接在.gitignore文件中忽略了这个插件涉及到的子插件问题。
+> 因为本地是完全没有问题的，而且我的依赖是本地直传 GitHub 远仓，于是，直接在`.gitignore`文件中忽略了这个插件涉及到的子插件问题。
 >
 > ```.gitignore
 > node_modules/imagemin-gifsicle/*
@@ -242,9 +270,8 @@ image_minifier:
 >           folder: build # The folder the action should deploy.
 > ```
 >
-> 
 
-### 文章置顶
+## 文章置顶--hexo-generator-index
 
 ```shell
 #---------------------------
@@ -259,26 +286,11 @@ sticky: 100（数值越大，优先级越高）
 
 
 
-### 生成sitemap.xml
-
-```shell
-#---------------------------
-# 站点地图（sitemap.xml）
-# 安装插件：
-#   -Google：npm install hexo-generator-sitemap --save
-#   -Baidu：npm install hexo-generator-baidu-sitemap --save
-#---------------------------
-
-# sitemap
-sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
-```
 
 
 
-### 文章链接持久化
+
+## 文章链接持久化
 
 ```shell
 #---------------------------

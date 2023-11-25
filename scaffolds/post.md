@@ -4,7 +4,8 @@ date: {{ date }}
 sticky: 100
 index_img: 
 banner_img: 
-excerpt: 
+description: 用于meta标签描述，优化SEO(可以增加关键词，优化页面显示)
+excerpt: 同样用于标签描述，且用于文章气泡介绍
 categories:
   - Java notes
   - 算法
