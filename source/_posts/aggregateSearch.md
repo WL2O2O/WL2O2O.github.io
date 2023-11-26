@@ -3,8 +3,7 @@ title: 聚合搜索中台
 index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120915504.png
 excerpt: >-
-  聚合搜索就是输入一个关键字，对于用户可以使用户在同一个入口搜索到不同的内容分类，不同形式的内容，提升用户的检索效率；对于企业来说无需对每一个项目进行搜索功能的开发，当有新的内容或者新的网站，可以进行复用，提高开发效率。后端：Spring
-  Boot、MySQL、ES、数据抓取、数据同步（Logstash、Canal）
+  聚合搜索就是输入一个关键字，对于用户可以使用户在同一个入口搜索到不同的内容分类，不同形式的内容，提升用户的检索效率；对于企业来说无需对每一个项目进行搜索功能的开发，当有新的内容或者新的网站，可以进行复用，提高开发效率。后端：SpringBoot、MySQL、ES、数据抓取、数据同步（Logstash、Canal）
 categories:
   - Project
 tags:

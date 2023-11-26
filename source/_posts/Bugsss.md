@@ -1,8 +1,8 @@
 ---
 title: Bugs宝典
-excerpt: 分享一下平时遇到的Bugs以及解决方案，来看看有没有让你肠子都悔青的Bugs
 index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202308211859336.jpg
+excerpt: 分享一下平时遇到的Bugs以及解决方案，来看看有没有让你肠子都悔青的Bugs
 categories:
   - Bugs
 tags:

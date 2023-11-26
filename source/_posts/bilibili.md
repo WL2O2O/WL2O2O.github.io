@@ -9,6 +9,7 @@ tags:
   - Mysql
   - MyBatis
   - Maven
+excerpt: 基于Spring Boot从零到一搭建仿哔哩哔哩项目
 abbrlink: 45290
 date: 2022-12-23 20:23:01
 ---

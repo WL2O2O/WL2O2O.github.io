@@ -1,6 +1,7 @@
 ---
 title: 校园失物招领系统
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627644.png
+excerpt: 基于SSM框架设计的校园失物招领聊天交流系统
 categories:
   - Project
 tags:

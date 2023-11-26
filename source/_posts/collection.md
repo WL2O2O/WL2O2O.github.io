@@ -1,6 +1,7 @@
 ---
 title: Java Collection
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
+excerpt: 你是怎么理解Java中的集合的？
 categories:
   - Java notes
 tags:
