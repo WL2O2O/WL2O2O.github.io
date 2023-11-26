@@ -98,7 +98,11 @@ $ hexo d
    > 
    > REM 因为Button在线修改是在GitHub远仓修改的，所以这里直接拉取GitHub远仓的更改
    > 
+   > echo "pull source code..."
+   > 
    > git pull origin hexoBlog
+   > 
+   > echo "pull source code over!"
    > 
    > echo "deploy to gitee pages"
    > 
@@ -114,13 +118,13 @@ $ hexo d
    > 
    > cd E:\CS_GUIDER\hexo
    > 
-   > echo "Synchronize source code to remoteRepo..."
+   > echo "upload source code to remoteRepo..."
    > 
    > REM 目前版本中 gitee 远仓的工作流还待更新，所以这里我们任然使用 hexo-cli 脚手架的一键部署命令，这里需要在根目录的 config.yml 文件中进行配置远仓地址，这里因为GitHub工作流文件可以云端部署静态资源，所以我在文件中只配置了 Gitee 的远仓地址。（后续更新 Gitee 工作流之后就可以直接废弃hexo-cli的相关命令啦，但是如果修改了文件地址的话或者标题，可能会出现文章无法访问以及链接失效的问题，所以hexo clean还是需要了解一下的）
    > 
-   > git add .
+   > echo "trucking files over"
    > 
-   > echo "truck files..."
+   > echo "commit files"
    > 
    > git commit -m "feat: auto synchronized🎉"
    > 

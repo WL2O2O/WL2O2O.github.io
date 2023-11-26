@@ -4,11 +4,15 @@ E:
 
 cd E:\CS_GUIDER\hexo
 
-echo "Synchronize source code to remoteRepo..."
+echo "upload source code to remoteRepo..."
+
+echo "trucking files"
 
 git add .
 
-echo "truck files..."
+echo "trucking files over"
+
+echo "commit files"
 
 git commit -m "feat: auto synchronized🎉"
 
