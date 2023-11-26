@@ -14,7 +14,7 @@ echo "trucking files over"
 
 echo "commit files"
 
-git commit -m "feat: auto synchronized✨"
+git commit -m "feat: auto synchronized."
 
 echo "commit over"
 
