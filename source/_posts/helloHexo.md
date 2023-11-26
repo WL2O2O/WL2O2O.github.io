@@ -19,14 +19,116 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 $ hexo new "My New Post"
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
 merge commend
 
 ```bash
 $ hexo cl && hexo g && hexo s
 $ hexo d
 ```
+
+## 升级日志
+
+2023年11月15日
+
+1. 增加一个GitHub现在编辑button，可直接跳转GitHub远仓，进行修改提交。
+
+   > 为文章页增加了一个 GitHub 在线修改的 button，点击可在线提交到 GitHub`hexoBlog分支`(源文件)分支，同时触发流水线自动部署到`master分支`(pages)，所以会存在一种情况：每当我在线修改后，本地仓库文章与远仓不同步，本地写文章的话需要拉取最新更改。
+   >
+   > - 优化方案：是否可以有自动同步本地仓库的工作流
+   >
+   > - 解决方案：本地更新文章之前需要先拉取远仓最新更改，否则会提示：
+   >
+   >   ![image-20231126144130073](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311261441104.png)
+   >
+   
+2. 修改了layout布局文件夹下面的post.ejs文件，设置文章index_img宽高比为5：3
+
+	> 	attention: 更改文章页的index_img需要手动更改图片尺寸
+
+3. 设置 GitHub 工作流,当同步源文件到远仓时,会自动部署静态资源到 GitHub Pages.
+
+   > attention: 因为`imagemin-gifsicle`插件版本的问题,本地运行时没问题,通过远仓的工作流进行`npm install`时,有时会安装不上,有时安装好了运行会报错,因此就直接把本地的`node_modules`直接上传到了GitHub,同时,在GitHub工作流文件中去掉了依赖安装的步骤.
+   >
+   > - **GitHub工作流代码：**
+   >
+   > ```yml
+   > name: Build and Deploy  
+   > on: [push]  
+   > 
+   > jobs:  
+   > build-and-deploy:  
+   > concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.  
+   > runs-on: ubuntu-latest  
+   > steps:  
+   >       - name: Checkout 🔔  
+   >         uses: actions/checkout@v3  
+   > 
+   >       - name: Install Hexo CLI    
+   >         run: npm install -g hexo-cli@4.3.0  
+   >         env:    
+   >           CI: false  
+   > 
+   >       - name: Install Dependencies # 步骤3：安装依赖  
+   >         if: steps.cache.outputs.cache-hit != 'true'  
+   >         run: npm run build  
+   >         env:  
+   >           CI: false  
+   > 
+   >       - name: Deploy 🚀 # 步骤4：部署  
+   >         # uses: JamesIves/github-pages-deploy-action@releases/v3  
+   >         uses: JamesIves/github-pages-deploy-action@v4  
+   >         with:  
+   >           GITHUB_TOKEN: ${{ secrets.GITEE_TOKEN }} # 使用 Gitee 令牌  
+   >           BRANCH: master # 部署到 master 分支  
+   >           FOLDER: public # 部署 public 文件夹
+   > ```
+   >
+   > - 有了工作流, 本地更新上传文章就可以通过脚本一键上传了！
+   >
+   > **本地仓库拉取远仓最新更改 windows shell 脚本:**
+   >
+   > ```shell
+   > @echo off
+   > 
+   > E:
+   > 
+   > cd E:\CS_GUIDER\hexo
+   > 
+   > echo "Pull the latest code from github..."
+   > 
+   > REM 因为Button在线修改是在GitHub远仓修改的，所以这里直接拉取GitHub远仓的更改
+   > 
+   > git pull origin hexoBlog
+   > 
+   > echo "deploy to gitee pages"
+   > 
+   > hexo cl && call hexo g && hexo d -m "autoDeploy"
+   > ```
+   >
+   > **本地一键上传远仓 windows shell 脚本:**
+   >
+   > ```shell
+   > @echo off
+   > 
+   > E:
+   > 
+   > cd E:\CS_GUIDER\hexo
+   > 
+   > echo "Synchronize source code to remoteRepo..."
+   > 
+   > REM 目前版本中 gitee 远仓的工作流还待更新，所以这里我们任然使用 hexo-cli 脚手架的一键部署命令，这里需要在根目录的 config.yml 文件中进行配置远仓地址，这里因为GitHub工作流文件可以云端部署静态资源，所以我在文件中只配置了 Gitee 的远仓地址。（后续更新 Gitee 工作流之后就可以直接废弃hexo-cli的相关命令啦，但是如果修改了文件地址的话或者标题，可能会出现文章无法访问以及链接失效的问题，所以hexo clean还是需要了解一下的）
+   > 
+   > git add .
+   > 
+   > git commit -m "feat: auto synchronized🎉"
+   > 
+   > git push origin hexoBlog
+   > 
+   > git push gitee hexoBlog
+   > 
+   > ```
+
+
 
 ## 我的 Hexo 多端部署方案
 
@@ -284,12 +386,6 @@ image_minifier:
 sticky: 100（数值越大，优先级越高）
 ```
 
-
-
-
-
-
-
 ## 文章链接持久化
 
 ```shell
@@ -315,3 +411,4 @@ abbrlink:
   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
 ```
 
+## 文章推送远仓脚本
