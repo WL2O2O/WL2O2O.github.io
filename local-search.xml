@@ -285,31 +285,6 @@
   
   
   <entry>
-    <title>云上个人书库</title>
-    <link href="/2023/08/01/library/"/>
-    <url>/2023/08/01/library/</url>
-    
-    <content type="html"><![CDATA[<h1 id="云上个人书库"><a href="#云上个人书库" class="headerlink" title="云上个人书库"></a>云上个人书库</h1><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>基于华为云鲲鹏ECS搭建的无广告、简洁、便捷的个人书库。</p><h2 id="搭建方案"><a href="#搭建方案" class="headerlink" title="搭建方案"></a>搭建方案</h2><p><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/202308141150924.png" alt="搭建方案图"></p><p>步骤 1  长时间未操作弹性云服务器远程登录界面而登出，忘记宝塔登录的业务平面地址，可输入以下指令重新查看面板入口。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">/etc/init.d/bt default<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    <categories>
-      
-      <category>Project</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>云上书库</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>聚合搜索中台</title>
     <link href="/2023/08/01/aggregateSearch/"/>
     <url>/2023/08/01/aggregateSearch/</url>
@@ -337,6 +312,31 @@
       <tag>Lodash</tag>
       
       <tag>ES</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>云上个人书库</title>
+    <link href="/2023/08/01/library/"/>
+    <url>/2023/08/01/library/</url>
+    
+    <content type="html"><![CDATA[<h1 id="云上个人书库"><a href="#云上个人书库" class="headerlink" title="云上个人书库"></a>云上个人书库</h1><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>基于华为云鲲鹏ECS搭建的无广告、简洁、便捷的个人书库。</p><h2 id="搭建方案"><a href="#搭建方案" class="headerlink" title="搭建方案"></a>搭建方案</h2><p><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/202308141150924.png" alt="搭建方案图"></p><p>步骤 1  长时间未操作弹性云服务器远程登录界面而登出，忘记宝塔登录的业务平面地址，可输入以下指令重新查看面板入口。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">/etc/init.d/bt default<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Project</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>云上书库</tag>
       
     </tags>
     
@@ -781,6 +781,31 @@
   
   
   <entry>
+    <title>Java Collection</title>
+    <link href="/2022/09/07/collection/"/>
+    <url>/2022/09/07/collection/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-1.png"></p><h2 id="怎么理解HashMap的数据结构呢？"><a href="#怎么理解HashMap的数据结构呢？" class="headerlink" title="怎么理解HashMap的数据结构呢？"></a>怎么理解HashMap的数据结构呢？</h2><p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-8.png"></p><p>HashMap是一种基于哈希表实现的键值对数据结构，它通过哈希函数将键映射到哈希表的桶（bucket）中，并在桶中存储对应的值。HashMap的数据结构可以理解为一个由桶组成的数组和一个保存键值对数量的计数器。</p><p>在HashMap中，每个桶都是一个链表或红黑树，用于解决哈希冲突。当多个键映射到同一个桶时，它们会被存储在同一个桶的链表或红黑树中，通过比较键的值来查找、插入和删除键值对。</p><p>在HashMap中，每个键值对由一个键和一个值组成，其中键是唯一的。在插入键值对时，HashMap首先根据键的哈希值计算出对应的桶，然后在桶中进行查找，如果桶中已经存在相同的键，则更新对应的值，否则将新的键值对插入到桶的末尾或红黑树中。在查找键值对时，HashMap首先根据键的哈希值找到对应的桶，然后在桶中进行查找，如果找到则返回对应的值，否则返回null。</p><p>由于哈希表的查找、插入和删除操作的时间复杂度通常为O(1)，因此HashMap在实现高效的键值对存储、查找和操作方面具有很好的性能。但是，由于哈希冲突的存在，HashMap的性能在数据集很大或者哈希函数不够均匀的情况下可能会受到影响。因此，在使用HashMap时需要注意选择合适的哈希函数，以避免哈希冲突和性能问题。</p><blockquote><p>如果还没有理解，就看下面的例子：</p></blockquote><p>我们可以把HashMap想象成一个盒子，里面可以放很多小球，每个小球都有一个编号和对应的颜色。我们可以通过编号来找到对应的小球的颜色。</p><p>为了快速找到编号对应的小球，我们需要在盒子里面建立一个分布均匀的网格，把小球放在对应的网格里面。这个网格就是哈希表，而网格中的每个小格子就是哈希表的桶。</p><p>当我们要找到某个编号对应的小球时，就可以通过哈希函数把编号转换成一个桶的位置，然后在对应的桶中查找对应的小球。如果找到了，则返回对应的颜色；如果没有找到，则返回null。</p><p>如果多个小球的编号对应的桶位置相同，这就是哈希冲突。为了解决哈希冲突，我们可以在桶中建立一个链表，把编号对应的小球放在链表的末尾。这样，在查找时，我们可以遍历链表，找到对应的小球。</p><p>当链表中的小球数量很多时，遍历链表的效率会变低，因此，我们可以把链表转换成红黑树，以提高查找效率。</p><p>总之，HashMap的数据结构就是一个由桶组成的数组，每个桶中可以存储多个键值对。在查找、插入和删除键值对时，我们需要先通过哈希函数找到对应的桶，然后在桶中进行查找和操作。如果多个键映射到同一个桶，则在桶中使用链表或红黑树解决哈希冲突。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java notes</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java基础</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Educoder</title>
     <link href="/2022/09/07/Educoder/"/>
     <url>/2022/09/07/Educoder/</url>
@@ -823,31 +848,6 @@
     <tags>
       
       <tag>Linux</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java Collection</title>
-    <link href="/2022/09/07/collection/"/>
-    <url>/2022/09/07/collection/</url>
-    
-    <content type="html"><![CDATA[<p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-1.png"></p><h2 id="怎么理解HashMap的数据结构呢？"><a href="#怎么理解HashMap的数据结构呢？" class="headerlink" title="怎么理解HashMap的数据结构呢？"></a>怎么理解HashMap的数据结构呢？</h2><p><img src="https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-8.png"></p><p>HashMap是一种基于哈希表实现的键值对数据结构，它通过哈希函数将键映射到哈希表的桶（bucket）中，并在桶中存储对应的值。HashMap的数据结构可以理解为一个由桶组成的数组和一个保存键值对数量的计数器。</p><p>在HashMap中，每个桶都是一个链表或红黑树，用于解决哈希冲突。当多个键映射到同一个桶时，它们会被存储在同一个桶的链表或红黑树中，通过比较键的值来查找、插入和删除键值对。</p><p>在HashMap中，每个键值对由一个键和一个值组成，其中键是唯一的。在插入键值对时，HashMap首先根据键的哈希值计算出对应的桶，然后在桶中进行查找，如果桶中已经存在相同的键，则更新对应的值，否则将新的键值对插入到桶的末尾或红黑树中。在查找键值对时，HashMap首先根据键的哈希值找到对应的桶，然后在桶中进行查找，如果找到则返回对应的值，否则返回null。</p><p>由于哈希表的查找、插入和删除操作的时间复杂度通常为O(1)，因此HashMap在实现高效的键值对存储、查找和操作方面具有很好的性能。但是，由于哈希冲突的存在，HashMap的性能在数据集很大或者哈希函数不够均匀的情况下可能会受到影响。因此，在使用HashMap时需要注意选择合适的哈希函数，以避免哈希冲突和性能问题。</p><blockquote><p>如果还没有理解，就看下面的例子：</p></blockquote><p>我们可以把HashMap想象成一个盒子，里面可以放很多小球，每个小球都有一个编号和对应的颜色。我们可以通过编号来找到对应的小球的颜色。</p><p>为了快速找到编号对应的小球，我们需要在盒子里面建立一个分布均匀的网格，把小球放在对应的网格里面。这个网格就是哈希表，而网格中的每个小格子就是哈希表的桶。</p><p>当我们要找到某个编号对应的小球时，就可以通过哈希函数把编号转换成一个桶的位置，然后在对应的桶中查找对应的小球。如果找到了，则返回对应的颜色；如果没有找到，则返回null。</p><p>如果多个小球的编号对应的桶位置相同，这就是哈希冲突。为了解决哈希冲突，我们可以在桶中建立一个链表，把编号对应的小球放在链表的末尾。这样，在查找时，我们可以遍历链表，找到对应的小球。</p><p>当链表中的小球数量很多时，遍历链表的效率会变低，因此，我们可以把链表转换成红黑树，以提高查找效率。</p><p>总之，HashMap的数据结构就是一个由桶组成的数组，每个桶中可以存储多个键值对。在查找、插入和删除键值对时，我们需要先通过哈希函数找到对应的桶，然后在桶中进行查找和操作。如果多个键映射到同一个桶，则在桶中使用链表或红黑树解决哈希冲突。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java notes</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java基础</tag>
       
     </tags>
     
@@ -1057,7 +1057,7 @@
     <link href="/2021/02/07/001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
     <url>/2021/02/07/001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
     
-    <content type="html"><![CDATA[<blockquote><blockquote><blockquote><p>今天来搞一搞力扣的经典劝退题，有人相爱，有人夜里开车看海，有人<code>leetcode</code>第一题都做不出来。滴~~~今天不玩梗，玩代码！</p></blockquote></blockquote></blockquote><ul><li><p><code>leetCode：</code>001.两数之和</p></li><li><p><code>describution:</code></p></li></ul><blockquote><p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> <em><code>target</code></em> 的那 <strong>两个</strong> 整数，并返回它们的数组下标。</p><p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p><p>你可以按任意顺序返回答案。</p><p><strong>示例 1：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[2,7,11,15]</span>, target = 9<br>&gt;输出：<span class="hljs-comment">[0,1]</span><br>&gt;解释：因为 nums<span class="hljs-comment">[0]</span> + nums<span class="hljs-comment">[1]</span> == 9 ，返回 <span class="hljs-comment">[0, 1]</span> 。<br></code></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[3,2,4]</span>, target = 6<br>&gt;输出：<span class="hljs-comment">[1,2]</span><br></code></pre></td></tr></table></figure><p><strong>示例 3：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[3,3]</span>, target = 6<br>&gt;输出：<span class="hljs-comment">[0,1]</span><br></code></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>2 &lt;= nums.length &lt;= 104</code></li><li><code>-109 &lt;= nums[i] &lt;= 109</code></li><li><code>-109 &lt;= target &lt;= 109</code></li><li><strong>只会存在一个有效答案</strong></li></ul></blockquote><p><code>技巧：</code>数组双指针</p><p><code>思路：</code>使用哈希表作为辅助数据结构，可以在 O(n) 的时间复杂度内完成或者使用数组双指针团灭 nSum 问题。</p><p><code>code1：</code>（哈希表的解法）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] twoSum(<span class="hljs-type">int</span>[] nums, <span class="hljs-type">int</span> target) &#123;<br>    Map&lt;Integer, Integer&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">complement</span> <span class="hljs-operator">=</span> target - nums[i];<br>        <span class="hljs-keyword">if</span> (map.containsKey(complement)) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[] &#123;map.get(complement), i&#125;;<br>        &#125;<br>        map.put(nums[i], i);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">0</span>];<br>&#125;<br></code></pre></td></tr></table></figure><p><code>code2：</code>（非全部AC解法：数组双指针，例如遇到重复的数组元素）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] twoSum(<span class="hljs-type">int</span>[] nums, <span class="hljs-type">int</span> target) &#123;<br>    <span class="hljs-comment">// 复制原数组</span><br>    <span class="hljs-type">int</span>[] copy = Arrays.copyOf(nums, nums.length);<br>    <span class="hljs-comment">// 先对数组排序</span><br>    Arrays.sort(nums);<br>    <span class="hljs-comment">// 左右指针</span><br>    <span class="hljs-type">int</span> <span class="hljs-variable">lo</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>, hi = nums.length - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (lo &lt; hi) &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> nums[lo] + nums[hi];<br>        <span class="hljs-keyword">if</span> (sum &lt; target) &#123;<br>            lo++;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sum &gt; target) &#123;<br>            hi--;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-comment">// 找到了一组解，需要再次遍历原数组找到对应的下标</span><br>            <span class="hljs-type">int</span>[] result = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">2</span>];<br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; copy.length; i++) &#123;<br>                <span class="hljs-keyword">if</span> (copy[i] == nums[lo]) &#123;<br>                    result[<span class="hljs-number">0</span>] = i;<br>                &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (copy[i] == nums[hi]) &#123;<br>                    result[<span class="hljs-number">1</span>] = i;<br>                &#125;<br>            &#125;<br>            <span class="hljs-keyword">return</span> result;<br>        &#125;<br>    &#125;<br>    <span class="hljs-comment">// 误解返空</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[]&#123;&#125;;<br>&#125;<br></code></pre></td></tr></table></figure><p><code>结束语：</code>类似于<code>nSum</code>的问题还有很多，诸如此，都可以使用数组双指针的技巧来巧妙解决，以上<code>code2</code>可以作为<code>nSum</code>问题的一个模板，除了 <code>twoSum</code> 问题，力扣上面还有 <code>3Sum</code>，<code>4Sum</code>,总之，<code>nSum</code> 问题就是给定一个数组 <code>nums</code> 和一个 <code>target</code>，然后从 <code>nums</code> 选择 <code>n</code> 个数，使得<code>n</code>个数字之和为 <code>target</code>。力扣第 167 题 <a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">两数之和 II</a>也完全可以用数组双指针来求解，下期见🏊‍♂️</p>]]></content>
+    <content type="html"><![CDATA[<ul><li><p><code>leetCode：</code>001.两数之和</p></li><li><p><code>describution:</code></p></li></ul><blockquote><p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> <em><code>target</code></em> 的那 <strong>两个</strong> 整数，并返回它们的数组下标。</p><p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p><p>你可以按任意顺序返回答案。</p><p><strong>示例 1：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[2,7,11,15]</span>, target = 9<br>&gt;输出：<span class="hljs-comment">[0,1]</span><br>&gt;解释：因为 nums<span class="hljs-comment">[0]</span> + nums<span class="hljs-comment">[1]</span> == 9 ，返回 <span class="hljs-comment">[0, 1]</span> 。<br></code></pre></td></tr></table></figure><p><strong>示例 2：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[3,2,4]</span>, target = 6<br>&gt;输出：<span class="hljs-comment">[1,2]</span><br></code></pre></td></tr></table></figure><p><strong>示例 3：</strong></p><figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs inform7">&gt;输入：nums = <span class="hljs-comment">[3,3]</span>, target = 6<br>&gt;输出：<span class="hljs-comment">[0,1]</span><br></code></pre></td></tr></table></figure><p><strong>提示：</strong></p><ul><li><code>2 &lt;= nums.length &lt;= 104</code></li><li><code>-109 &lt;= nums[i] &lt;= 109</code></li><li><code>-109 &lt;= target &lt;= 109</code></li><li><strong>只会存在一个有效答案</strong></li></ul></blockquote><p><code>技巧：</code>数组双指针</p><p><code>思路：</code>使用哈希表作为辅助数据结构，可以在 O(n) 的时间复杂度内完成或者使用数组双指针团灭 nSum 问题。</p><p><code>code1：</code>（哈希表的解法）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] twoSum(<span class="hljs-type">int</span>[] nums, <span class="hljs-type">int</span> target) &#123;<br>    Map&lt;Integer, Integer&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; nums.length; i++) &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">complement</span> <span class="hljs-operator">=</span> target - nums[i];<br>        <span class="hljs-keyword">if</span> (map.containsKey(complement)) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[] &#123;map.get(complement), i&#125;;<br>        &#125;<br>        map.put(nums[i], i);<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">0</span>];<br>&#125;<br></code></pre></td></tr></table></figure><p><code>code2：</code>（非全部AC解法：数组双指针，例如遇到重复的数组元素）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] twoSum(<span class="hljs-type">int</span>[] nums, <span class="hljs-type">int</span> target) &#123;<br>    <span class="hljs-comment">// 复制原数组</span><br>    <span class="hljs-type">int</span>[] copy = Arrays.copyOf(nums, nums.length);<br>    <span class="hljs-comment">// 先对数组排序</span><br>    Arrays.sort(nums);<br>    <span class="hljs-comment">// 左右指针</span><br>    <span class="hljs-type">int</span> <span class="hljs-variable">lo</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>, hi = nums.length - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (lo &lt; hi) &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">sum</span> <span class="hljs-operator">=</span> nums[lo] + nums[hi];<br>        <span class="hljs-keyword">if</span> (sum &lt; target) &#123;<br>            lo++;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (sum &gt; target) &#123;<br>            hi--;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-comment">// 找到了一组解，需要再次遍历原数组找到对应的下标</span><br>            <span class="hljs-type">int</span>[] result = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">2</span>];<br>            <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; copy.length; i++) &#123;<br>                <span class="hljs-keyword">if</span> (copy[i] == nums[lo]) &#123;<br>                    result[<span class="hljs-number">0</span>] = i;<br>                &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (copy[i] == nums[hi]) &#123;<br>                    result[<span class="hljs-number">1</span>] = i;<br>                &#125;<br>            &#125;<br>            <span class="hljs-keyword">return</span> result;<br>        &#125;<br>    &#125;<br>    <span class="hljs-comment">// 误解返空</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[]&#123;&#125;;<br>&#125;<br></code></pre></td></tr></table></figure><p><code>结束语：</code>类似于<code>nSum</code>的问题还有很多，诸如此，都可以使用数组双指针的技巧来巧妙解决，以上<code>code2</code>可以作为<code>nSum</code>问题的一个模板，除了 <code>twoSum</code> 问题，力扣上面还有 <code>3Sum</code>，<code>4Sum</code>,总之，<code>nSum</code> 问题就是给定一个数组 <code>nums</code> 和一个 <code>target</code>，然后从 <code>nums</code> 选择 <code>n</code> 个数，使得<code>n</code>个数字之和为 <code>target</code>。力扣第 167 题 <a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">两数之和 II</a>也完全可以用数组双指针来求解，下期见🏊‍♂️</p>]]></content>
     
     
     <categories>
