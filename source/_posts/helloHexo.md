@@ -120,9 +120,17 @@ $ hexo d
    > 
    > git add .
    > 
+   > echo "truck files..."
+   > 
    > git commit -m "feat: auto synchronized🎉"
    > 
+   > echo "commit over"
+   > 
+   > echo "push to github"
+   > 
    > git push origin hexoBlog
+   > 
+   > echo "push gitee"
    > 
    > git push gitee hexoBlog
    > 
