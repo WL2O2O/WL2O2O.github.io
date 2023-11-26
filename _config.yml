@@ -125,11 +125,12 @@ theme: fluid
 ## example, https://github.com/hexojs/hexojs.github.io
 deploy:
   - type: git
-    repo: git@github.com:WL2O2O/WL2O2O.github.io.git
-    branch: master
-  - type: git
     repo: git@gitee.com:WLei224/WLei224.git
     branch: master
+  # git 命令推送二者源码，hexo推送gitee页面
+  # - type: git
+  #   repo: git@github.com:WL2O2O/WL2O2O.github.io.git
+  #   branch: master
   # - type: git
   #   repo: git@139.159.155.183:/home/git/hexo-blog.git
   #   branch: master
