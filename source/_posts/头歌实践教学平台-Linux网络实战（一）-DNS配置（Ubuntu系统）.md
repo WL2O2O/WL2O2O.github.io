@@ -11,15 +11,21 @@ abbrlink: 14983
 date: 2022-05-04 15:30:37
 ---
 
-***见者有缘，欢迎大家访问我的博客【CS_GUIDER】：
-[https://wlei224.gitee.io](https://wlei224.gitee.io/) （建议访问这个，速度极快）
-[https://wl2o2o.github.io](https://wl2o2o.github.io/)（github托管，可能访问慢）***
+[TOC]
+
+# 通关前的啰嗦（属于知识补充，不想看就跳过）
+
+> ## 小广告：
+>
+> ***见者有缘，欢迎大家访问我的博客【CS_GUIDER】：
+> [https://wlei224.gitee.io](https://wlei224.gitee.io/) （建议访问这个，速度极快）
+> [https://wl2o2o.github.io](https://wl2o2o.github.io/)（github托管，可能访问慢）***
+>
+> 我的开源博客涵盖了**八股文**、**Java基础**、**JVM**、**MySQL**、**Linux**、**框架技术**、**算法**以及其他领域的文章，如果你想搭建自己的博客，或者是想沉淀知识，欢迎访问我的网站，长期不定时更新连载我的博客搭建版本记录以及搭建踩坑记录，以及基于原 fluid 主题增加的功能，欢迎大家访问和咨询。
+>
+> ![博客文章](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210931702.png)
 
 
-
-我的开源博客涵盖了**八股文**、Java基础、JVM、MySQL、Linux、框架技术、算法以及其他领域的文章，如果你对建站比较感兴趣，你也想沉淀自己的知识，欢迎访问我的网站，不定时更新连载我的博客搭建版本记录，踩坑记录或者是我基于hexo的fluid主题增加的小功能，欢迎大家访问和咨询。
-
-![博客文章](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210931702.png)
 
 > ## 写在前面
 >
@@ -27,7 +33,7 @@ date: 2022-05-04 15:30:37
 >
 > ![头歌实践教学平台-Linux网络实战（一）第四关](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210935053.png)
 > ![成功图](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311210935591.png) 如上图所示，本关题解笔者已经通过，并测验了多次，为避免出错，可以先按照如下步骤，直接复制即可，通关后想了解原理，再回过头来一步一步进行，如果遇到什么问题，欢迎在评论区进行讨论！
-# 通关前的啰嗦（属于知识补充，不想看就跳过）
+# 
 ## 相关知识背景
 **域名**：`Internet`上某一台计算机或计算机组的名称，是`IP地址`的映射。域名解析实际上就是把域名映射回`IP地址`。
 
@@ -39,11 +45,11 @@ Linux中`/etc/resolv.conf`文件是`DNS客户机`配置文件，用于设置`DNS
 
 Zone(区域)：一个正解或反解的设置就是一个zone，通常一个配置文件就是一个zone。
 
-# 通关保姆级步骤
+# 通关保姆级步骤（点击直达）
 Tips：头歌平台的环境是ubantu版本的Linux系统，在Linux系统下可以通过Ctrl+insert进行复制，Shift+insert进行粘贴。
 ## 安装DNS服务器并开启服务
 
-> 注意：严格按照如下两个步骤进行bind任务环境的安装与初始化。
+> 注意：严格**按照如下**两个步骤的**顺序**进行 bind 任务环境的安装与初始化。
 >
 > | 1、更新安装源后、安装DNS服务器（共两个命令） | apt-get update          | apt-get install bind9 |
 > | :------------------------------------------- | ----------------------- | --------------------- |
