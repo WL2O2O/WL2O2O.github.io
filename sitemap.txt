@@ -1,3 +1,4 @@
+https://wlei224.gitee.io/2023/01/07/JVM/
 https://wlei224.gitee.io/2022/05/04/%E5%A4%B4%E6%AD%8C%E5%AE%9E%E8%B7%B5%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0-Linux%E7%BD%91%E7%BB%9C%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89-DNS%E9%85%8D%E7%BD%AE%EF%BC%88Ubuntu%E7%B3%BB%E7%BB%9F%EF%BC%89/
 https://wlei224.gitee.io/2023/08/22/netblog/
 https://wlei224.gitee.io/2021/09/07/helloHexo/
@@ -15,7 +16,6 @@ https://wlei224.gitee.io/2022/09/07/Java-Essay/
 https://wlei224.gitee.io/2023/05/11/MyLanqiaoNote/
 https://wlei224.gitee.io/about/index.html
 https://wlei224.gitee.io/2023/10/16/Polymorphism/
-https://wlei224.gitee.io/2023/01/07/JVM/
 https://wlei224.gitee.io/2022/09/07/Educoder/
 https://wlei224.gitee.io/2023/10/07/abstractandinterface/
 https://wlei224.gitee.io/2023/02/23/transaction/
@@ -49,8 +49,8 @@ https://wlei224.gitee.io/tags/SSM/
 https://wlei224.gitee.io/tags/MySQL/
 https://wlei224.gitee.io/tags/jquery/
 https://wlei224.gitee.io/tags/ajax/
-https://wlei224.gitee.io/tags/educoder/
 https://wlei224.gitee.io/tags/DM/
+https://wlei224.gitee.io/tags/educoder/
 https://wlei224.gitee.io/tags/Java%E5%9F%BA%E7%A1%80/
 https://wlei224.gitee.io/tags/%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/
 https://wlei224.gitee.io/tags/%E8%BF%AD%E4%BB%A3/
@@ -64,8 +64,8 @@ https://wlei224.gitee.io/tags/%E2%80%9C-%E2%80%9D%E8%BF%90%E7%AE%97/
 https://wlei224.gitee.io/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/
 https://wlei224.gitee.io/tags/Linux/
 https://wlei224.gitee.io/tags/Polymorphism/
-https://wlei224.gitee.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/
 https://wlei224.gitee.io/tags/Redis/
+https://wlei224.gitee.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/
 https://wlei224.gitee.io/tags/Vue/
 https://wlei224.gitee.io/tags/Ant-Design-Vue/
 https://wlei224.gitee.io/tags/Lodash/
@@ -86,8 +86,8 @@ https://wlei224.gitee.io/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/
 https://wlei224.gitee.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/
 https://wlei224.gitee.io/tags/%E4%BA%91%E4%B8%8A%E4%B9%A6%E5%BA%93/
 https://wlei224.gitee.io/tags/Logging-Services/
-https://wlei224.gitee.io/tags/Netty/
 https://wlei224.gitee.io/tags/Object%E7%B1%BB/
+https://wlei224.gitee.io/tags/Netty/
 https://wlei224.gitee.io/tags/Spring-Cloud-GateWay/
 https://wlei224.gitee.io/tags/feign/
 https://wlei224.gitee.io/tags/nacos/
@@ -103,8 +103,8 @@ https://wlei224.gitee.io/tags/%E9%9D%A2%E6%B8%A3%E9%80%86%E8%A2%AD/
 https://wlei224.gitee.io/categories/%E7%AE%97%E6%B3%95/
 https://wlei224.gitee.io/categories/Bugs/
 https://wlei224.gitee.io/categories/Project/
-https://wlei224.gitee.io/categories/Java-notes/
 https://wlei224.gitee.io/categories/Database/
+https://wlei224.gitee.io/categories/Java-notes/
 https://wlei224.gitee.io/categories/JVM/
 https://wlei224.gitee.io/categories/Linux/
 https://wlei224.gitee.io/categories/Blog/
