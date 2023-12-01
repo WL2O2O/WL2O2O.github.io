@@ -30,7 +30,7 @@ Java源程序-（`javac编译` `编译型`）
 
 图解：
 
-![](https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/jvm-1.png)
+![](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202312011550163.png)
 
 > 这就是说Java 语言“编译与解释并存”的原因
 
@@ -42,7 +42,7 @@ Java源程序-（`javac编译` `编译型`）
 
 按照虚拟机内存规范划分：
 
-![image-20230717091757266](E:/Master/TyporaImages/JVM/image-20230717091757266.png)
+![image-20230717091757266](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202312011550147.png)
 
 JVM分为线程共享与隔离区，如上图所示。
 
@@ -50,7 +50,7 @@ JVM分为线程共享与隔离区，如上图所示。
 
 在此之前先说一下线程与进程，这里引用一个博客的图片：
 
-![](https://img-blog.csdnimg.cn/58369465841a4cdea8083b6951dff710.png#pic_center)
+![](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202312011550668.jpeg)
 
 
 
