@@ -1,14 +1,3 @@
----
-title: Hexo 建站笔记
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120902040.png
-categories:
-  - Blog
-tags:
-  - 网站搭建
-description: 这是我的 Hexo 多端部署方案以及怎么把hexo博客部署到服务器，怎么优化博客访问速度？hexo博客优化
-abbrlink: 44559
-date: 2021-09-07 14:07:56
----
 ## Quick Start
 
 ### Create a new post
@@ -37,11 +26,10 @@ $ hexo d
    > - 解决方案：本地更新文章之前需要先拉取远仓最新更改，否则会提示：
    >
    >   ![image-20231126144130073](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311261441104.png)
-   >
-   
+
 2. 修改了layout布局文件夹下面的post.ejs文件，设置文章index_img宽高比为5：3
 
-	> 	attention: 更改文章页的index_img需要手动更改图片尺寸
+   > 		attention: 更改文章页的index_img需要手动更改图片尺寸
 
 3. 设置 GitHub 工作流,当同步源文件到远仓时,会自动部署静态资源到 GitHub Pages.
 
@@ -186,7 +174,9 @@ $ hexo d
 > 9. TAG标签使用。通过添加TAG标签可以增强主题的相关性和被搜索的概率。
 >
 > 10. 合理设置标题。文章的Title最好以“文章标题-博客名称”形式出现。
+>
 > 11. 关键词自然出现。在文章标题、正文开头或结尾中自然出现关键词。
+>
 > 12. 文章结尾优化。每篇文章的结尾处可加入“原创文章如转载，请注明出处”“本文首发于XXX网站”等信息，对SEO有一定帮助。
 
 ## 支持生成sitemap.xml
@@ -264,23 +254,23 @@ image_minifier:
 >
 > ```bash
 > FATAL {
->   err: Error: spawn /home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle ENOENT
->       at ChildProcess._handle.onexit (node:internal/child_process:284:19)
->       at onErrorNT (node:internal/child_process:477:16)
->       at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
->     errno: -2,
->     code: 'ENOENT',
->     syscall: 'spawn /home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle',
->     path: '/home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle',
->     spawnargs: [ '--no-warnings', '--no-app-extensions' ],
->     stdout: <Buffer >,
->     stderr: <Buffer >,
->     failed: true,
->     signal: null,
->     cmd: '/home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle --no-warnings --no-app-extensions',
->     timedOut: false,
->     killed: false
->   }
+> err: Error: spawn /home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle ENOENT
+>    at ChildProcess._handle.onexit (node:internal/child_process:284:19)
+>    at onErrorNT (node:internal/child_process:477:16)
+>    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+>  errno: -2,
+>  code: 'ENOENT',
+>  syscall: 'spawn /home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle',
+>  path: '/home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle',
+>  spawnargs: [ '--no-warnings', '--no-app-extensions' ],
+>  stdout: <Buffer >,
+>  stderr: <Buffer >,
+>  failed: true,
+>  signal: null,
+>  cmd: '/home/runner/work/WL2O2O.github.io/WL2O2O.github.io/node_modules/imagemin-gifsicle/node_modules/gifsicle/vendor/gifsicle --no-warnings --no-app-extensions',
+>  timedOut: false,
+>  killed: false
+> }
 > } Something's wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html
 > Error: Process completed with exit code 2.
 > ```
@@ -321,15 +311,15 @@ image_minifier:
 > name: Build and Deploy
 > on: [push]
 > permissions: # 增加写入仓库分支的写权限，否则在最后一步部署时会出错，提示
->   contents: write
+> contents: write
 > jobs:
->   build-and-deploy:
->     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
->     runs-on: ubuntu-latest
->     steps:
+> build-and-deploy:
+>  concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+>  runs-on: ubuntu-latest
+>  steps:
 >       - name: Checkout 🛎️
 >         uses: actions/checkout@v3
->         
+> 
 >       - name: Install Hexo CLI  
 >         run: npm install -g hexo-cli@4.3.0
 >         env:  
@@ -340,7 +330,7 @@ image_minifier:
 >         run: npm run build
 >         env:
 >           CI: false
->           
+> 
 >       - name: Deploy 🚀 # 步骤4：部署
 >         # uses: JamesIves/github-pages-deploy-action@releases/v3
 >         uses: JamesIves/github-pages-deploy-action@v4
@@ -381,7 +371,6 @@ image_minifier:
 >         with:
 >           folder: build # The folder the action should deploy.
 > ```
->
 
 ## 支持文章置顶--hexo-generator-index
 
