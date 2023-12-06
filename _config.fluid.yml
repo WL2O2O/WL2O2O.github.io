@@ -523,7 +523,7 @@ footer:
   content: '
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
-    <a href="https://github.com/wl2o2o" target="_blank" rel="nofollow noopener"><span>WL2o2o</span></a>
+    <a href="https://github.com/WL2O2O" target="_blank" rel="nofollow noopener"><span>WL2O2O</span></a>
   '
 
   # 展示网站的 PV、UV 统计数
@@ -541,9 +541,9 @@ footer:
   beian:
     enable: false
     # ICP证号
-    icp_text: 京ICP证123456号
+    icp_text: 豫ICP备2023001822号
     # 公安备案号，不填则只显示ICP
-    police_text: 京公网安备12345678号
+    police_text: 豫公网安备41078102000226号
     # 公安备案的编号，用于URL跳转查询
     police_code: 12345678
     # 公安备案的图片. 为空时不显示备案图片
