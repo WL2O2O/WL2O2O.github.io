@@ -11,7 +11,14 @@ date: 2022-10-07 08:58:32
 ---
 # 常用 Git 命令清单
 
-> 整理：CS_GUIDER，作者：[阮一峰](http://www.ruanyifeng.com/)，戳[原文链接](https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)。
+> 整理：[CS_GUIDER](https://wl2o2o.github.io/)，作者：阮一峰，原文链接：https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+
+宝藏资源推荐✨✨✨：
+
+推荐一个快速练习 Git 的宝藏网站——动图演示 Git 的命令逻辑。
+[戳我查看👆](https://learngitbranching.js.org/)
+
+---
 
 我每天使用 Git ，但是很多命令记不住。
 
