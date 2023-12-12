@@ -6,7 +6,7 @@ cd E:\CS_GUIDER\hexo
 
 echo "Pull the latest code from github..."
 
-git pull origin master
+git pull origin hexoBlog
 
 echo "pull latest code over!"
 

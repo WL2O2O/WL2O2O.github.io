@@ -1,11 +1,13 @@
 ---
-title: 蓝桥杯
+title: 我的算法笔记
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627636.png
 banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
+expert: 一份小而美的蓝桥杯笔记，从基础到进阶。
 categories:
   - 算法
 tags:
   - 蓝桥杯
+sticky: 100
 abbrlink: 48363
 date: 2023-05-11 12:23:11
 ---
