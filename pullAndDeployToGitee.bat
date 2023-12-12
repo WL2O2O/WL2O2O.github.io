@@ -4,9 +4,11 @@ E:
 
 cd E:\CS_GUIDER\hexo
 
-echo "Pull the latest code from github..."
+echo "Pull the latest code from remote repo..."
 
 git pull origin hexoBlog
+
+git pull gitee hexoBlog
 
 echo "pull latest code over!"
 
