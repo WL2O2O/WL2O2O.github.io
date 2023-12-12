@@ -28,4 +28,4 @@ git push gitee hexoBlog
 
 echo "Done!"
 
-timeout /t 10
+timeout /t 3
