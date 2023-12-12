@@ -1,7 +1,7 @@
 ---
 title: 我的算法笔记
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
-excerpt: 一份小而美的蓝桥杯笔记，从基础到进阶
+excerpt: 一份小而美的算法笔记，从基础到进阶
 categories:
   - 算法
 tags:
