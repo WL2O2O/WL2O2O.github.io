@@ -25,3 +25,7 @@ git push origin hexoBlog
 echo "push gitee"
 
 git push gitee hexoBlog
+
+echo "Done!"
+
+timeout /t 3
