@@ -51,19 +51,32 @@
         <% } %>
         <% if(theme.search.enable) { %>
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search" style="font-size: 1.1em;">Search</i>
             </a>
           </li>
           <% import_js(theme.static_prefix.internal_js, 'local-search.js') %>
         <% } %>
         <% if(theme.dark_mode && theme.dark_mode.enable) { %>
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+            <a class="nav-link" target="_self" aria-label="Color Toggle">
               <i class="iconfont icon-dark" id="color-toggle-icon"></i>
             </a>
           </li>
         <% } %>
+        <!-- 导航栏增加 GitHub 链接 -->
+        <li class="nav-item" id="github-btn">
+          <a class="nav-link" target="_blank" aria-label="Github" href="https://github.com/WL2O2O/WL2O2O.github.io" title="If you get gains, star achieves you and me✨">
+            <i class="iconfont icon-github-fill" id="icon-github-fill" style="font-size: 1.1em;"></i>
+          </a>
+        </li>
+        <!-- 增加一个有趣的特效 —— 来自左耳朵耗子的 CoolShell -->
+        <% import_js(theme.static_prefix.internal_js, 'high.js') %>
+        <li class="nav-item" id="high-btn">
+          <a class="nav-link" target="_self" aria-label="High" onclick="runHighEffect()">
+            <i>High一下!</i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
