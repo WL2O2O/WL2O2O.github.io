@@ -1,4 +1,11 @@
+// 设置一个状态，用于防止无限次执行
+var animationExecuted = false;
 function runHighEffect() {
+
+  if (animationExecuted) {
+    return; // animationExecuted = true 则动画已经执行过，直接return，不再重复执行
+  }
+
   (function () {
     function c() {
       var e = document.createElement("link");
@@ -77,6 +84,7 @@ function runHighEffect() {
       e.addEventListener("ended", function () {
         N();
         h();
+        animationExecuted = false; // 动画执行完毕，将变量设置为 false
       }, true);
       e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
       document.body.appendChild(e);
@@ -133,4 +141,6 @@ function runHighEffect() {
       }
     }
   })();
+
+  animationExecuted = true; // 标记动画正在执行
 }
