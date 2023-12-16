@@ -1,5 +1,5 @@
 ---
-title: Java Essay
+title: Java Notes
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
 sticky: 100
 categories:

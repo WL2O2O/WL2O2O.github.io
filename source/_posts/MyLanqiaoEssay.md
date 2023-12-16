@@ -1,7 +1,7 @@
 ---
-title: 我的算法笔记
+title: 我的算法随笔
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
-excerpt: 一份小而美的算法笔记，从基础到进阶
+excerpt: 一份小而美的算法随笔，从基础到进阶系列
 categories:
   - 算法
 tags:

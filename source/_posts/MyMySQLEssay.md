@@ -1,10 +1,11 @@
 ---
-title: CSGUIDER'S八股文（连载中！）
+title: 我的 MySQL 随笔
+sticky: 100
 index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311161446867.png
-excerpt: MySQL形象八股文，不形象你打我
+excerpt: MySQL形象八股文随笔，不形象你打我系列
 categories:
-  - Java notes
+  - MySQL
 tags:
   - 八股文
   - 面渣逆袭
