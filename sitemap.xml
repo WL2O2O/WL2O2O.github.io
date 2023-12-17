@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wlei224.gitee.io/2022/10/07/git/</loc>
+    
+    <lastmod>2023-12-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wlei224.gitee.io/2022/11/07/helloVuepress/</loc>
     
     <lastmod>2023-12-17</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://wlei224.gitee.io/2022/09/07/MyJavaNote/</loc>
+    <loc>https://wlei224.gitee.io/about/index.html</loc>
     
     <lastmod>2023-12-17</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://wlei224.gitee.io/2022/10/07/git/</loc>
+    <loc>https://wlei224.gitee.io/2022/09/07/MyJavaNote/</loc>
     
     <lastmod>2023-12-17</lastmod>
     
@@ -167,15 +176,6 @@
     <loc>https://wlei224.gitee.io/2022/09/07/tip/</loc>
     
     <lastmod>2023-11-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wlei224.gitee.io/about/index.html</loc>
-    
-    <lastmod>2023-11-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
