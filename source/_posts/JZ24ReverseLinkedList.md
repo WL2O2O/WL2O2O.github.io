@@ -2,7 +2,7 @@
 title: 002-JZoffer
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
 categories:
-  - 算法
+  - Algo
 tags:
   - 链表反转
   - 迭代
@@ -72,7 +72,7 @@ date: 2023-06-01 09:56:58
 >  技巧： 
 >
 >  	出入栈
->  			
+>  				
 >  	要明白ListNode创建的是结点，所以需要另外创建一个curr指针，来指向结点，进而完成对链表的操作。
 >
 >  思路： 
