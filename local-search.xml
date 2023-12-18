@@ -13,9 +13,7 @@
     
     <categories>
       
-      <category>Java notes</category>
-      
-      <category>Blog</category>
+      <category>Java U8G</category>
       
     </categories>
     
@@ -24,7 +22,7 @@
       
       <tag>八股文</tag>
       
-      <tag>面渣逆袭</tag>
+      <tag>面试逆袭</tag>
       
     </tags>
     
@@ -42,7 +40,7 @@
     
     <categories>
       
-      <category>MySQL</category>
+      <category>Java U8G</category>
       
     </categories>
     
@@ -51,7 +49,7 @@
       
       <tag>八股文</tag>
       
-      <tag>面渣逆袭</tag>
+      <tag>面试逆袭</tag>
       
     </tags>
     
@@ -503,14 +501,16 @@
     
     <categories>
       
-      <category>算法</category>
+      <category>Java U8G</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>蓝桥杯</tag>
+      <tag>八股文</tag>
+      
+      <tag>面试逆袭</tag>
       
     </tags>
     
