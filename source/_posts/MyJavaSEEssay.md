@@ -4,13 +4,12 @@ sticky: 100
 description: 一篇小而精的Java基础八股文随笔，记录实战面试高频考点
 excerpt: 小而精的Java基础八股文随笔，记录实战面试高频考点
 categories:
-  - Java notes
-  - Blog
+  - Java U8G
 index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311161446867.png
 tags:
   - 八股文
-  - 面渣逆袭
+  - 面试逆袭
 abbrlink: 46344
 date: 2023-12-16 09:13:57
 ---
