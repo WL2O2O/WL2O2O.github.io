@@ -3,11 +3,11 @@ title: css
 index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120849257.png
 categories:
-  - 前端
+  - Frontend
 tags:
   - CSS
 abbrlink: 52116
-date: 2022-09-10 12:14:21
+date: 2021-09-10 12:14:21
 ---
 
 <div style="background-image: url('https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202308211955549.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover; padding: 20px; opacity: 0.7; color: purple; line-height: 2; margin-top: 20px; margin-bottom: 20px;font-size: 15px;">    
@@ -17,7 +17,6 @@ date: 2022-09-10 12:14:21
         我是一个html代码段
     </div>
 </div>
-
 
 
 
@@ -87,7 +86,7 @@ date: 2022-09-10 12:14:21
       <li>深入学习 JavaScript：JavaScript 为网页添加交互和动态功能。</li>
     </ol>
     <!-- 文章作者 -->
-    <p class="author">作者：John Doe</p>
+    <p class="author">作者：CSGUIDER</p>
   </div>
   <div class="article">
     <h2>CSS 基础入门</h2>
@@ -99,10 +98,11 @@ date: 2022-09-10 12:14:21
       <li>盒模型：指元素的内容、内边距、边框和外边距的组合。</li>
     </ul>
     <!-- 文章作者 -->
-    <p class="author">作者：Jane Smith</p>
+    <p class="author">作者：CSGUIDER</p>
   </div>
 </body>
 </html>
+
 
 
 <!DOCTYPE html>
@@ -135,4 +135,3 @@ date: 2022-09-10 12:14:21
   </div>
 </body>
 </html>
-

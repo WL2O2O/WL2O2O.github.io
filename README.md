@@ -15,7 +15,13 @@ $ hexo d
 
 ## 升级日志
 
-2023年11月15日
+- 2023年12月16日
+
+1. 调整了 GloableHeader 的图标显示；
+2. 增加了GitHub repo 的 Link 标签；
+3. 模仿酷壳，在 GloableHeader 增加了一个 Funny Shake effect。
+
+- 2023年11月15日
 
 1. 增加一个GitHub现在编辑button，可直接跳转GitHub远仓，进行修改提交。
 
