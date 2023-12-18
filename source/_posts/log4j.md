@@ -1,7 +1,7 @@
 ---
 title: 一篇文章搞懂 log4j 的使用方法
 categories:
-  - 框架
+  - Frameworks
 tags:
   - MyBatis
   - Logging Services

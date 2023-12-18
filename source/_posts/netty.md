@@ -2,7 +2,7 @@
 title: 一篇文章搞懂什么是Netty
 index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627639.png
 categories:
-  - 框架
+  - Frameworks
 tags:
   - Netty
 abbrlink: 5282
