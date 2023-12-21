@@ -52,7 +52,7 @@ Tips：头歌平台的环境是ubantu版本的Linux系统，在Linux系统下可
 > | 第一步：先更新安装源         | apt-get update          |
 > |----------------------------|------------------------ |
 > | **第二步：再安装DNS服务器** | **apt-get install bind9**  |
-> | **第二步：最后开启DNS服务** | **service bind9 start** |
+> | **第三步：最后开启DNS服务** | **service bind9 start** |
 > 
 > 具体编程要求如下：
 > 先有域名test.com，然后将该域名与IP地址：10.40.211.244相绑定在一起。
