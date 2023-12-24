@@ -1152,7 +1152,12 @@ links:
       link: "https://www.yuque.com/wlei224/csguider/csb1zwghsos18fag",
       avatar: "/img/yuque.png"
       }
-
+    - {
+      title: "JavaU8G",
+      intro: "Java unique 8 gu——这些年我们为了面试背的八股文",
+      link: "https://csguider.icu",
+      avatar: "/img/mdbook.png"
+      }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
@@ -1161,7 +1166,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：***</li><li>简介：***</li><li>链接：https://***.com</li><li>图片：***</li></ul>'
+    content: '<hr>如果希望加入我的友链，请按如下评论中的格式提供信息👇<hr>'
 
   # 评论插件
   # Comment plugin
