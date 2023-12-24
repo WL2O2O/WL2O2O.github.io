@@ -4,17 +4,21 @@ E:
 
 cd E:\CS_GUIDER\hexo
 
-echo "Pull the latest code from remote repo..."
+echo "Pull latest[Remote] --> [LocalRepo]..."
 
 git pull origin hexoBlog
 
-git pull gitee hexoBlog
-
-echo "pull latest code over!"
+echo "pull over!"
 
 echo "deploy to gitee pages"
 
 hexo cl && call hexo g && hexo d -m "autoDeploy"
+
+echo "Deploy Done!"
+
+echo "Sync latest --> [GiteeRepo]..."
+
+git push gitee hexoBlog
 
 echo "Done!"
 

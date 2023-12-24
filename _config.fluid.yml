@@ -1001,7 +1001,7 @@ giscus:
   reactions-enabled: 1
   emit-metadata: 0
   input-position: top
-  lang: zh-CN
+  lang: en
 
 # Discuss
 # 多平台、多数据库、自托管、免费开源评论系统

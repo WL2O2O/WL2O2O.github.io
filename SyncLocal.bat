@@ -22,10 +22,18 @@ echo "push to github"
 
 git push origin hexoBlog
 
-echo "push gitee"
+echo "Deploy Done!"
+
+echo "Sync latest --> [GiteeRepo]..."
 
 git push gitee hexoBlog
 
 echo "Done!"
+
+echo "deploy to gitee pages"
+
+hexo cl && call hexo g && hexo d -m "autoDeploy"
+
+echo "Deploy Done!"
 
 timeout /t 3
