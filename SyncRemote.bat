@@ -1,9 +1,5 @@
 @echo off
 
-E:
-
-cd E:\CS_GUIDER\hexo
-
 echo "Pull latest[Remote] --> [LocalRepo]..."
 
 git pull origin hexoBlog
