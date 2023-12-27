@@ -5,9 +5,10 @@ excerpt: 我收藏的一篇介绍校招和面试常问问题总结好文
 hide: true
 categories:
   - STAR
-date: 2023-12-27 22:08:59
 tags:
- - 面试逆袭
+  - 面试逆袭
+abbrlink: 59198
+date: 2023-12-27 22:08:59
 ---
 
 # 校招与面经

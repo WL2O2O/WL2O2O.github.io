@@ -2,6 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 sticky: 100
+hide: true
 index_img: 
 banner_img: 
 description: 用于meta标签描述，优化SEO(可以增加关键词，优化页面显示)
@@ -19,4 +20,10 @@ categories:
   - 前端
   - Git
 tags:
+  - 八股文
+  - 面试逆袭
+  - Java基础
+  - MySQL
+  - 架构师
+  - Spring Boot
 ---
