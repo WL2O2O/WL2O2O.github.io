@@ -1171,7 +1171,7 @@ java -Dfile.encoding=utf8 -cp %s Main %s
 
 6. 执行高危命令
 
-### 怎么解决
+### 怎么解决？
 
 1. 超时控制
 2. 限制给用户分配的资源
@@ -1179,7 +1179,9 @@ java -Dfile.encoding=utf8 -cp %s Main %s
 4. 限制用户的操作权限，（文件、网络、执行）
 5. 运行环境隔离
 
-#### 超时控制
+
+
+#### a. 超时控制
 
 怎么显示执行时间？创建一个新的线程
 
@@ -1196,22 +1198,203 @@ new Thread(() -> {
 }).start();
 ```
 
-#### 限制给用户分配的资源
+#### b. 限制给用户分配的资源
 
 怎么限制呢？一个最简单的办法：通过`JVM`自带的一个堆内存限制参数：`-Xmx256m`
-`java -Xmx256m -Dfile.encoding=utf8 -cp %s Main %s`
+
+```
+java -Xmx256m -Dfile.encoding=utf8 -cp %s Main %s
+```
+
+
 
 **但是我们要注意！！！-Xmx参数，Java的堆内存限制，并不完全等同于系统占用的资源，可能会超出**
 
-> **面试重点：**
-> **JVM层面的内存限制安全吗？**
-> **答：并不安全，若要进行严格的内存控制，我们需要在内存方面进行进一步的限制**
-> **如果是在Linux 系统的话，我们可以使用 cgrop 来实现对某一个进程的 CPU 或者内存资源的分配**
-> **使用方法：**
+**面试重点：**
+
+**JVM层面的内存限制安全吗？**
+
+**答：并不安全，若要进行严格的内存控制，我们需要在内存方面进行进一步的限制**
+
+**如果是在Linux 系统的话，我们可以使用 cgrop 来实现对某一个进程的 CPU 或者内存资源的分配**
+
+**使用方法：**
 
 
 
-#### 限制代码，黑白名单
+
+
+#### c. 限制代码，黑白名单
+
+```java
+    private static final List<String> blacklist = Arrays.asList("File", "exec");
+
+    private static final WordTree WORD_TREE;
+
+    static {
+        WORD_TREE = new WordTree();
+        WORD_TREE.addWords(blacklist);
+    }
+
+@Override
+    public ExecuteCodeResponse executeCode(ExecuteCodeRequest executeCodeRequest) {
+        List<String> inputList = executeCodeRequest.getInputList();
+        String code = executeCodeRequest.getCode();
+        String language = executeCodeRequest.getLanguage();
+
+        FoundWord foundWord = WORD_TREE.matchWord(code);
+        if (foundWord != null) {
+            System.out.println("包含禁止词汇：" + foundWord.getFoundWord());
+            return null;
+        }
+        ···
+	}
+}
+```
+
+#### d. 限制用户的操作权限
+
+限制用户对文件、内存、CPU、网络等资源的访问。
+
+**Java安全管理器（Security Manager），是Java提供的可以保护JVM、Java安全的机制，**可以实现更加严格的控制。
+
+
+
+编写默认的安全管理器，只需继承Java自带的`SecurityManager`
+
+```java
+package com.wl2o2o.smartojcodesandbox.security;
+
+import java.security.Permission;
+
+/**
+ * 默认禁用所有权限安全管理器
+ *
+ * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @CreateTime 2023/12/28
+ */
+
+public class DefaultSecurityManager extends SecurityManager {
+
+    // 检查所有权限
+    @Override
+    public void checkPermission(Permission perm) {
+        throw new SecurityException(perm.getActions() + "权限被禁用！");
+    }
+}
+```
+
+
+
+#### e. 实现其他权限控制
+
+```java
+package com.wl2o2o.smartojcodesandbox.security;
+
+import java.security.Permission;
+
+/**
+ * 我的安全管理器
+ *
+ * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @CreateTime 2023/12/28
+ */
+
+public class MySecurityManager extends SecurityManager {
+
+    // 检查所有的权限
+    @Override
+    public void checkPermission(Permission perm) {
+        // super.checkPermission(perm);
+        System.out.println(perm);
+    }
+
+    // 检查执行权限
+    @Override
+    public void checkExec(String cmd) {
+        throw new SecurityException("exec 权限被禁用！" + cmd);
+    }
+
+    @Override
+    public void checkRead(String file) {
+        // System.out.println(file);
+        // if (file.contains("E:\\Exercise\\project\\smartoj-code-sandbox")) {
+        //     return;
+        // }
+        // throw new SecurityException("read 权限被禁用！" + file);
+    }
+
+    @Override
+    public void checkWrite(String file) {
+        // throw new SecurityException("write 权限被禁用！" + file);
+    }
+
+    // 检查删除操作权限
+    @Override
+    public void checkDelete(String file) {
+        // throw new SecurityException("delete 权限被禁用！" + file);
+    }
+
+    // 检查程序可链接网络权限
+    @Override
+    public void checkConnect(String host, int port) {
+        // throw new SecurityException("connect 权限被禁用！" + host + ":" + port);
+    }
+}
+// 这样会直接全部限制开发者写的所有程序的
+System.setSecurityManager(new MySecurityManager());
+```
+
+**实际上，我们只需要对涉及到相关执行命令的子程序进行安全管理，所以采用如下步骤进行配置（也就是配置一个安全管理类加载路径——** `**;%s -Djava.security.manager=%s", SECURITY_MANAGER_PATH, SECURITY_MANAGER_CLASS_NAME**`**）**
+
+**步骤：**
+
+1. **编写安全管理器**
+2. **编译成class文件**
+3. **去掉包名**
+4. **放置在**`**resources**`**目录之下**
+5. **指定**`**final**`**变量，存放管理器class名以及路径**
+6. **完成类加载路径配置：**
+
+```java
+String runCmd = String.format("java -Xmx256m -Dfile.encoding=utf8 -cp %s;%s -Djava.security.manager=%s Main %s", userCodeParentPath, SECURITY_MANAGER_PATH, SECURITY_MANAGER_CLASS_NAME, input);
+Process runProcess = Runtime.getRuntime().exec(runCmd);
+```
+
+**这样就可以实现直接在子程序中直接运用安全管理器。**
+
+
+
+但是，安全管理器还是存在不足的地方，比如:
+
+**优点：**
+
+权限控制很灵活，实现简单
+
+**缺点：**
+
+1. **如果要做比较严格的安全校验，需要判断哪些文件允许读写，粒度太细，难以精细化控制**
+2. **安全管理器本身都是Java代码，难免存在漏洞（等于说还是程序上的控制，不属于系统层面上的）**
+3. **而且不推荐 Java8 以上版本使用**
+
+
+
+#### f. 运行环境隔离
+
+系统层面上，把用户程序封装到沙箱里，和宿主机（我们的电脑/服务器）隔离开
+
+怎么实现：（两种方案）
+
+- Docker 容器技术可以实现（底层是 cgroup 和 namespace 等方式实现）
+- cgroup
+
+
+
+> 注意：其实完全使用 Docker 的话，也很难实现绝对安全控制，可以结合 Java 安全管理器进行使用
+
+---
 
 
 
@@ -2038,19 +2221,23 @@ JSON 数据的处理方法：
 
 
 
+# 简历完善点
 
-## 简历完善点
-
-> 实际运行上述程序时，我们会发现，内存占用到达一定空间后，程序就自动报错：`java.lang.OutOfMemoryError:Java heap space`，而不是无限增加内存占用，直到系统死机。**这是JVM的一个保护机制。**
+实际运行上述程序时，我们会发现，内存占用到达一定空间后，程序就自动报错：`java.lang.OutOfMemoryError:Java heap space`，而不是无限增加内存占用，直到系统死机。**这是JVM的一个保护机制。**
 
 1. 内存使用情况，可以使用**JVisualVM或JConsole**工具，连接到JVM虚拟机上来可视化查看运行状态。（使用过相关工具）
 2. 数据结构相关的知识点：HuTool的`WordTree`字典树工具，他可以使用更少的空间存储更多的词汇， 实现更加便捷的查找。
+3. Java安全管理器和 Docker 相结合（需要再进行详细了解一下）
 
 
 
-## TODO
+
+
+# TODO
 
 详细了解一下糊涂工具类
+
+Java安全管理器
 
 
 
