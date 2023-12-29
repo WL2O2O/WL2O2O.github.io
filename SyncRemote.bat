@@ -1,5 +1,7 @@
 @echo off
 
+git --version
+
 echo "Pull latest[Remote] --> [LocalRepo]..."
 
 git pull origin hexoBlog
