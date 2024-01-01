@@ -28,7 +28,7 @@ echo "Sync latest --> [GiteeRepo]..."
 
 git push gitee hexoBlog
 
-echo "Done!"
+echo "[Local] --> [GiteeRepo] Done!"
 
 echo "deploy to gitee pages"
 

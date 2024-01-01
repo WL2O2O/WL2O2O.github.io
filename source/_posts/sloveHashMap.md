@@ -1,5 +1,5 @@
 ---
-title: 再也不怕面试问到 HashMap 
+title: 再也不怕面试问到 HashMap
 description: 一篇文章搞懂 HashMap 的数据结构、怎么解决冲突、为什么负载因子为0.75、如何扩容等问题
 excerpt: 怎么理解 HashMap 的数据结构？怎么解决 hash 冲突？哈希表负载因子是多少？哈希表怎么扩容？
 categories:
@@ -8,6 +8,7 @@ tags:
   - 八股文
   - 面试逆袭
   - Java基础
+abbrlink: 36038
 date: 2024-01-01 23:31:00
 ---
 
