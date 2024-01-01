@@ -2,22 +2,21 @@
 
 git --version
 
-echo "Pull latest[Remote] --> [LocalRepo]..."
 
+@REM 拉取 GitHub 在线编辑内容到本地
+echo "--- ---Pull latest[Remote] --> [LocalRepo]...--- ---"
 git pull origin hexoBlog
+echo "--- ---pull over!--- ---"
 
-echo "pull over!"
-
-echo "Sync latest --> [GiteeRepo]..."
-
+@REM 推送源码到 Gitee
+echo "--- ---Sync latest --> [GiteeRepo]...--- ---"
 git push gitee hexoBlog
+echo "--- ---local --> [GiteeRepo] Done!--- ---"
 
-echo "local --> [GiteeRepo] Done!"
-
-echo "deploy to gitee pages"
-
+@REM 构建文章到 Gitee
+echo "--- ---deploy to gitee pages--- ---"
 hexo cl && call hexo g && hexo d -m "autoDeploy"
+echo "--- ---Deploy Done!--- ---"
 
-echo "Deploy Done!"
 
-timeout /t 3
+call timeout /t 3
