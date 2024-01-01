@@ -4,6 +4,64 @@
   
   
   <entry>
+    <title>再也不怕面试问到 HashMap</title>
+    <link href="/2024/01/01/sloveHashMap/"/>
+    <url>/2024/01/01/sloveHashMap/</url>
+    
+    <content type="html"><![CDATA[<hr><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202401012339709.png" alt="2024一起卷吧"></p><font face="STCAIYUN"><b> 见者有缘，缘来好运🍀诚邀各位围观我的博客【CS_GUIDER】👇</b></font><br><font color=#758ef1><b>🧑‍💻个人主页：<a href="https://github.com/wl2o2o">wl2o2o</a><br>✒️博客主页：<a href="https://wlei224.gitee.io"> CSGUIDER(好玩)</a><a href="https://wl2o2o.github.io"> CSGUIDER(实用)</a><br>⭐八股专栏：<a href="https://csguider.icu"> JavaU8G(内置MusicPlayer)</a></b></font><br><font color=#fc1944><b>我的开源博客涵盖了八股文、设计模式、网站搭建、数据库、Linux系统的教程和笔记。我致力于为您提供Java编程的实用指南和资源，包括Java框架、JVM、微服务以及Git。无论您是初学者还是经验丰富的开发人员，都可以从中获益。谢谢您的光临！</b></font><hr><h1 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h1><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202401012338127.png" alt="什么是 HashMap"></p><h1 id="我的理解"><a href="#我的理解" class="headerlink" title="我的理解"></a>我的理解</h1><p><code>HashMap</code>又称哈希表，又称散列表。首先，<code>HashMap</code>的数据结构是基于数组和链表的，如图：</p><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202401012338628.png" alt="HashMap数据结构"></p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>so，既然是基于数组和链表的，那就说明数组和链表的特点也就是<code>HashMap</code>的特点：</p><ul><li><p><strong>数组：寻址快，直接根据索引访问元素，插入和删除慢；</strong></p></li><li><p><strong>链表：寻址慢，需要从头节点开始遍历，插入和删除快。</strong></p></li></ul><p>说到<code>HashMap</code>就要说到 Java 8 了，Java 8 之前，<code>HashMap</code>使用一个数组加链表的结构来存储 【K，V】 键值对。</p><p>如果发生 hash 冲突，那么，</p><p>这必将导致在处理 hash 冲突的时候性能不高，尤其是链表很长的时候。因此，Java 8 中的<code>HashMap</code>引入了红黑树来替代链表，这样当链表变长的时候，会自动转换为红黑树，从而提高了增删改查的性能。</p><h2 id="什么是-Hash-冲突？怎么解决？"><a href="#什么是-Hash-冲突？怎么解决？" class="headerlink" title="什么是 Hash 冲突？怎么解决？"></a>什么是 Hash 冲突？怎么解决？</h2><p>哈希冲突就是不同的数据经过哈希计算之后，得到的<br><code>hash</code>值相同，然后被映射到了哈希表中的同一个位置，这就是哈希冲突。</p><p><strong>解决方法：</strong></p><ol><li>开放寻址法<br>意思就是，一旦发生冲突的话，就去按线性顺序寻找下一个空的散列地址，知道找到存放位置；</li><li>链地址法<br>就是将哈希表数组的元素作为链表的头结点（这个链表的所有元素构成一个近义词链表，因为经过<code>hash</code>计算值相同），一旦哈希冲突，就把该关键字链接到该结点的尾部；</li><li>再哈希法<br>顾名思义，就是再次通过另一个<code>hash</code>函数计算，得到另外的散列地址，直到冲突不发生；</li><li>建立公共溢出区<br>将哈希表分为<code>基本表</code>与<code>溢出表</code>，发生冲突的元素放入溢出表中。</li></ol><h2 id="负载因子为什么是-0-75-？"><a href="#负载因子为什么是-0-75-？" class="headerlink" title="负载因子为什么是 0.75 ？"></a>负载因子为什么是 0.75 ？</h2><p>对于开放寻址法，荷载因子是特别重要因素，应严格限制在0.7-0.8以下。超过0.8，查表时的CPU缓存不命中（cache missing）按照指数曲线上升。因此，一些采用开放寻址法的hash库，如Java的系统库限制了荷载因子为0.75，超过此值将resize散列表。</p><h2 id="如何进行扩容？"><a href="#如何进行扩容？" class="headerlink" title="如何进行扩容？"></a>如何进行扩容？</h2><p>待完善··· ···</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java基础</tag>
+      
+      <tag>八股文</tag>
+      
+      <tag>面试逆袭</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>什么是微服务与分布式</title>
+    <link href="/2024/01/01/microService/"/>
+    <url>/2024/01/01/microService/</url>
+    
+    <content type="html"><![CDATA[<hr><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202401012339968.png" alt="2024一起卷吧"></p><font face="STCAIYUN"><b> 见者有缘，缘来好运🍀诚邀各位围观我的博客【CS_GUIDER】👇</b></font><br><font color=#758ef1><b>🧑‍💻个人主页：<a href="https://github.com/wl2o2o">wl2o2o</a><br>✒️博客主页：<a href="https://wlei224.gitee.io"> CSGUIDER(好玩)</a><a href="https://wl2o2o.github.io"> CSGUIDER(实用)</a><br>⭐八股专栏：<a href="https://csguider.icu"> JavaU8G(内置MusicPlayer)</a></b></font><br><font color=#fc1944><b>我的开源博客涵盖了八股文、设计模式、网站搭建、数据库、Linux系统的教程和笔记。我致力于为您提供Java编程的实用指南和资源，包括Java框架、JVM、微服务以及Git。无论您是初学者还是经验丰富的开发人员，都可以从中获益。谢谢您的光临！</b></font><hr><h1 id="🐳什么是微服务"><a href="#🐳什么是微服务" class="headerlink" title="🐳什么是微服务"></a>🐳什么是微服务</h1><blockquote><p>维基百科这样介绍：</p></blockquote><p><img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202401012339582.png" alt="image.png"></p><h1 id="🐳微服务的本质"><a href="#🐳微服务的本质" class="headerlink" title="🐳微服务的本质"></a>🐳微服务的本质</h1><p>把一个大项目，根据业务逻辑拆分为一个个小模块，模块之间通过 HTTP 或者其他网络通讯协议进行相互调用，这样的项目叫做微服务项目。</p><h1 id="特点以及使用场景"><a href="#特点以及使用场景" class="headerlink" title="特点以及使用场景"></a>特点以及使用场景</h1><blockquote><p>微服务框架的特性：</p></blockquote><ul><li>每个服务都容易被取代。</li><li>服务是以能力来组织的，例如用户界面、前端、推荐系统、账单或是物流等。</li><li>由于功能被拆成多个服务，因此可以由不同的编程语言、数据库实现。</li><li>架构是对称而非分层（即生产者与消费者的关系）。</li></ul><blockquote><p>使用场景：</p></blockquote><ul><li>适用于具持续交付（Continuous Delivery）的软件开发流程。</li><li>与服务导向架构（Service-Oriented Architecture）不同，后者是集成各种业务的应用程序，但微服务只属于一个应用程序。</li></ul><h1 id="知识扩展"><a href="#知识扩展" class="headerlink" title="知识扩展"></a>知识扩展</h1><blockquote><p>微服务可以使用什么技术实现？</p></blockquote><ul><li><code>Spring Cloud</code></li><li><code>Spring Cloud Alibaba</code></li><li><code>Dubbo</code></li><li><code>RPC</code>（<code>GRPC</code>、<code>TRPC</code>）</li></ul><blockquote><p>为什么微服务架构受欢迎？</p></blockquote><ul><li><strong>降低系统耦合性</strong>：通过将功能分解到各个离散的服务中，微服务架构降低了系统的耦合性，使得各个服务能够独立地进行开发、部署和扩展。</li><li><strong>提高灵活性</strong>：由于每个服务都是独立的，可以对不同的服务使用不同的技术栈和编程语言，提高了技术的灵活性和效率。</li><li><strong>便于维护和调试</strong>：每个服务都是独立的，当出现问题时，可以迅速定位并修复问题，不会对整个应用程序造成影响，提高了系统的可维护性和稳定性。</li><li><strong>易于水平扩展</strong>：每个服务都可以独立地进行水平扩展，提高了系统的可扩展性。当某个服务的负载增加时，可以单独对该服务进行扩展，而不会影响其他服务。</li><li><strong>促进业务创新</strong>：微服务架构是更面向业务创新的一种架构模式，使得开发团队可以更快地响应业务需求的变化，提高开发效率和应用程序的迭代速度。</li></ul><blockquote><p> 从语雀这次 P0 级事故，我们可以学到什么？</p><ul><li>可监控</li><li>可灰度</li><li>可回滚 </li></ul></blockquote><p><img src="https://img-blog.csdnimg.cn/img_convert/8dd32ad90fb8bb94993d3730de078bc3.png" alt="image.png"></p><blockquote><p>知识扩展</p></blockquote><h2 id="💻分布式与🐳微服务的区别"><a href="#💻分布式与🐳微服务的区别" class="headerlink" title="💻分布式与🐳微服务的区别"></a>💻分布式与🐳微服务的区别</h2><p><strong>简单来说：</strong></p><ul><li>分布式就是把一个大的项目拆分，部署到多台机器；<br>微服务是把项目按照功能进行拆分。</li><li>分布式项目对标<strong>单机项目</strong>；<br>微服务项目是与<strong>整个项目的业务逻辑</strong>进行对比的。</li></ul><h2 id="面试问题"><a href="#面试问题" class="headerlink" title="面试问题"></a>面试问题</h2><p>什么是分布式锁？什么是单机锁？<br>分布式锁？顾名思义，分布式锁就是要考虑到多台机器的场景</p><p>待补充······</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>八股文</tag>
+      
+      <tag>面试逆袭</tag>
+      
+      <tag>微服务</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>我的 设计模式 随笔</title>
     <link href="/2023/12/20/MyDesignModeEssay/"/>
     <url>/2023/12/20/MyDesignModeEssay/</url>
@@ -128,9 +186,9 @@
     
     <tags>
       
-      <tag>链表</tag>
-      
       <tag>递归</tag>
+      
+      <tag>链表</tag>
       
     </tags>
     
@@ -461,29 +519,6 @@
   
   
   <entry>
-    <title>001-JZoffer</title>
-    <link href="/2023/06/01/JZ06PrintLinkedList/"/>
-    <url>/2023/06/01/JZ06PrintLinkedList/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p><code>JZ6 从尾到头打印链表</code></p><p>简单 通过率：29.17% 时间限制：1秒 空间限制：64M</p><p>知识点<a href="https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13?tag=580">链表</a></p><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>输入一个链表的头节点，按链表从尾到头的顺序返回每个节点的值（用数组返回）。</p><p>如输入{1,2,3}的链表如下图:</p><p><img src="https://uploadfiles.nowcoder.com/images/20210717/557336_1626506480516/103D87B58E565E87DEFA9DD0B822C55F" alt="img"></p><p>返回一个数组为[3,2,1]</p><p>0 &lt;= 链表长度 &lt;= 10000</p><h2 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h2><p>输入：</p><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">&gt;</span><span class="hljs-template-variable">&#123;1,2,3&#125;</span><br></code></pre></td></tr></table></figure><p>返回值：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">&gt;<span class="hljs-selector-attr">[3,2,1]</span><br></code></pre></td></tr></table></figure><h2 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h2><p>输入：</p><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dns">&gt;&#123;<span class="hljs-number">67,0,24,58</span>&#125;<br></code></pre></td></tr></table></figure><p>返回值：</p><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs accesslog">&gt;<span class="hljs-string">[58,24,0,67]</span><br></code></pre></td></tr></table></figure></blockquote><p><code>技巧：</code></p><p>​    出入栈或者递归</p><p>​    递归方法 + ArrayList的头结点添加元素实现链表逆序</p><p><code>思路：</code></p><p>​    涉及到递归的思想：递归是一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂问题层层转化为一个与原问题相似的小问题来求解。因此，所谓递归就是将一个复杂的问题细化为一个个子问题，这就是递归！</p><p>​    下面说说这个题目：</p><p>​    我们都知道链表无法进行逆序访问，那肯定无法直接遍历链表得到从头到尾的逆序结果。但是我们都知道递归是<strong>到达底层</strong>之后才会<strong>往上层回溯</strong>，因此我们可以考虑递归遍历链表：</p><p>​    step1:从表头开始往后递归进入每一个节点。</p><p>​    step2:每次返回添加一个值到新的数组中，直到遇到尾节点（head.next == null）</p><p>​    官方题解思路：</p><p><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/202307211019432.png" alt="image-20230721101906413"></p><p><code>code：</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;<br><span class="hljs-comment">/**</span><br><span class="hljs-comment">*    public class ListNode &#123;</span><br><span class="hljs-comment">*        int val;</span><br><span class="hljs-comment">*        ListNode next = null;</span><br><span class="hljs-comment">*</span><br><span class="hljs-comment">*        ListNode(int val) &#123;</span><br><span class="hljs-comment">*            this.val = val;</span><br><span class="hljs-comment">*        &#125;</span><br><span class="hljs-comment">*    &#125;</span><br><span class="hljs-comment">*</span><br><span class="hljs-comment">*/</span><br><span class="hljs-keyword">import</span> java.util.ArrayList;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ArrayList&lt;Integer&gt; <span class="hljs-title function_">printListFromTailToHead</span><span class="hljs-params">(ListNode listNode)</span> &#123;<br>        ArrayList&lt;Integer&gt; res = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();<br>        Stack&lt;Integer&gt; s = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();<br>        <span class="hljs-keyword">while</span>(listNode != <span class="hljs-literal">null</span>)&#123;<br>            s.push(listNode.val);<br>            listNode = listNode.next;<br>        &#125;<br>        <span class="hljs-keyword">while</span>(!s.isEmpty())&#123;<br>            res.add(s.pop());<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;<br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-comment">//递归函数</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">recursion</span><span class="hljs-params">(ListNode head, ArrayList&lt;Integer&gt; res)</span>&#123; <br>        <span class="hljs-keyword">if</span>(head != <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-comment">//先往链表深处遍历</span><br>            recursion(head.next, res); <br>            <span class="hljs-comment">//再填充到数组就是逆序</span><br>            res.add(head.val); <br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">public</span> ArrayList&lt;Integer&gt; <span class="hljs-title function_">printListFromTailToHead</span><span class="hljs-params">(ListNode listNode)</span> &#123;<br>        ArrayList&lt;Integer&gt; res = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;Integer&gt;();<br>        <span class="hljs-comment">//递归函数解决</span><br>        recursion(listNode, res);<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><code>结束语：</code></p><p>​    本题考查的就是链表的逆向输出，要想逆向输出，</p><ol><li>可以遍历链表然后存储到数组中，再利用数组的reverse()方法，直接反序；</li><li>官方题解中的链表递归，其实这个考察的就是递归的思想，递归是<strong>到达底层</strong>之后才会<strong>往上层回溯</strong>（先递进，再回归！可以这么理解）</li><li>既然涉及到链表的反序输出，那么为什么不利用栈呢？先入后出==&gt;逆向输出。</li></ol><p>​    </p><p>好久没写算法题，太生疏了！！！每日一题，没有退路，继续加油！</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>链表</tag>
-      
-      <tag>递归</tag>
-      
-      <tag>ArrayList</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>002-JZoffer</title>
     <link href="/2023/06/01/JZ24ReverseLinkedList/"/>
     <url>/2023/06/01/JZ24ReverseLinkedList/</url>
@@ -500,11 +535,34 @@
     
     <tags>
       
-      <tag>递归</tag>
-      
       <tag>链表反转</tag>
       
       <tag>迭代</tag>
+      
+      <tag>递归</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>001-JZoffer</title>
+    <link href="/2023/06/01/JZ06PrintLinkedList/"/>
+    <url>/2023/06/01/JZ06PrintLinkedList/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p><code>JZ6 从尾到头打印链表</code></p><p>简单 通过率：29.17% 时间限制：1秒 空间限制：64M</p><p>知识点<a href="https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=13?tag=580">链表</a></p><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>输入一个链表的头节点，按链表从尾到头的顺序返回每个节点的值（用数组返回）。</p><p>如输入{1,2,3}的链表如下图:</p><p><img src="https://uploadfiles.nowcoder.com/images/20210717/557336_1626506480516/103D87B58E565E87DEFA9DD0B822C55F" alt="img"></p><p>返回一个数组为[3,2,1]</p><p>0 &lt;= 链表长度 &lt;= 10000</p><h2 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h2><p>输入：</p><figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dust"><span class="language-xml">&gt;</span><span class="hljs-template-variable">&#123;1,2,3&#125;</span><br></code></pre></td></tr></table></figure><p>返回值：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">&gt;<span class="hljs-selector-attr">[3,2,1]</span><br></code></pre></td></tr></table></figure><h2 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h2><p>输入：</p><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs dns">&gt;&#123;<span class="hljs-number">67,0,24,58</span>&#125;<br></code></pre></td></tr></table></figure><p>返回值：</p><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs accesslog">&gt;<span class="hljs-string">[58,24,0,67]</span><br></code></pre></td></tr></table></figure></blockquote><p><code>技巧：</code></p><p>​    出入栈或者递归</p><p>​    递归方法 + ArrayList的头结点添加元素实现链表逆序</p><p><code>思路：</code></p><p>​    涉及到递归的思想：递归是一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂问题层层转化为一个与原问题相似的小问题来求解。因此，所谓递归就是将一个复杂的问题细化为一个个子问题，这就是递归！</p><p>​    下面说说这个题目：</p><p>​    我们都知道链表无法进行逆序访问，那肯定无法直接遍历链表得到从头到尾的逆序结果。但是我们都知道递归是<strong>到达底层</strong>之后才会<strong>往上层回溯</strong>，因此我们可以考虑递归遍历链表：</p><p>​    step1:从表头开始往后递归进入每一个节点。</p><p>​    step2:每次返回添加一个值到新的数组中，直到遇到尾节点（head.next == null）</p><p>​    官方题解思路：</p><p><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/202307211019432.png" alt="image-20230721101906413"></p><p><code>code：</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;<br><span class="hljs-comment">/**</span><br><span class="hljs-comment">*    public class ListNode &#123;</span><br><span class="hljs-comment">*        int val;</span><br><span class="hljs-comment">*        ListNode next = null;</span><br><span class="hljs-comment">*</span><br><span class="hljs-comment">*        ListNode(int val) &#123;</span><br><span class="hljs-comment">*            this.val = val;</span><br><span class="hljs-comment">*        &#125;</span><br><span class="hljs-comment">*    &#125;</span><br><span class="hljs-comment">*</span><br><span class="hljs-comment">*/</span><br><span class="hljs-keyword">import</span> java.util.ArrayList;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ArrayList&lt;Integer&gt; <span class="hljs-title function_">printListFromTailToHead</span><span class="hljs-params">(ListNode listNode)</span> &#123;<br>        ArrayList&lt;Integer&gt; res = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();<br>        Stack&lt;Integer&gt; s = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();<br>        <span class="hljs-keyword">while</span>(listNode != <span class="hljs-literal">null</span>)&#123;<br>            s.push(listNode.val);<br>            listNode = listNode.next;<br>        &#125;<br>        <span class="hljs-keyword">while</span>(!s.isEmpty())&#123;<br>            res.add(s.pop());<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.ArrayList;<br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-comment">//递归函数</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">recursion</span><span class="hljs-params">(ListNode head, ArrayList&lt;Integer&gt; res)</span>&#123; <br>        <span class="hljs-keyword">if</span>(head != <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-comment">//先往链表深处遍历</span><br>            recursion(head.next, res); <br>            <span class="hljs-comment">//再填充到数组就是逆序</span><br>            res.add(head.val); <br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">public</span> ArrayList&lt;Integer&gt; <span class="hljs-title function_">printListFromTailToHead</span><span class="hljs-params">(ListNode listNode)</span> &#123;<br>        ArrayList&lt;Integer&gt; res = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;Integer&gt;();<br>        <span class="hljs-comment">//递归函数解决</span><br>        recursion(listNode, res);<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><code>结束语：</code></p><p>​    本题考查的就是链表的逆向输出，要想逆向输出，</p><ol><li>可以遍历链表然后存储到数组中，再利用数组的reverse()方法，直接反序；</li><li>官方题解中的链表递归，其实这个考察的就是递归的思想，递归是<strong>到达底层</strong>之后才会<strong>往上层回溯</strong>（先递进，再回归！可以这么理解）</li><li>既然涉及到链表的反序输出，那么为什么不利用栈呢？先入后出==&gt;逆向输出。</li></ol><p>​    </p><p>好久没写算法题，太生疏了！！！每日一题，没有退路，继续加油！</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>递归</tag>
+      
+      <tag>链表</tag>
+      
+      <tag>ArrayList</tag>
       
     </tags>
     
