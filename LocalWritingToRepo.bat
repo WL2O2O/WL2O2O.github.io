@@ -31,4 +31,4 @@ echo "--- ---deploy to gitee pages--- ---"
 hexo cl && call hexo g && hexo d -m "autoDeploy"
 echo "--- ---Deploy Done!--- ---"
 
-call timeout /t 3
+timeout /t 3
