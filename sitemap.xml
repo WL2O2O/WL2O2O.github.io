@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wlei224.gitee.io/2022/11/07/helloVuepress/</loc>
-    
-    <lastmod>2024-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wlei224.gitee.io/2022/05/04/%E5%A4%B4%E6%AD%8C%E5%AE%9E%E8%B7%B5%E6%95%99%E5%AD%A6%E5%B9%B3%E5%8F%B0-Linux%E7%BD%91%E7%BB%9C%E5%AE%9E%E6%88%98%EF%BC%88%E4%B8%80%EF%BC%89-DNS%E9%85%8D%E7%BD%AE%EF%BC%88Ubuntu%E7%B3%BB%E7%BB%9F%EF%BC%89/</loc>
     
     <lastmod>2024-03-23</lastmod>
@@ -39,6 +30,15 @@
   
   <url>
     <loc>https://wlei224.gitee.io/2022/10/07/git/</loc>
+    
+    <lastmod>2024-03-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wlei224.gitee.io/2022/11/07/helloVuepress/</loc>
     
     <lastmod>2024-03-23</lastmod>
     
@@ -481,6 +481,13 @@
   </url>
   
   <url>
+    <loc>https://wlei224.gitee.io/tags/Bugs/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wlei224.gitee.io/tags/DM/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -489,13 +496,6 @@
   
   <url>
     <loc>https://wlei224.gitee.io/tags/educoder/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wlei224.gitee.io/tags/Bugs/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -670,6 +670,13 @@
   </url>
   
   <url>
+    <loc>https://wlei224.gitee.io/tags/CSS/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wlei224.gitee.io/tags/Ant-Design-Pro/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -706,13 +713,6 @@
   
   <url>
     <loc>https://wlei224.gitee.io/tags/SDK%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wlei224.gitee.io/tags/CSS/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -868,6 +868,13 @@
   </url>
   
   <url>
+    <loc>https://wlei224.gitee.io/categories/Bugs/</loc>
+    <lastmod>2024-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://wlei224.gitee.io/categories/Database/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -876,13 +883,6 @@
   
   <url>
     <loc>https://wlei224.gitee.io/categories/Java-notes/</loc>
-    <lastmod>2024-03-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wlei224.gitee.io/categories/Bugs/</loc>
     <lastmod>2024-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
