@@ -53,9 +53,9 @@ https://wlei224.gitee.io/tags/SSM/
 https://wlei224.gitee.io/tags/MySQL/
 https://wlei224.gitee.io/tags/jquery/
 https://wlei224.gitee.io/tags/ajax/
+https://wlei224.gitee.io/tags/Bugs/
 https://wlei224.gitee.io/tags/DM/
 https://wlei224.gitee.io/tags/educoder/
-https://wlei224.gitee.io/tags/Bugs/
 https://wlei224.gitee.io/tags/Java%E5%9F%BA%E7%A1%80/
 https://wlei224.gitee.io/tags/%E9%93%BE%E8%A1%A8/
 https://wlei224.gitee.io/tags/%E9%80%92%E5%BD%92/
@@ -80,13 +80,13 @@ https://wlei224.gitee.io/tags/SpringBoot/
 https://wlei224.gitee.io/tags/Mysql/
 https://wlei224.gitee.io/tags/MyBatis/
 https://wlei224.gitee.io/tags/Maven/
+https://wlei224.gitee.io/tags/CSS/
 https://wlei224.gitee.io/tags/Ant-Design-Pro/
 https://wlei224.gitee.io/tags/React/
 https://wlei224.gitee.io/tags/Ant-Design-Pro-Components/
 https://wlei224.gitee.io/tags/Umi/
 https://wlei224.gitee.io/tags/Umi-Request/
 https://wlei224.gitee.io/tags/SDK%E5%BC%80%E5%8F%91/
-https://wlei224.gitee.io/tags/CSS/
 https://wlei224.gitee.io/tags/Git/
 https://wlei224.gitee.io/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/
 https://wlei224.gitee.io/tags/%E6%9E%B6%E6%9E%84%E5%B8%88/
@@ -108,9 +108,9 @@ https://wlei224.gitee.io/tags/Linux-DNS/
 https://wlei224.gitee.io/tags/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95/
 https://wlei224.gitee.io/categories/Algo/
 https://wlei224.gitee.io/categories/Project/
+https://wlei224.gitee.io/categories/Bugs/
 https://wlei224.gitee.io/categories/Database/
 https://wlei224.gitee.io/categories/Java-notes/
-https://wlei224.gitee.io/categories/Bugs/
 https://wlei224.gitee.io/categories/JVM/
 https://wlei224.gitee.io/categories/Linux/
 https://wlei224.gitee.io/categories/Java-U8G/
