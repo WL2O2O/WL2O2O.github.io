@@ -1,6 +1,7 @@
 ---
 title: 方特攻略
 hide: true
+abbrlink: 21165
 date: 2024-04-16 00:00:00
 ---
 ## 方特欢乐世界攻略
@@ -13,26 +14,42 @@ date: 2024-04-16 00:00:00
 ### 公众号必打卡项目
 
 1. 方特城堡
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005989.jpg" alt="alt text" style="zoom:50%;" />
+
    梦幻的粉红色城堡不仅是理想的拍照打卡地，还有着诸多适合儿童参与的大型体验项目，是专属于小朋友们的童梦天地。手偶剧表演、多媒体互动体验、淘气堡、小滑梯等项目及设施，让小朋友们在这里玩得不亦乐乎。
 2. 海螺湾
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005990.jpg" alt="alt text" style="zoom:50%;" />
+
    4D项目海螺湾里上演着关于海洋世界的故事。快戴上4D眼镜，透过逼真的特效，与可爱的海洋生物们一起进入蔚蓝的海洋吧！
 3. 飞越极限
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005991.jpg" alt="alt text" style="zoom:50%;" />
+
    园内“现象级”体验项目，采用VR Soaring技术、巨大的半球形银幕、灵巧的悬挂式座椅，以3D数字技术精美还原了祖国的大好河山，感受凌空飞翔的震撼体验！
 4. 生命之光
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005992.jpg" alt="alt text" style="zoom:50%;" />
+
    是兼具知识性与观赏性为一体的观影体验项目，透过立体巨幕，为游客讲述了地球生命不断演化的历史进程，以及人类的进化发展历程，对于大小朋友来说都是一部很有意义的科教项目。
 5. 恐龙套餐（恐龙危机+逃出恐龙岛）
    不要忘记体验漂流历险项目逃出恐龙岛，小船缓缓进入充满危险的侏罗纪时代，恐龙岛危机四伏，直达空中的巨石顶端后瞬间极速下坠，游客可感受巨大水花的洗礼。
+   
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005993.jpg" alt="恐龙危机" style="zoom:50%;" />
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005994.jpg" alt="逃出恐龙岛" style="zoom:50%;" />
+
 6. 过山车套餐（极地快车+暴风眼）
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005995.jpg" alt="极地快车" style="zoom:50%;" />
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005996.jpg" alt="暴风眼" style="zoom:50%;" />
+
 7. 飞行套餐（空中飞舞+高空飞翔）
+
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005997.jpg" alt="空中飞舞" style="zoom:50%;" />
+   
    <img src="https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202404162005999.jpg" alt="高空飞翔" style="zoom:50%;" />
 
 
