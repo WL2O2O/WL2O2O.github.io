@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>递归魔法-反转链表</title>
+    <link href="/2024/04/19/206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/"/>
+    <url>/2024/04/19/206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</url>
+    
+    <content type="html"><![CDATA[<h1 id="206-反转链表"><a href="#206-反转链表" class="headerlink" title="206. 反转链表"></a>206. 反转链表</h1><h2 id="这里是普通头插法解法"><a href="#这里是普通头插法解法" class="headerlink" title="这里是普通头插法解法"></a>这里是普通头插法解法</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * Definition for singly-linked list.</span><br><span class="hljs-comment"> * public class ListNode &#123;</span><br><span class="hljs-comment"> *     int val;</span><br><span class="hljs-comment"> *     ListNode next;</span><br><span class="hljs-comment"> *     ListNode() &#123;&#125;</span><br><span class="hljs-comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span><br><span class="hljs-comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span><br><span class="hljs-comment"> * &#125;</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">reverseList</span><span class="hljs-params">(ListNode head)</span> &#123;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">prev</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">cur</span> <span class="hljs-operator">=</span> head;<br>        <span class="hljs-keyword">while</span>(cur != <span class="hljs-literal">null</span>) &#123;<br>            <span class="hljs-type">ListNode</span> <span class="hljs-variable">next</span> <span class="hljs-operator">=</span> cur.next;<br>            cur.next = prev;<br>            prev = cur;<br>            cur = next;<br>        &#125;<br>        <span class="hljs-keyword">return</span> prev;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="这里是递归解法"><a href="#这里是递归解法" class="headerlink" title="这里是递归解法"></a>这里是递归解法</h2><p>对于递归算法，最重要的是明确递归函数的定义和递归调用的逻辑。不要在我们的小脑瓜里模拟递归压栈，真的压不起（反正我是没有那个能力哈哈哈哈）</p><p>老老实实弄明白一层递归的作用，如图：<br><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8-2024-04-19-03-09-25.png" alt="206-反转链表-2024-04-19-03-09-25"></p><p>然后，写终止条件，就完事了。如图：<br><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8-2024-04-19-03-11-07.png" alt="206-反转链表-2024-04-19-03-11-07"></p><p>优雅的递归，实在是很优雅！</p><p>最后别忘了链表的末尾要指向null。</p><p>需要注意的有：</p><ol><li>递算法要有 base case</li><li>防止出现环<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">reverseList</span><span class="hljs-params">(ListNode head)</span> &#123;<br>        <span class="hljs-comment">// ListNode prev = null;</span><br>        <span class="hljs-comment">// ListNode cur = head;</span><br>        <span class="hljs-comment">// while(cur != null) &#123;</span><br>        <span class="hljs-comment">//     ListNode next = cur.next;</span><br>        <span class="hljs-comment">//     cur.next = prev;</span><br>        <span class="hljs-comment">//     prev = cur;</span><br>        <span class="hljs-comment">//     cur = next;</span><br>        <span class="hljs-comment">// &#125;</span><br>        <span class="hljs-comment">// return prev;</span><br>        <br>        <span class="hljs-comment">// base case</span><br>        <span class="hljs-keyword">if</span> (head == <span class="hljs-literal">null</span> || head.next == <span class="hljs-literal">null</span>) &#123;<br>            <span class="hljs-keyword">return</span> head;<br>        &#125;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">last</span> <span class="hljs-operator">=</span> reverseList(head.next);<br>        head.next.next = head;<br>        head.next = <span class="hljs-literal">null</span>;<br>        <span class="hljs-keyword">return</span> last;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Algo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>链表</tag>
+      
+      <tag>递归</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>美团第一场笔试热经</title>
     <link href="/2024/03/09/%E7%BE%8E%E5%9B%A2%E7%AC%AC%E4%B8%80%E5%9C%BA%E7%AC%94%E8%AF%95%E7%83%AD%E7%BB%8F/"/>
     <url>/2024/03/09/%E7%BE%8E%E5%9B%A2%E7%AC%AC%E4%B8%80%E5%9C%BA%E7%AC%94%E8%AF%95%E7%83%AD%E7%BB%8F/</url>
