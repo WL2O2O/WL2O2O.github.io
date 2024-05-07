@@ -150,7 +150,17 @@ date: 2023-09-07 08:58:32
 
 ## 工具篇
 
-### pnpm
+### nvm
+1. nvm 突然报错，包括npm安装依赖也会出现错误，如下图所示：
+![nvm报错](https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/Bugsss-2024-05-07-19-58-22.png)
+
+    我猜测应该是网络或者配置问题，果真，**npm.taobao.org** 的 HTTPS 证书已经在2024年1月22日过期，所以需要切换镜像源到
+    ```bash
+        node_mirror: http://npmmirror.com/mirrors/node/
+        npm_mirror: http://registry.npmmirror.com/mirrors/npm/
+    ```
+    
+
 
 
 
