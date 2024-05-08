@@ -4,3 +4,8 @@ node_modules/imagemin-gifsicle/*
 *.log
 public/
 .deploy*/
+
+hexo/source/_posts/22.md
+hexo/source/_posts/csh.md
+hexo/source/_posts/love.md
+hexo/source/_posts/the3anniversary.md
