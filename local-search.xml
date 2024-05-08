@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>SZML</title>
+    <link href="/2024/05/08/SZML/"/>
+    <url>/2024/05/08/SZML/</url>
+    
+    <content type="html"><![CDATA[<h2 id="数字马力面经"><a href="#数字马力面经" class="headerlink" title="数字马力面经"></a>数字马力面经</h2><h3 id="同学-1"><a href="#同学-1" class="headerlink" title="同学 1"></a>同学 1</h3><p>时长-35分钟<br>0 自我介绍</p><ol><li><p>怎么学习</p></li><li><p>tcp ip三次握手四次挥手 </p></li><li><p>http和https什么区别 https安全交互有什么步骤（不知道）</p></li><li><p>对称性加密，非对称性加密 （不知道）</p></li><li><p>cookie和session的区别</p></li><li><p>实现单例对象有几种方式 这些方式优缺点是啥 为什么懒汉要双重判断？</p></li><li><p>怎么计算两个ArrayList的并集 交集 差集(好像有一些API，当时没答出来)</p></li><li><p>ArrayList和LinkedList区别 优缺点 是不是线程安全，怎么使用一个线程安全的List</p></li><li><p>currentHashMap怎么保证线程安全 1.7 1.8区别</p></li><li><p>怎么理解Hash冲突</p></li><li><p>序列化 反序列化的理解 什么时候需要用到 怎么用 为什么要指定UID 为什么我序列化后插入一个数据后反序列化有什么问题 为什么有这个问题？为什么你说uid不指定就会出现这个问题（这地方不是特别熟，并且有点紧张，说的很差，最后心态直接爆炸，直接说我了解的太少。这里我就不想面了）</p></li><li><p>StringBuffer和StringBuilder说一下</p></li><li><p>Springboot如何获得IOC容器 （都在背八股，太长久了忘了）</p></li><li><p>Springboot加载文件顺序，不在同个目录下呢？</p></li><li><p>用到gateWay是吧。gateWay如何实现url重写(不知道)</p></li><li><p>Feign用过是吧，怎么通过openFeign进行请求头设置(没用过，不会)</p></li><li><p>mybatis # $ 区别</p></li><li><p>maven会用吧，说一下依赖传递性（忘了，说成了继承，被他点着说：我要你说依赖传递，你说的是继承）</p></li><li><p>Spring事务用过吧，原理是什么 静态代理原理是什么？</p></li><li><p>bean加载过程 如何在装配阶段进行bean的替换，复制(md都是背八股，都忘了之前的实操了，回去好好复习了)</p></li><li><p>数据库四大特性 数据库隔离级别 默认隔离级别 RR是不是完全解决幻读？举个没解决幻读的例子</p></li><li><p>MVCC说一下 </p></li><li><p>聚集索引 非聚集索引</p></li><li><p>类加载器作用，为什么要通过类加载器进行加载</p></li><li><p>反问</p></li></ol><p>总结：不知道不了解都说烦了，没信心了，直接GG。虽然都是常规的八股，但是加上有点紧张回答的不好，并且面的广度比较大，包括一些ArrayList的API，maven依赖我都很少用，并且有些问题没有说清楚，看你不熟悉就直接往深处一直问，只能说一句不了解不知道来结束这个问题，有些计网的八股还不是很熟。就这样吧，秋招不行我就滚去实习准备春招了，春招不行我就去送外卖。</p><h3 id="同学2"><a href="#同学2" class="headerlink" title="同学2"></a>同学2</h3><p>数字马力（郑州 java开发）<br>10/23 笔试 算法三道题</p><ol><li><p>哈希表判断重复</p></li><li><p>链表CRUD “insert 1” “delete 0”，这种字符串解析对链表CRUD</p></li><li><p>正则表达式匹配  这种题是true/false的，直接全false A 33.6% 全ture A 66.4，先骗一下。后来又用java String的API全A了。</p></li></ol><p>10/28 线上一面（40min）</p><ol start="0"><li>其他都是常规问题</li><li>AQS源码</li><li>AOP源码</li><li>ConcurrentHashMap源码</li><li>spring的事务传播机制及实现原理</li></ol><p>源码部分我都不会，也是我接下来需要补足的。不过面试官非常好，给我说我这边给你过了，不确定你二面能不能过。</p><p>10/31 线上二面</p><ol start="0"><li>果然不堪一击！</li></ol><p>面试官很好，是我太菜。</p><h3 id="同学3"><a href="#同学3" class="headerlink" title="同学3"></a>同学3</h3><p>数字马力 一面</p><ol><li>先问一些java基础吧，</li><li>Java的Map了解吗，有哪些实现。那CurrentHashMap怎么保证线程安全的？</li><li>你在使用Map的时候怎么遍历，有哪些遍历的方式，既然Iterator可以遍历，你说说Iterator。</li><li>多线程有哪些参数，工作中的使用多线程的场景你说一下，有没有遇到什么问题，怎么解决死锁的。</li><li>Spring Bean的生命周期，Spring的Bean为什么默认是单例模式，那减少JVM GC垃圾回收的实例，你说下垃圾回收的一些算法吧，回收过程起死回生这个现象出现在那个阶段。</li><li>RabbitMQ怎么保证程序执行成功消息一定发送成功，消息发送成功消费者消费失败，你有什么补救措施（或怎么处理）。</li><li>Redis缓存，Redis分布式锁，一些场景和应用吧。<br>mysql优化一些问题等。记不太清了。</li></ol><p>ps: 一面问的都比较基础但是会抓着一个点一直问。</p><h3 id="同学-4"><a href="#同学-4" class="headerlink" title="同学 4"></a>同学 4</h3><p>面经：主要看着简历问的，简历上写知识点的有点忘了，给自己挖坑了</p><ol><li>讲讲NIO（不会，然后接着问了IO</li><li>单例模式有哪些实现方式？</li><li>mysql慢查询怎么优化？</li><li>主从复制原理</li><li>bean的生命周期（忘了</li><li>了解jvm吗？</li><li>juc包下有哪些类？实际使用？</li><li>讲讲ReentranLock</li><li>场景题</li><li>反问环节。</li></ol><p>作者：鼠道难<br>链接：<a href="https://www.nowcoder.com/feed/main/detail/6b65b2fa96f64b2f8c92127702e03775?sourceSSR=search">https://www.nowcoder.com/feed/main/detail/6b65b2fa96f64b2f8c92127702e03775?sourceSSR=search</a><br>来源：牛客网</p><h3 id="同学-5"><a href="#同学-5" class="headerlink" title="同学 5"></a>同学 5</h3><p>数字马力/1面</p><ol><li>jvm的内存结构</li><li>有哪些类加载器</li><li>双亲委派机制</li><li>spring的ioc原理</li><li>spring的事物执行原理</li><li>spring  aop的底层基于什么实现的</li><li>mysql的主键索引和唯一索引的区别</li><li>mysql底层基于什么实现的</li><li>b+树的运行原理（没答上）</li><li>做了这么项目最熟悉哪块（挖了个坑，说自己数熟悉线程池，多线程，并发）</li><li>不用现在的开发工具，你如何去实现一个线程池（回答要有一个队列，他问我为啥要队列，额，说队列不是关键的，麻了，我说起到缓冲的作用，又给自己挖了个坑，mq就是多并发的）</li><li>那你自己知道mq的consumer是怎么实现并发消费的</li><li>feign和http的区别</li><li>什么是微服务，cap是什么？</li></ol><p>还有一些面试题不记得了，感觉寄了🐔</p><p>作者：喜欢后撤步的大老虎觉醒了<br>链接：<a href="https://www.nowcoder.com/feed/main/detail/c20f18e722b24cefbca55f6550ef62c8?sourceSSR=search">https://www.nowcoder.com/feed/main/detail/c20f18e722b24cefbca55f6550ef62c8?sourceSSR=search</a><br>来源：牛客网</p><h3 id="同学-6"><a href="#同学-6" class="headerlink" title="同学 6"></a>同学 6</h3><p>数字马力-Java开发工程师（长沙）- 一面【已过】</p><ol start="0"><li>自我介绍</li><li>实习项目组做的是什么业务？</li><li>开发组大概是有多少人？人员分配呢？</li><li>你做的这些项目都是来源于哪里啊？</li><li>一个项目大概要做多久？</li><li>在哪里找的项目？一般通过哪些网站找的？</li><li>介绍一下API开放平台里面有哪些内容，以及是怎么实现的吗？</li><li>API签名认证算法你是怎么设计的？</li><li>看你项目中使用异步编排进行解决接口响应慢的问题，那么对于接口响应慢的问题你一般有哪些思路？</li><li>你的项目中商品的预热是怎么做的？</li><li>那你一般怎么进行保证数据库与缓存中数据的一致性问题？</li><li>看你使用过RabbitMQ的延时队列，你知道他的底层是怎么进行实现的吗?</li><li>分布式锁使用的是Redisson对吧？</li><li>扩展问一下：处理redis可以实现分布式锁，还有哪些技术栈可以实现分布式锁？</li><li>MYSQL是可以进行实现分布式锁，但是与Redis的实现方式不同，你知道哪里不同吗？</li><li>还知道哪些技术可以进行实现分布式锁吗？</li><li>你知道Redisson的看门狗机制是怎么进行实现的吗，为什么可以达成续期？</li><li>我看你使用了SpringCache相关注解，你能给我介绍一下都有哪些注解吗？</li><li>这个注解是怎么识别出参数，然后作为key的呢？</li><li>比如说我在使用SpringCache的注解的时候，参数是一个对象，对象中有很多个属性，如果我们要使用对象中的属性作为key，那么我们该如何进行指定，才能让SpringCache注解识别到对象其中的属性？</li><li>你知道EL表达式有哪些解析方式吗？</li><li>你知道Spring对EL表达式有哪些支持吗？</li><li>你知道EL表达式除了在SpringCache注解中使用到了，还在哪里使用到了El表达式吗？</li><li>ThreadLocal是用于存储登录态的哈？为什么要使用ThreadLocal啊，有相关的技术栈的考量吗（理由）？</li><li>最后你会进行threadLocal的清除吗？</li><li>如果现在是一个分布式项目，想要实现ThreadLocal的跨服务传递，有没有实现方案？因为分布式项目我可能调用的是下游系统，我想让ThreadLocal中的东西也传递过去，有没有了解过相关技术实现？</li><li>线程池的相关参数有哪些？</li><li>如果我现在要根据线程池参数，实现一个具有缓冲能力的线程池，该如何进行设计？</li><li>这种方案为什么可以起到缓冲的作用，能解释一下吗？</li><li>用线程池的时候参数你是如何进行设计的，还是说用默认的？</li><li>进行反问</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>STAR</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>面试逆袭</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>VueSkills</title>
+    <link href="/2024/05/08/VueSkills/"/>
+    <url>/2024/05/08/VueSkills/</url>
+    
+    <content type="html"><![CDATA[<h2 id="export-default-问题"><a href="#export-default-问题" class="headerlink" title="export default 问题"></a>export default 问题</h2><p>当使用setup语法糖时，不需要使用export default 导出组件，否则会报错，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/VueSkills-2024-05-08-10-28-55.png" alt="Vue中setup语法糖"></p><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><blockquote><p>在 Vue 3 中使用 <code>&lt;script setup&gt;</code> 语法糖时，通常不需要显式地使用 export default 来导出组件选项，因为 <code>&lt;script setup&gt;</code> 会自动收集顶级声明（如变量、函数等）并暴露给模板。但是，如果你在 <code>&lt;script setup&gt;</code> 中还包含了一个传统的 export default 块，这通常会导致编译错误，因为这与 <code>&lt;script setup&gt;</code> 的设计初衷相冲突。</p></blockquote><h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;script setup lang=&quot;ts&quot;&gt;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure><h2 id="居中问题"><a href="#居中问题" class="headerlink" title="居中问题"></a>居中问题</h2><p>调整居中，只会通过<code>left: -500px;</code>这样来调整距离，但是这样并不完美，当改变窗口尺寸的时候，会出现问题</p><h3 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h3><p>要想优雅地居中显示，可以利用 CSS 的 Flexbox 或 Grid 布局特性，而不是直接设置 left 的负值。考虑到你可能是在某个容器内希望居中这个按钮，这里提供两种方法来实现这一目标，假设这个按钮位于一个打算用于布局的父容器中。<br>方法 1: 使用 Flexbox<br>修改父容器的样式，使其成为 Flex 容器，并居中其内容。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- 父容器应用 Flexbox 布局 --&gt;<br>&lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;<br>  &lt;a-button<br>    type=&quot;primary&quot;<br>    :loading=&quot;loading1&quot;<br>    @click=&quot;handleClick1&quot;<br>    &gt;toSubmit&lt;/a-button<br>  &gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure><p>方法 2: 使用 Grid 布局<br>如果更倾向于使用 Grid 布局，也可以通过以下方式实现居中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;!-- 父容器应用 Grid 布局 --&gt;<br>&lt;div style=&quot;display: grid; place-items: center;&quot;&gt;<br>  &lt;a-button<br>    type=&quot;primary&quot;<br>    :loading=&quot;loading1&quot;<br>    @click=&quot;handleClick1&quot;<br>    &gt;toSubmit&lt;/a-button<br>  &gt;<br>&lt;/div&gt;<br></code></pre></td></tr></table></figure><p>在这两个方法中，我们都没有直接在按钮上设置位置属性，而是通过调整其父元素的布局模式来实现居中对齐。这样可以确保按钮在不同屏幕尺寸和分辨率下都能保持良好的居中效果，同时也让代码更加简洁和响应式。</p><h3 id="方法介绍"><a href="#方法介绍" class="headerlink" title="方法介绍"></a>方法介绍</h3><p>这两种布局是现代 CSS 中非常重要的布局模型，它们提供了更强大和灵活的页面元素定位方式，特别是对于响应式设计和复杂的界面布局。<br>Flexbox (Flexible Box)<br>用途：Flexbox 是一种一维布局模型，主要用于处理容器内元素的线性布局，如行或列。它擅长处理单轴布局，比如水平或垂直排列的元素，以及元素之间的对齐和填充。</p><p>主要属性：</p><ul><li>display: flex：启用 Flexbox 布局。</li><li>flex-direction：控制主轴的方向（行或列）。</li><li>justify-content：控制元素在主轴上的对齐方式。</li><li>align-items：控制元素在交叉轴上的对齐方式。</li><li>flex-wrap：决定元素是否换行。</li><li>flex-grow, flex-shrink, flex-basis：控制元素的伸缩比例和基础大小。</li></ul><p>优点：易于实现单行或单列的弹性布局，如导航栏、页脚、列表项等。<br>兼容性：在现代浏览器中广泛支持，包括 IE10+。</p><p>CSS Grid (Grid Layout)<br>用途：Grid 是一个二维布局模型，它允许你创建复杂的网格系统，非常适合页面的全面布局，如网页的行和列。它可以同时处理行和列，因此非常适合构建响应式网格。</p><p>主要属性：</p><ul><li>display: grid：启用 Grid 布局。</li><li>grid-template-columns 和 grid-template-rows：定义网格的列和行。</li><li>grid-gap：设置网格项之间的间距。</li><li>grid-template-areas：用于命名和指定网格区域。</li><li>grid-auto-flow：控制网格项如何自动填充网格。</li><li>align-items, justify-items，以及 align-self, justify-self：控制网格项在各自单元格内的对齐。</li></ul><p>优点：能够精确控制元素的位置和大小，适用于复杂的多列布局和响应式设计。</p><p>兼容性：在现代浏览器中支持良好，包括 IE10+（但需要使用 -ms- 前缀）。</p><p>通常，开发者会根据具体的需求和场景来选择使用 Flexbox 还是 Grid。对于简单的布局和对齐，Flexbox 可能更合适；而对于复杂的二维布局和整体页面结构，Grid 则更为强大。在某些情况下，两者可以结合使用，以充分利用各自的优点。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Vue3</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>快慢指针-环形链表的起点计算</title>
     <link href="/2024/04/19/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/"/>
     <url>/2024/04/19/142-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/</url>
