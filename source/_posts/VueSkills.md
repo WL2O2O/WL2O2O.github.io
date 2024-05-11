@@ -93,5 +93,34 @@ CSS Grid (Grid Layout)
 
 ## 换行显示 || 水平排列
 ### 方法介绍
-在Vue中，特别是使用诸如Ant Design Vue这类UI框架时，<a-divider> 是一个组件，用于在界面上创建分割线，以视觉上分隔内容区块。这个组件模拟了HTML中的<hr>标签的功能，但更加灵活和可定制。
-其中，size="0" 是一个属性设置，用于定义分割线的大小或者说粗细。在Ant Design Vue中，size 属性可以接受不同的预设值，比如 'small', 'middle', 'large' 或者直接指定像素值。当设置为 "0" 时，这通常意味着希望得到一个极细或者几乎不可见的分割线。不过，实际表现可能会依据框架的具体实现和CSS样式有所不同，某些情况下，设置为 "0" 可能意在移除分割线的可见部分，仅保留其布局上的分隔作用或依赖于自定义样式来控制其外观。
+> 在Vue中，特别是使用诸如Ant Design Vue这类UI框架时，`<a-divider>` 是一个组件，用于在界面上创建分割线，以视觉上分隔内容区块。这个组件模拟了HTML中的`<hr>`标签的功能，但更加灵活和可定制。其中，size="0" 是一个属性设置，用于定义分割线的大小或者说粗细。在Ant Design Vue中，size 属性可以接受不同的预设值，比如 'small', 'middle', 'large' 或者直接指定像素值。当设置为 "0" 时，这通常意味着希望得到一个极细或者几乎不可见的分割线。不过，实际表现可能会依据框架的具体实现和CSS样式有所不同，某些情况下，设置为 "0" 可能意在移除分割线的可见部分，仅保留其布局上的分隔作用或依赖于自定义样式来控制其外观。
+
+
+## router.push 问题
+### 问题描述
+这个问题是在我的毕业设计中想要通过点击切换上一题、下一题中遇到的，当使用router.push()方法时，我们目前所在的url与将要跳转的url包含相同的前缀时，路由会跳转，但是页面不会重新渲染，例如：
+```vue
+const toPrevious = () => {
+  // currentPath: "/view/question/1"
+  router
+    .push({
+      path: `/view/question/${currentQuestionId.value}`,
+    })
+};
+```
+
+### 解决方法
+```vue
+const toPrevious = () => {
+  router
+    .push({
+      path: `${currentQuestionId.value}`,
+      // path: `/user/login`,
+    })
+    .then(() => {
+      window.history.go(0);
+    });
+};
+```
+
+
