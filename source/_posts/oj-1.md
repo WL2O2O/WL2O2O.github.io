@@ -5,6 +5,7 @@ index_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
 banner_img: >-
   https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151640352.png
+hide: true
 categories:
   - Project
 tags:
