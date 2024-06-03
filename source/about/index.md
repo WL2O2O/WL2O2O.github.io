@@ -9,7 +9,7 @@ date: 2023-08-19 18:13:14
 {% note info %}
 **CSGUIDER - Java开发**
 
-📱166 3840 6024 &nbsp;📬<u>[csguider@163.com](mailto:csguider@163.com)</u>&nbsp;🧑‍💻<u>[wl2o2o.github.io](https://wl2o2o.github.io)</u>(UV: 2.2K+/PV: 4K+)&nbsp;🤝<u>[github.com/wl2o2o](https://github.com/wl2o2o)</u>
+📱166 3840 6024 &nbsp;📬<u>[csguider@163.com](mailto:csguider@163.com)</u>&nbsp;🧑‍💻<u>[wl2o2o.github.io](https://wl2o2o.github.io)</u>(UV: 2.4K+/PV: 4K+)&nbsp;🤝<u>[github.com/wl2o2o](https://github.com/wl2o2o)</u>
 {% endnote %}
 
 {% note success %}

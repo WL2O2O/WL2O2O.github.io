@@ -1157,7 +1157,7 @@ links:
     - {
       title: "JavaU8G",
       intro: "Java unique 8 gu——这些年我们为了面试背的八股文",
-      link: "https://csguider.icu",
+      link: "https://csguider.top",
       avatar: "/img/mdbook.png"
       }
   # 当成员头像加载失败时，替换为指定图片
