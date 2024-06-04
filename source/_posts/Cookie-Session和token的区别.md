@@ -1,12 +1,13 @@
 ---
 title: 'Cookie, Session和token的区别'
-description: 六张图讲清楚Cookie, Session和token的区别
-excerpt: 【用图说话系列】用六张图讲清楚Cookie, Session和token的区别
+description: '六张图讲清楚Cookie, Session和token的区别'
+excerpt: '【用图说话系列】用六张图讲清楚Cookie, Session和token的区别'
 categories:
   - Java notes
 tags:
   - 八股文
   - 面试逆袭
+abbrlink: 50030
 date: 2024-06-03 19:34:53
 index_img:
 banner_img:
