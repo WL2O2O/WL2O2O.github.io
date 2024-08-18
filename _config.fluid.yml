@@ -1087,8 +1087,8 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/WL2O2O", tip: "GitHub" }
     - { class: "iconfont icon-gitee-fill", link: "https://gitee.com/WLei224", tip: "Gitee" }
-    - { class: "iconfont icon-book", link: "https://csguider.icu", tip: "JavaU8G" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111030600.png" }
+    - { class: "iconfont icon-book", link: "https://csguider.top", tip: "JavaU8G" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/wx.jpg" }
 
 
 #---------------------------
