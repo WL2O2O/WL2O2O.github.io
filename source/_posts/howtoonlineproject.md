@@ -8,9 +8,10 @@ categories:
 tags:
   - 八股文
   - 上线项目
+index_img: 'https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online.png'
+banner_img: 'https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online.png'
+abbrlink: 8932
 date: 2024-08-18 18:36:43
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online.png
-banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online.png
 ---
 
 # 上线项目的3种方式
@@ -23,7 +24,6 @@ banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online
 
 - `Nginx`和`jdk`的安装与配置
   [Nginx安装配置的参考链接：](https://zhuanlan.zhihu.com/p/425790769)https://zhuanlan.zhihu.com/p/425790769
-  {% fold info @点击展开详细命令与配置 %}
    ```bash
    # nginx 默认配置
    user  nginx;
@@ -55,8 +55,6 @@ banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/online
   # 使用yum来安装jdk，免配置环境变量
   yum install -y java-1.8.0-openjdk*
    ```
-  {% endfold %}
-
 ### 方式二、使用宝塔面板上线
 
 - 首先，直接建议打一个快照，标记这是安装宝塔面板之前的快照，便于我们重装系统
@@ -131,7 +129,6 @@ user  root;
 ```
 
 跨域解决：
-{% fold info @打开我，必解决跨域问题 %}
 ```bash
 location ^~ /api/ {
     # 代理到后端服务
@@ -152,8 +149,6 @@ location ^~ /api/ {
     }
 }
 ```
-{% endfold %}
-
 3、重启Nginx
 
 ```bash
@@ -171,7 +166,7 @@ nginx -s reload
 ![添加站点](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202408182042155.png)
 3、进入站点目录，上传打包好的前端`dist`
 
-4、测试访问（有需要的话，可以手动配置nginx的配置文件)
+4、测试访问（有需要的话，可以手动配置nginx的配置文件）
 
 ### Docker容器
 
