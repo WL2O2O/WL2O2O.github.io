@@ -1,7 +1,6 @@
 ---
 title: csh
-banner_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202308211940248.jpg
+banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202308211940248.jpg
 hide: true
 date: 2024-08-20 00:00:00
 index_img:
