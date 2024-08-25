@@ -291,3 +291,58 @@ docker ps -a
 ```
 
 4、测试是否启动成功
+
+## 场景模拟
+### 场景一：多`war`包部署
+
+#### 场景描述
+在不影响服务器上正常运行的基础上，将多个`war`包部署到同一个服务器上，并使用`nginx`进行负载均衡。
+
+#### 解决方案
+1、使用Docker：
+
+- 使用`docker`创建多个`tomcat`容器，分别部署多个`war`包，并使用`nginx`进行负载均衡。
+
+2、不使用Docker：
+
+- 首先，复制一份tomcat
+
+- 进入到 tomcat 的目录下, 将其中的 webapps 文件夹进行一份拷贝, 用于第二个应用的部署
+
+- 进入到 tomcat 的服务配置文件下面, 打开 server.xml 配置文件, 填充第二个应用部署时的相关配置信息
+```
+  <!-- 第二个项目配置 -->
+  <Service name="Catalina1">
+      
+    <!-- 为避免冲突, 修改端口 -->
+    <Connector port="8081" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+  
+    <!-- Tomcat默认使用8009端口, 避免冲突, 修改 -->
+    <Connector port="8010" protocol="AJP/1.3" redirectPort="8443"/>
+  	
+    <!-- Engine 节点, name 修改为 Catalina1 -->
+    <!-- 服务启动后会在 conf 下生成相应的引擎文件夹, 名称保持一致. -->
+    <Engine name="Catalina1" defaultHost="localhost">
+      <Realm className="org.apache.catalina.realm.LockOutRealm">
+        <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+               resourceName="UserDatabase"/>
+      </Realm>
+  
+      <!-- 修改Host节点，appBase修改为需要进行发布的文件位置, 也就是第一步复制的 webapps1 -->
+      <Host name="localhost"  appBase="webapps1"
+            unpackWARs="true" autoDeploy="true">
+  
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+               prefix="localhost_access_log" suffix=".txt"
+               pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+  
+      </Host>
+    </Engine>
+  </Service>
+```
+
+- 配置nginx负载均衡，记得`nginx -s reload`
+
+- 脚本启动tomcat，记得`start.sh`
