@@ -1160,6 +1160,12 @@ links:
       link: "https://csguider.top",
       avatar: "/img/mdbook.png"
       }
+    - {
+      title: "a.d博客",
+      intro: "爱你所爱，行你所行",
+      link: "https://www.aiheadn.cn/",
+      avatar: "https://q1.qlogo.cn/g?b=qq&nk=2585570153&s=100"
+      }
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
