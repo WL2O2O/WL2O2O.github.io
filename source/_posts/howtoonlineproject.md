@@ -245,6 +245,20 @@ java -jar xxx-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
 java -jar xxx-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod > log.out 2>&1 &
 ```
 
+4、通过`jobs`以及`jps`命令检查任务的状态
+
+> **jobs**：
+>
+> - 这是一个Unix和Linux shell中的命令，用来显示由该shell启动的后台作业的状态。当你使用`&`将一个程序放到后台运行时，你可以用`jobs`命令来查看这个程序是否还在运行，以及它的运行状态（如正在运行、已停止等）。
+>
+> **jps**：
+>
+> - 这是Java Platform的Standard Edition（Java SE）提供了一个命令行工具，用于列出正在运行的Java应用程序（JVM）及其进程ID。`jps`可以跨平台使用，并且不需要任何参数就可以工作，它会显示所有正在运行的Java应用的主类名和进程ID。这对于确定一个Java应用程序是否正在运行以及查找其PID是非常有用的。
+
+5、当我们的代码进行迭代升级之后，我们重新上线jar包，结果会发现端口号被占用了
+
+![解决项目jar包迭代端口占用的问题](https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202409020251086.png)
+
 ### 宝塔面板
 
 1、打开`文件`菜单，在`www/wwwroot`目录下创建一个`services`目录，再创建一个后端项目名字的文件夹，然后上传打包好的`jar`包到该目录下
@@ -346,3 +360,83 @@ docker ps -a
 - 配置nginx负载均衡，记得`nginx -s reload`
 
 - 脚本启动tomcat，记得`start.sh`
+
+### 场景二：不停服war包部署
+
+#### 场景描述
+
+在不影响服务器上正常运行的基础上，将`war`包部署到服务器
+
+#### 解决方案：
+
+> 建议：因为设置到war包的不停服更新，所以强烈建议使用`docker`容器来运行多个`tomcat`实例，便于迭代升级
+
+1. **准备阶段**
+
+   - 确保新版本的WAR包已经准备好并且存放在Tomcat的`webapps`目录下。
+   - 配置Nginx的反向代理规则，使得对旧服务的请求暂时被代理到备用端口。
+
+2. **临时调整Nginx配置**
+
+   - 修改Nginx的配置文件，将当前正在运行的服务（端口：8080）请求暂时指向一个备用端口（例如：8081），这通常涉及到修改location块中的代理设置。
+
+     ```nginx
+     server {
+         listen 80;
+         server_name example.com;
+     
+         location / {
+             proxy_pass http://localhost:8081; # 原本可能是http://localhost:8080
+             proxy_set_header Host $host;
+             proxy_set_header X-Real-IP $remote_addr;
+             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+             proxy_set_header X-Forwarded-Proto $scheme;
+         }
+     }
+     ```
+
+   - 重启Nginx使配置生效。
+
+     ```nginx
+     nginx -s reload
+     ```
+
+3. **部署新版本**
+
+   - 在Tomcat中部署新的WAR包。如果是直接放入`webapps`目录，Tomcat会自动解压并启动应用。
+   - 确认新版本的应用程序能够正常运行，此时可以访问新版本应用所在的默认端口（例如：8081）来进行测试。
+
+4. **恢复Nginx配置**
+
+   - 如果新版本没有问题，那么迭代升级成功，如果有问题，那么可以修改Nginx配置文件，重新指向8080端口，进行回滚。
+
+     ```txt
+     即：无线上问题？ 保持指向 8081 端口（迭代成功） ： 重新指向 8080 端口进行回滚
+     ```
+
+   - 重启Nginx使配置生效。
+
+5. **清理旧版本**
+
+   - 如果不再需要旧版本，可以考虑删除旧的WAR包或者备份后删除。
+
+#### 更加便捷的解决方案：
+
+除了上述方法外，还有一些更现代化的方法来实现无停机部署，比如使用容器化技术（如Docker）配合Kubernetes等编排工具，它们提供了滚动更新等高级功能，可以在不中断服务的情况下平滑地升级应用程序。
+
+#### 公司常见做法：
+
+不同的公司可能会有不同的做法，但是常见的几种方式包括：
+
+- **蓝绿部署**：创建两套相同的环境（蓝色和绿色），其中一套上线，另一套用于部署新版本。一旦新版本验证无误，就切换流量到新版本上。
+- **金丝雀发布**：逐步将流量引导到新版本，一开始只让一小部分用户访问新版本，如果一切正常，逐渐增加流量比例，直到完全切换。
+- **滚动更新**：在集群环境中逐个更新实例，确保每次只有一个实例处于更新状态，从而减少对服务的影响。
+
+以上方法可以根据实际情况和技术栈的选择来决定采用哪种。对于传统的服务器环境，使用Nginx反向代理是一个简单且有效的方案。
+
+
+
+## 场景综述
+
+如果你掌握了以上`war`包迭代升级的技巧，那么，`jar`包迭代升级的步骤肯定也不在话下了！！！respect🎉🎉🎉
+
