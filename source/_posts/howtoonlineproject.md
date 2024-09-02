@@ -3,6 +3,7 @@ title: 前后端项目上线教程
 sticky: 100
 description: 项目如何上线，教你用三种方式轻松上线
 excerpt: 我的职业生涯中上线项目的三种方式————典藏版（无坑）
+category_bar: true
 categories:
   - Project
 tags:
