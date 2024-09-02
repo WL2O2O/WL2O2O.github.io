@@ -3,6 +3,7 @@ title: {{ title }}
 date: {{ date }}
 sticky: 100
 hide: true
+category_bar: true
 index_img: 
 banner_img: 
 description: 用于meta标签描述，优化SEO(可以增加关键词，优化页面显示)
