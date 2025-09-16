@@ -1,13 +1,11 @@
 ---
 title: 头歌实践教学平台-Linux网络实战（一）-DNS配置（Ubuntu系统）
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627632.png
-expert: 头歌实践教学平台-Linux网络实战（一）-DNS配置（Ubuntu系统）,别划走！！！这篇博客就是你要找的头歌教学实践平台上的：第四关：DNS服务器配置的保姆级通关步骤。
-categories:
-  - Linux
 tags:
   - Linux DNS
   - educoder
-abbrlink: 14983
+categories:
+  - Linux
+abbrlink: d96f4a06
 date: 2022-05-04 15:30:37
 ---
 

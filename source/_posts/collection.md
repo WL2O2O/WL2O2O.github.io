@@ -1,14 +1,14 @@
 ---
 title: Java Collection
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
-excerpt: 你是怎么理解Java中的集合的？
-categories:
-  - Java notes
 tags:
   - Java基础
-abbrlink: 48337
+categories:
+  - Java notes
+excerpt: 你是怎么理解Java中的集合的？
+abbrlink: 141569ae
 date: 2022-09-07 08:58:32
 ---
+
 ![](https://cdn.tobebetterjavaer.com/tobebetterjavaer/images/sidebar/sanfene/collection-1.png)
 
 ## 怎么理解HashMap的数据结构呢？

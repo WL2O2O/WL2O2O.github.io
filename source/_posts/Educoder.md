@@ -1,11 +1,10 @@
 ---
 title: Educoder
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
-categories:
-  - Java notes
 tags:
   - educoder
-abbrlink: 6873
+categories:
+  - Java notes
+abbrlink: 74c1e1a2
 date: 2022-09-07 14:07:56
 ---
 

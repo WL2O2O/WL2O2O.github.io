@@ -1,11 +1,10 @@
 ---
 title: 什么是SSM
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627644.png
-categories:
-  - Java notes
 tags:
   - SSM
-abbrlink: 14117
+categories:
+  - Java notes
+abbrlink: 7c11898e
 date: 2021-12-27 07:14:23
 ---
 

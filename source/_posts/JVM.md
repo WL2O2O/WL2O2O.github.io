@@ -1,12 +1,10 @@
 ---
 title: 一篇文章搞懂 JVM
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
-banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111618297.png
-categories:
-  - JVM
 tags:
   - Java基础
-abbrlink: 8425
+categories:
+  - JVM
+abbrlink: f58bbce4
 date: 2023-01-07 08:58:32
 ---
 

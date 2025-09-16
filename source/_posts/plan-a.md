@@ -1,7 +1,7 @@
 ---
 title: plan-a
 tags: plan
-abbrlink: 41017
+abbrlink: 3d6e4b43
 date: 2023-08-24 19:55:57
 ---
 

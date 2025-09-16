@@ -1,10 +1,10 @@
 ---
 title: 达梦数据库
-categories:
-  - Database
 tags:
   - DM
-abbrlink: 26937
+categories:
+  - Database
+abbrlink: f234e628
 date: 2023-08-07 08:58:32
 ---
 

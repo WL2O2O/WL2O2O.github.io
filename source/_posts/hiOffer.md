@@ -1,9 +1,8 @@
 ---
 title: hiOffer
-hide: true
-abbrlink: 54240
+tags: None
+abbrlink: 24fbdc49
 date: 2023-09-23 21:06:01
-tags:
 ---
 
 BOSS您好，我对您发布的 XX 岗位很感兴趣。

@@ -1,13 +1,13 @@
 ---
 title: MySQL事务
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627638.png
-categories:
-  - Database
 tags:
   - MySQL
-abbrlink: 23119
+categories:
+  - Database
+abbrlink: f91535f
 date: 2023-02-23 20:52:27
 ---
+
 ## 事务
 
 > #### 一、什么是事务

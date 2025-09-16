@@ -1,14 +1,12 @@
 ---
 title: 我的 设计模式 随笔
-sticky: 100
-description: 什么是设计模式？Java中有哪些设计模式？设计模式高频面试题
-excerpt: 一篇小而精的设计模式随笔，学习架构思想，为你的项目增添亮点
-categories:
-  - Java U8G
 tags:
   - 八股文
   - 面试逆袭
-abbrlink: 31772
+categories:
+  - Java U8G
+excerpt: 一篇小而精的设计模式随笔，学习架构思想，为你的项目增添亮点
+abbrlink: 88811ab6
 date: 2023-12-20 11:32:21
 ---
 

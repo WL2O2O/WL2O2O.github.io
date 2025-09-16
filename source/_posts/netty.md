@@ -1,13 +1,13 @@
 ---
 title: 一篇文章搞懂什么是Netty
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627639.png
-categories:
-  - Frameworks
 tags:
   - Netty
-abbrlink: 5282
+categories:
+  - Frameworks
+abbrlink: 6aee9804
 date: 2022-11-01 06:58:32
 ---
+
 # 什么是Netty
 
 ## 是什么？

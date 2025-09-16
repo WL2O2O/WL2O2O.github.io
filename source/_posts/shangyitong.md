@@ -1,9 +1,5 @@
 ---
 title: 尚医通
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
-banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151644178.png
-categories:
-  - Project
 tags:
   - Spring Boot
   - Spring Cloud GateWay
@@ -14,10 +10,11 @@ tags:
   - MySQL
   - JWT
   - EasyExcell
-abbrlink: 47316
+categories:
+  - Project
+abbrlink: 7e6038d8
 date: 2022-05-31 11:23:42
 ---
-
 
 > 欢迎观看我的医院预约挂号平台项目笔记
 >

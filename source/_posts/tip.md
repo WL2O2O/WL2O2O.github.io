@@ -1,12 +1,11 @@
 ---
 title: Tip 常用小技巧
-categories:
-  - Java notes
 tags:
   - 快捷键
   - 技巧
-description: IDEA快捷键技巧分享！
-abbrlink: 55031
+categories:
+  - Java notes
+abbrlink: 75f3839e
 date: 2022-09-07 08:58:32
 ---
 

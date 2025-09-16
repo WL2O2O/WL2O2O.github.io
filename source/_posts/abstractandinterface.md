@@ -1,12 +1,11 @@
 ---
 title: abstract class && interface
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
-excerpt: 你知道抽象类(abstract class)和接口(interface)有什么区别吗？
-categories:
-  - Java notes
 tags:
   - Java基础
-abbrlink: 20249
+categories:
+  - Java notes
+excerpt: 你知道抽象类(abstract class)和接口(interface)有什么区别吗？
+abbrlink: d784ab99
 date: 2023-10-07 08:58:32
 ---
 

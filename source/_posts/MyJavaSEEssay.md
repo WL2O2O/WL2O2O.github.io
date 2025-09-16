@@ -1,16 +1,12 @@
 ---
 title: 我的 Java EE 随笔
-sticky: 100
-description: 一篇小而精的Java基础八股文随笔，记录实战面试高频考点
-excerpt: 小而精的Java基础八股文随笔，记录实战面试高频考点
-categories:
-  - Java U8G
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311161446867.png
 tags:
   - 八股文
   - 面试逆袭
-abbrlink: 46344
+categories:
+  - Java U8G
+excerpt: 小而精的Java基础八股文随笔，记录实战面试高频考点
+abbrlink: 50aab414
 date: 2023-12-16 09:13:57
 ---
 

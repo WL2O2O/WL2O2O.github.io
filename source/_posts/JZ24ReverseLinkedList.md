@@ -1,13 +1,12 @@
 ---
 title: 002-JZoffer
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
-categories:
-  - Algo
 tags:
   - 链表反转
   - 迭代
   - 递归
-abbrlink: 51735
+categories:
+  - Algo
+abbrlink: eb30969e
 date: 2023-06-01 09:56:58
 ---
 

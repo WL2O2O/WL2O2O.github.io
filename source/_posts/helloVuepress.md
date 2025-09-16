@@ -1,11 +1,10 @@
 ---
 title: Vuepress 博客搭建
-index_img: 'https://v2.vuepress.vuejs.org/images/hero.png'
-categories:
-  - Blog
 tags:
   - 网站搭建
-abbrlink: 7284
+categories:
+  - Blog
+abbrlink: 39f532c2
 date: 2022-11-07 08:58:32
 ---
 

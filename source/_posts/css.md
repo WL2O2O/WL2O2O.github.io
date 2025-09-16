@@ -1,12 +1,10 @@
 ---
 title: css
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120849257.png
-categories:
-  - Frontend
 tags:
   - CSS
-abbrlink: 52116
+categories:
+  - Frontend
+abbrlink: 78cea6d8
 date: 2021-09-10 12:14:21
 ---
 
@@ -86,7 +84,7 @@ date: 2021-09-10 12:14:21
       <li>深入学习 JavaScript：JavaScript 为网页添加交互和动态功能。</li>
     </ol>
     <!-- 文章作者 -->
-    <p class="author">作者：CSGUIDER</p>
+    <p class="author">作者：CS_GUIDER</p>
   </div>
   <div class="article">
     <h2>CSS 基础入门</h2>
@@ -98,7 +96,7 @@ date: 2021-09-10 12:14:21
       <li>盒模型：指元素的内容、内边距、边框和外边距的组合。</li>
     </ul>
     <!-- 文章作者 -->
-    <p class="author">作者：CSGUIDER</p>
+    <p class="author">作者：CS_GUIDER</p>
   </div>
 </body>
 </html>

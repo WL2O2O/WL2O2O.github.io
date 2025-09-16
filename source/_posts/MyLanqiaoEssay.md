@@ -1,14 +1,12 @@
 ---
 title: 我的算法随笔
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
-excerpt: 一份小而美的算法随笔，从基础到进阶系列
-categories:
-  - Java U8G
 tags:
   - 八股文
   - 面试逆袭
-sticky: 100
-abbrlink: 48363
+categories:
+  - Java U8G
+excerpt: 一份小而美的算法随笔，从基础到进阶系列
+abbrlink: fe1a4e4e
 date: 2023-05-11 12:23:11
 ---
 

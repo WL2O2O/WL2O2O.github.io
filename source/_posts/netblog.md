@@ -1,12 +1,10 @@
 ---
 title: netblog
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120902040.png
-categories:
-  - Blog
 tags:
   - 网站搭建
-abbrlink: 34693
+categories:
+  - Blog
+abbrlink: f3dfbe7f
 date: 2023-08-22 01:23:17
 ---
 

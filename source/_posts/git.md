@@ -1,14 +1,13 @@
 ---
 title: 最常用的Git命令汇总
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120849258.png
-categories:
-  - Git
 tags:
   - Git
-abbrlink: 19040
+categories:
+  - Git
+abbrlink: ebc19133
 date: 2022-10-07 08:58:32
 ---
+
 # 常用 Git 命令清单
 
 > 整理：[CS_GUIDER](https://wl2o2o.github.io/)，作者：阮一峰，原文链接：https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html

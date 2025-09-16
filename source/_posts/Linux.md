@@ -1,12 +1,10 @@
 ---
 title: Linux 常用命令积累
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111619818.jpg
-categories:
-  - Linux
 tags:
   - Linux
-abbrlink: 44958
+categories:
+  - Linux
+abbrlink: 94c52c92
 date: 2022-09-07 08:58:32
 ---
 

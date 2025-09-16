@@ -1,13 +1,11 @@
 ---
 title: 面经干货
-description: 什么是校招？面试常问问题总结
-excerpt: 我收藏的一篇介绍校招和面试常问问题总结好文
-hide: true
-categories:
-  - STAR
 tags:
   - 面试逆袭
-abbrlink: 59198
+categories:
+  - STAR
+excerpt: 我收藏的一篇介绍校招和面试常问问题总结好文
+abbrlink: 399d9fcb
 date: 2023-12-27 22:08:59
 ---
 

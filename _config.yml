@@ -3,44 +3,44 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 主页 | CSGUIDER'S Blog
-subtitle: ''
-description: '欢迎来到我的CSGUIDER博客！这里提供了全面、实用和最新的Java编程信息。你可以找到Java算法、项目、博客、数据库、Linux系统的教程和笔记。我致力于为您提供Java编程的实用指南和资源，包括Java框架、JVM和Git等。无论您是初学者还是经验丰富的开发人员，都可以从中获益。谢谢您的光临！'
+title: CS_GUIDER'S Blog
+subtitle: 'If not now, when? If not me, who?'
+description: '欢迎来到我的CS_GUIDER博客！这里提供了全面、实用和最新的Java编程信息。你可以找到Java算法、项目、博客、数据库、Linux系统的教程和笔记。我致力于为您提供Java编程的实用指南和资源，包括Java框架、JVM和Git等。无论您是初学者还是经验丰富的开发人员，都可以从中获益。谢谢您的光临！'
 keywords:
-author: WLei224
+author: CS_GUIDER
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 # url: http://139.159.155.183
-url: https://wlei224.gitee.io
+url: https://wl2o2o.github.io
 # permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
-# #---------------------------
-# # 解决文章链接会随标题变动而变动，链接永久化插件
-# # 安装地址：https://github.com/Rozbo/hexo-abbrlink
-# # 安装插件：npm install hexo-abbrlink --save
-# #---------------------------
-# permalink: posts/:abbrlink.html
-# # abbrlink config
-# abbrlink:
-#   alg: crc32      #support crc16(default) and crc32
-#   rep: hex        #support dec(default) and hex
-#   drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
-#   # Generate categories from directory-tree
-#   # depth: the max_depth of directory-tree you want to generate, should > 0
-#   auto_category:
-#      enable: true  #true(default)
-#      depth:        #3(default)
-#      over_write: false 
-#   auto_title: false #enable auto title, it can auto fill the title by path
-#   auto_date: false #enable auto date, it can auto fill the date by time today
-#   force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
+#---------------------------
+# 解决文章链接会随标题变动而变动，链接永久化插件
+# 安装地址：https://github.com/Rozbo/hexo-abbrlink
+# 安装插件：npm install hexo-abbrlink --save
+#---------------------------
+permalink: posts/:abbrlink.html
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32
+  rep: hex        #support dec(default) and hex
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
 # Directory
 source_dir: source
 public_dir: public
@@ -118,7 +118,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: maple
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

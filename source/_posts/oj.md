@@ -1,14 +1,11 @@
 ---
 title: 基于Spring Boot的在线编程判题系统
-sticky: 90
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
-banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151640352.png
-categories:
-  - Project
 tags:
   - Spring Boot
   - MySQL
-abbrlink: 6280
+categories:
+  - Project
+abbrlink: 2f787749
 date: 2023-08-21 08:12:32
 ---
 
@@ -298,8 +295,8 @@ https://github.com/vfleaking/uoj(php实现的)
 
 ```sql
 # 数据库初始化
-# @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
-# @from <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+# @author <a href="https://github.com/wl2o2o">程序员CS_GUIDER</a>
+# @from <a href="https://wl2o2o.github.io">CS_GUIDER博客</a>
 
 -- 创建库
 create database if not exists smartoj;
@@ -1000,8 +997,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
- * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @Author <a href="https://github.com/wl2o2o">程序员CS_GUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CS_GUIDER博客</a>
  * @CreateTime 2023/12/23
  */
 @RestController("/")
@@ -1025,8 +1022,8 @@ public class MainController {
 
 ```java
 /**
- * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
- * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @Author <a href="https://github.com/wl2o2o">程序员CS_GUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CS_GUIDER博客</a>
  * @CreateTime 2023/12/25
  */
 
@@ -1270,8 +1267,8 @@ import java.security.Permission;
 /**
  * 默认禁用所有权限安全管理器
  *
- * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
- * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @Author <a href="https://github.com/wl2o2o">程序员CS_GUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CS_GUIDER博客</a>
  * @CreateTime 2023/12/28
  */
 
@@ -1297,8 +1294,8 @@ import java.security.Permission;
 /**
  * 我的安全管理器
  *
- * @Author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
- * @From <a href="https://wl2o2o.github.io">CSGUIDER博客</a>
+ * @Author <a href="https://github.com/wl2o2o">程序员CS_GUIDER</a>
+ * @From <a href="https://wl2o2o.github.io">CS_GUIDER博客</a>
  * @CreateTime 2023/12/28
  */
 
@@ -1596,7 +1593,7 @@ store.state.user?.loginUser
 
 ```typescript
 store.dispath("user/getLoginUser", {
-  userNama: "CSGUIDER",
+  userNama: "CS_GUIDER",
 })
 ```
 

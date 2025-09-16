@@ -1,9 +1,5 @@
 ---
 title: 校园失物招领系统
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627644.png
-excerpt: 基于SSM框架设计的校园失物招领聊天交流系统
-categories:
-  - Project
 tags:
   - Spring Boot
   - JSP
@@ -11,9 +7,13 @@ tags:
   - MySQL
   - jquery
   - ajax
-abbrlink: 12489
+categories:
+  - Project
+excerpt: 基于SSM框架设计的校园失物招领聊天交流系统
+abbrlink: d4ab7a61
 date: 2023-03-12 15:31:03
 ---
+
 # 我的JSP课程设计大作业
 
 1. **项目简介**

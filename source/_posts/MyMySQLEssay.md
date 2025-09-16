@@ -1,16 +1,13 @@
 ---
 title: 我的 MySQL 随笔
-sticky: 100
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311161446867.png
-excerpt: MySQL形象八股文随笔，不形象你打我系列
-categories:
-  - Java U8G
 tags:
   - 八股文
   - 面试逆袭
-abbrlink: 23390
-date: 2023-11-16 14:33:14 
+categories:
+  - Java U8G
+excerpt: MySQL形象八股文随笔，不形象你打我系列
+abbrlink: 129a1d80
+date: 2023-11-16 14:33:14
 ---
 
 - [x] 基础篇

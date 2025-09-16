@@ -1,17 +1,12 @@
 ---
 title: oj
-sticky: 100
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
-banner_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151640352.png
-hide: true
-categories:
-  - Project
 tags:
   - Spring Boot
   - MySQL
-abbrlink: 57261
+categories:
+  - Project
+abbrlink: edbedd1
+date: 2024-05-18 16:56:11
 ---
 
 # 在线判题系统

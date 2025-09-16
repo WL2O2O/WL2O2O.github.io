@@ -1,12 +1,10 @@
 ---
 title: Java Notes
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627635.png
-sticky: 100
-categories:
-  - Java notes
 tags:
   - Java基础
-abbrlink: 11449
+categories:
+  - Java notes
+abbrlink: 67a0ce1d
 date: 2022-09-07 08:58:32
 ---
 

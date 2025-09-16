@@ -1,14 +1,13 @@
 ---
 title: 什么是微服务与分布式
-description: 用一句话说明白什么是微服务、分布式与微服务的区别
-excerpt: 微服务是什么、分布式与微服务的区别（用一句话说明白，连载中···）
-categories:
-  - Blog
 tags:
   - 八股文
   - 面试逆袭
   - 微服务
-abbrlink: 62464
+categories:
+  - Blog
+excerpt: 微服务是什么、分布式与微服务的区别（用一句话说明白，连载中···）
+abbrlink: 7c385d50
 date: 2024-01-01 23:23:22
 ---
 
@@ -27,8 +26,8 @@ date: 2024-01-01 23:23:22
 <a href="https://github.com/wl2o2o">wl2o2o</a>
 <br>
 ✒️博客主页：
-<a href="https://wlei224.gitee.io"> CSGUIDER(好玩)</a>
-<a href="https://wl2o2o.github.io"> CSGUIDER(实用)</a>
+<a href="https://wlei224.gitee.io"> CS_GUIDER(好玩)</a>
+<a href="https://wl2o2o.github.io"> CS_GUIDER(实用)</a>
 <br>
 ⭐八股专栏：
 <a href="https://csguider.icu"> JavaU8G(内置MusicPlayer)</a>

@@ -1,18 +1,17 @@
 ---
 title: 仿哔哩哔哩项目
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120915505.png
-categories:
-  - Project
 tags:
   - SpringBoot
   - Mysql
   - MyBatis
   - Maven
+categories:
+  - Project
 excerpt: 基于Spring Boot从零到一搭建仿哔哩哔哩项目
-abbrlink: 45290
+abbrlink: a619b54
 date: 2022-12-23 20:23:01
 ---
+
 ### 从项目角度和技术角度两个维度来看：
 
 > 项目角度：规模大、不同种类的用户群体、高流量、个性化功能针对不同的用户；

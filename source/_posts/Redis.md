@@ -1,12 +1,10 @@
 ---
 title: Redis学习笔记
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309111618302.png
-categories:
-  - Java notes
 tags:
   - Redis
-abbrlink: 30038
+categories:
+  - Java notes
+abbrlink: 8eda3648
 date: 2022-10-27 20:27:45
 ---
 

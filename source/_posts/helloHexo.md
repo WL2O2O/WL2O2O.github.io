@@ -1,14 +1,13 @@
 ---
 title: Hexo 建站笔记
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120902040.png
-categories:
-  - Blog
 tags:
   - 网站搭建
-description: 这是我的 Hexo 多端部署方案以及怎么把hexo博客部署到服务器，怎么优化博客访问速度？hexo博客优化
-abbrlink: 44559
+categories:
+  - Blog
+abbrlink: a78bd332
 date: 2021-09-07 14:07:56
 ---
+
 ## Quick Start
 
 ### Create a new post

@@ -1,7 +1,6 @@
 ---
 title: EducationNotes
-hide: true
-abbrlink: 37244
+abbrlink: ba023cfa
 date: 2024-06-09 20:53:51
 ---
 

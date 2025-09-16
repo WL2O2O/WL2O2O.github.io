@@ -1,14 +1,14 @@
 ---
 title: 项目如何从〇到一
-excerpt: 项目如何从零到一，如何做好项目负责人，从项目立项、需求分析到项目落地的思路和方法
-sticky: 100
-categories:
-  - Project
 tags:
   - 架构师
-abbrlink: 62964
+categories:
+  - Project
+excerpt: 项目如何从零到一，如何做好项目负责人，从项目立项、需求分析到项目落地的思路和方法
+abbrlink: ac44d0e1
 date: 2023-07-02 11:23:41
 ---
+
 ***实操前须知：***
 
 > 1、准备充分：先阅读相关参考资料

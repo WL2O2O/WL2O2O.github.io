@@ -1,14 +1,13 @@
 ---
 title: MySQL笔记
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627638.png
-categories:
-  - Database
 tags:
   - MySQL
-abbrlink: 45387
+categories:
+  - Database
+abbrlink: fd5f561d
 date: 2023-01-06 18:23:52
 ---
+
 # MySQL 的逻辑架构图![](https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/202306061044225.png)
 
 

@@ -1,11 +1,11 @@
 ---
 title: 一篇文章搞懂 log4j 的使用方法
-categories:
-  - Frameworks
 tags:
   - MyBatis
   - Logging Services
-abbrlink: 11624
+categories:
+  - Frameworks
+abbrlink: a5a0061d
 date: 2023-09-22 00:33:33
 ---
 

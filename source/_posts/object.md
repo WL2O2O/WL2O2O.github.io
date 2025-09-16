@@ -1,14 +1,13 @@
 ---
 title: JavaObject
-index_img: >-
-  https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202309120835293.png
-categories:
-  - Java notes
 tags:
   - Object类
-abbrlink: 18850
+categories:
+  - Java notes
+abbrlink: 7837bac7
 date: 2022-01-03 18:29:02
 ---
+
 # Object类
 
 * 对象比较

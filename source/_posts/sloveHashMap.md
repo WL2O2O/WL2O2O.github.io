@@ -1,14 +1,13 @@
 ---
 title: 再也不怕面试问到 HashMap
-description: 一篇文章搞懂 HashMap 的数据结构、怎么解决冲突、为什么负载因子为0.75、如何扩容等问题
-excerpt: 怎么理解 HashMap 的数据结构？怎么解决 hash 冲突？哈希表负载因子是多少？哈希表怎么扩容？
-categories:
-  - Blog
 tags:
   - 八股文
   - 面试逆袭
   - Java基础
-abbrlink: 36038
+categories:
+  - Blog
+excerpt: 怎么理解 HashMap 的数据结构？怎么解决 hash 冲突？哈希表负载因子是多少？哈希表怎么扩容？
+abbrlink: 4a30f0e6
 date: 2024-01-01 23:31:00
 ---
 
@@ -27,8 +26,8 @@ date: 2024-01-01 23:31:00
 <a href="https://github.com/wl2o2o">wl2o2o</a>
 <br>
 ✒️博客主页：
-<a href="https://wlei224.gitee.io"> CSGUIDER(好玩)</a>
-<a href="https://wl2o2o.github.io"> CSGUIDER(实用)</a>
+<a href="https://wlei224.gitee.io"> CS_GUIDER(好玩)</a>
+<a href="https://wl2o2o.github.io"> CS_GUIDER(实用)</a>
 <br>
 ⭐八股专栏：
 <a href="https://csguider.icu"> JavaU8G(内置MusicPlayer)</a>

@@ -1,11 +1,11 @@
 ---
 title: 云上个人书库
-excerpt: 项目介绍：基于华为云鲲鹏ECS搭建的无广告、简洁、便捷的个人书库。
-categories:
-  - Project
 tags:
   - 云上书库
-abbrlink: 65275
+categories:
+  - Project
+excerpt: 项目介绍：基于华为云鲲鹏ECS搭建的无广告、简洁、便捷的个人书库。
+abbrlink: 13b039bd
 date: 2023-08-01 13:58:32
 ---
 

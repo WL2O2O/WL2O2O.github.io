@@ -1,17 +1,13 @@
 ---
 title: VueSkills
-sticky: 100
-hide: true
-description: ⭐⭐⭐分享毕生积累的 Vue 语法以及至臻小技巧
-categories:
-  - 前端
 tags:
   - Vue3
-index_img: >-
-  https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/VueSkills-2024-05-08-10-27-38.png
-abbrlink: 28861
+categories:
+  - 前端
+abbrlink: b9206201
 date: 2024-05-08 10:21:52
 ---
+
 ## export default 问题
 当使用setup语法糖时，不需要使用export default 导出组件，否则会报错，如下图所示：
 ![Vue中setup语法糖](https://cdn.jsdelivr.net/gh/wl2o2o/blogCdn/img/VueSkills-2024-05-08-10-28-55.png)

@@ -1,13 +1,12 @@
 ---
 title: 001-JZoffer
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627628.png
-categories:
-  - 
 tags:
   - 链表
   - 递归
   - ArrayList
-abbrlink: 14851
+categories:
+  - None
+abbrlink: d2bdaa5b
 date: 2023-06-01 09:56:58
 ---
 

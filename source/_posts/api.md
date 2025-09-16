@@ -1,13 +1,5 @@
 ---
 title: API开放平台
-index_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627634.png
-banner_img: https://cs-wlei224.obs.cn-south-1.myhuaweicloud.com/blog-imgs/202311151627632.png
-excerpt: >-
-  项目介绍：前端开发的时候有有时会需要后端的接口，如果此时有一个 API 接口可以使用，那么就无需后端接口了。本项目是一个提供 API
-  接口调用的平台，用户可以注册与登录，开通接口的调用权限，用户可以使用接口，每次调用会进行次数统计。管理院可以发布接口、下线接口、接入接口，以及可视化接口的调用情况。
-sticky: 100
-categories:
-  - Project
 tags:
   - Ant Design Pro
   - React
@@ -16,7 +8,12 @@ tags:
   - Umi Request
   - Spring Boot
   - SDK开发
-abbrlink: 2239
+categories:
+  - Project
+excerpt: >-
+  项目介绍：前端开发的时候有有时会需要后端的接口，如果此时有一个 API 接口可以使用，那么就无需后端接口了。本项目是一个提供 API
+  接口调用的平台，用户可以注册与登录，开通接口的调用权限，用户可以使用接口，每次调用会进行次数统计。管理院可以发布接口、下线接口、接入接口，以及可视化接口的调用情况。
+abbrlink: c40430e5
 date: 2023-06-03 12:34:12
 ---
 
