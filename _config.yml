@@ -117,7 +117,7 @@ theme: maple
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   - type: git
-    repo: git@gitee.com:WLei224/WLei224.git
+    repo: git@github.com:WL2O2O/WL2O2O.github.io.git
     branch: master
 
 marked:
