@@ -1,48 +1,29 @@
-# name: Deploy # 工作流名称
-# on:
-#   push: # push 事件触发工作流
-#     branches:
-#       - hexoBlog # 只有在 hexoBlog 分支推送时触发工作流
-# jobs:
-#   build: # job1 id
-#     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
-#     name: Deploy blog
-#     steps:
-#       - name: Checkout # 步骤1：获取源码
-#         uses: actions/checkout@v2 # 使用 actions/checkout@v2
-
-#       - name: Cache node modules # 步骤2：缓存 node_modules
-#         uses: actions/cache@v2
-#         with:
-#           path: node_modules
-#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-name: Build and Deploy
-on: [push]
-permissions:
-  contents: write
+name: Build and Deploy Hexo
+on:
+  push:
+    branches:
+      - hexoBlog
 jobs:
   build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+    - name: Checkout 🛎️
+      uses: actions/checkout@master
+      
+    - name: Use Node.js 12
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '12'
         
-      - name: Install Hexo CLI  
-        run: npm install -g hexo-cli@4.3.0
-        env:  
-          CI: false
+    - name: Install and Build 🔧 
+      run: |
+        npm install -g hexo-cli
+        npm install
+        hexo clean
+        hexo generate
 
-      - name: Install Dependencies # 步骤3：安装依赖
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm run build
-        env:
-          CI: false
-          
-      - name: Deploy 🚀 # 步骤4：部署
-        # uses: JamesIves/github-pages-deploy-action@releases/v3
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master # 部署到 gh-pages 分支
-          FOLDER: public # 部署 public 文件夹
+    - name: Deploy 🚀
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public
